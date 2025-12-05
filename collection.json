@@ -1,0 +1,851 @@
+{
+  "info": {
+    "name": "Bonding App API",
+    "description": "Complete API collection for the Bonding App - A relationship bonding platform with activities, gamification, and partner interaction features.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{access_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000/api",
+      "type": "string"
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "refresh_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "user_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "activity_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "session_id",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Google Login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"google_token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkMzM2ZGY1Njk4ZmVmMTU0MDhjYjhkODNiOWQzMDEyN2IzOGM4NDYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiJZT1VSX0NMSUVOVF9JRC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IllPVVJfQ0xJRU5UX0lELmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTIzNDU2Nzg5MDEyMzQ1Njc4OTAiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImFiY2RlZmdoaWprbG1ub3AiLCJuYW1lIjoiSm9obiBEb2UiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvZGVmYXVsdC11c2VyIiwiZ2l2ZW5fbmFtZSI6IkpvaG4iLCJmYW1pbHlfbmFtZSI6IkRvZSIsImxvY2FsZSI6ImVuIiwiaWF0IjoxNzE2MjM5MDIyLCJleHAiOjE3MTYyNDI2MjJ9.REPLACE_WITH_ACTUAL_GOOGLE_TOKEN\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/google-login/",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "google-login", ""]
+            },
+            "description": "⚠️ **IMPORTANT:** Replace the token with a real Google OAuth token\n\n**How to get Google OAuth token:**\n1. Go to: https://developers.google.com/oauthplayground/\n2. Select \"Google OAuth2 API v2\"\n3. Select scope: \"https://www.googleapis.com/auth/userinfo.email\" and \"https://www.googleapis.com/auth/userinfo.profile\"\n4. Click \"Authorize APIs\"\n5. Click \"Exchange authorization code for tokens\"\n6. Copy the \"id_token\" value\n7. Paste it in the \"google_token\" field above\n\n**OR** use Google Sign-In button in your frontend and capture the token.\n\n**Note:** Google tokens expire in 1 hour."
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.environment.set('access_token', jsonData.tokens.access);",
+                  "    pm.environment.set('refresh_token', jsonData.tokens.refresh);",
+                  "    pm.environment.set('user_id', jsonData.user.id);",
+                  "    console.log('✅ Tokens saved successfully');",
+                  "    console.log('Access Token:', jsonData.tokens.access);",
+                  "    console.log('User ID:', jsonData.user.id);",
+                  "} else {",
+                  "    console.log('❌ Login failed:', pm.response.json());",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Manual Register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\": \"john_doe_123\",\n    \"email\": \"johndoe@example.com\",\n    \"password\": \"SecurePass123!\",\n    \"confirm_password\": \"SecurePass123!\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"age\": 28,\n    \"preferred_language\": \"en\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/register/",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "register", ""]
+            },
+            "description": "**Manual Registration with Email/Password**\n\n**Required Fields:**\n- `username`: Unique username (alphanumeric + underscore)\n- `email`: Valid email address\n- `password`: Strong password (min 8 chars, mix of upper/lower/numbers/special)\n- `confirm_password`: Must match password\n- `first_name`: User's first name\n- `last_name`: User's last name\n- `age`: User's age (must be 18+)\n- `preferred_language`: \"en\" or \"hi\"\n\n**Response:**\n- Returns user object with JWT tokens\n- Tokens are auto-saved to environment variables\n- Creates default user preferences\n- Generates invitation code for partner linking"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.environment.set('access_token', jsonData.tokens.access);",
+                  "    pm.environment.set('refresh_token', jsonData.tokens.refresh);",
+                  "    pm.environment.set('user_id', jsonData.user.id);",
+                  "    console.log('✅ Registration successful!');",
+                  "    console.log('Access Token:', jsonData.tokens.access);",
+                  "    console.log('User ID:', jsonData.user.id);",
+                  "    console.log('Invitation Code:', jsonData.user.partner_invitation_code);",
+                  "} else {",
+                  "    console.log('❌ Registration failed:', pm.response.json());",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Manual Register - User 2 (For Partner Testing)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\": \"jane_smith_456\",\n    \"email\": \"janesmith@example.com\",\n    \"password\": \"SecurePass456!\",\n    \"confirm_password\": \"SecurePass456!\",\n    \"first_name\": \"Jane\",\n    \"last_name\": \"Smith\",\n    \"age\": 26,\n    \"preferred_language\": \"en\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/register/",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "register", ""]
+            },
+            "description": "**Second User Registration for Partner Testing**\n\nUse this to create a second user account to test partner linking features.\n\n**Steps:**\n1. Register User 1 (John Doe)\n2. Register User 2 (Jane Smith) - THIS REQUEST\n3. Note the invitation code from either user\n4. Use \"Link Partner\" endpoint to connect them\n\n**Different credentials:**\n- Username: jane_smith_456\n- Email: janesmith@example.com\n- Password: SecurePass456!"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var jsonData = pm.response.json();",
+                  "    // Save as secondary user for partner testing",
+                  "    pm.environment.set('partner_access_token', jsonData.tokens.access);",
+                  "    pm.environment.set('partner_user_id', jsonData.user.id);",
+                  "    pm.environment.set('partner_invitation_code', jsonData.user.partner_invitation_code);",
+                  "    console.log('✅ Partner account registered!');",
+                  "    console.log('Partner User ID:', jsonData.user.id);",
+                  "    console.log('Partner Invitation Code:', jsonData.user.partner_invitation_code);",
+                  "    console.log('💡 Use this invitation code to link with User 1');",
+                  "} else {",
+                  "    console.log('❌ Registration failed:', pm.response.json());",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refresh_token\": \"{{refresh_token}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/logout/",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "logout", ""]
+            },
+            "description": "Logout and blacklist refresh token"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User Profile",
+      "item": [
+        {
+          "name": "Get My Profile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/users/me/",
+              "host": ["{{base_url}}"],
+              "path": ["users", "me", ""]
+            },
+            "description": "Get current user's profile with all details"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Profile",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"first_name\": \"Updated\",\n  \"last_name\": \"Name\",\n  \"bio\": \"Love spending quality time together!\",\n  \"age\": 26,\n  \"preferred_language\": \"hi\",\n  \"theme\": \"dark\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/users/update-profile/",
+              "host": ["{{base_url}}"],
+              "path": ["users", "update-profile", ""]
+            },
+            "description": "Update user profile information"
+          },
+          "response": []
+        },
+        {
+          "name": "Link Partner",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"invitation_code\": \"ABC12345\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/users/partner/link/",
+              "host": ["{{base_url}}"],
+              "path": ["users", "partner", "link", ""]
+            },
+            "description": "Link with a partner using their invitation code"
+          },
+          "response": []
+        },
+        {
+          "name": "Unlink Partner",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/users/partner/unlink/",
+              "host": ["{{base_url}}"],
+              "path": ["users", "partner", "unlink", ""]
+            },
+            "description": "Unlink current partner"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Preferences",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/users/preferences/",
+              "host": ["{{base_url}}"],
+              "path": ["users", "preferences", ""]
+            },
+            "description": "Get user notification preferences"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Preferences",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"daily_reminder\": true,\n  \"reminder_time\": \"19:00:00\",\n  \"partner_activity_notification\": true,\n  \"achievement_notification\": true,\n  \"streak_reminder\": true,\n  \"push_enabled\": true,\n  \"email_enabled\": false\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/users/preferences/",
+              "host": ["{{base_url}}"],
+              "path": ["users", "preferences", ""]
+            },
+            "description": "Update notification preferences"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Activities",
+      "item": [
+        {
+          "name": "List All Activities",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/activities/?category=&difficulty=&mode=&premium=true",
+              "host": ["{{base_url}}"],
+              "path": ["activities", ""],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "",
+                  "description": "Filter by category ID"
+                },
+                {
+                  "key": "difficulty",
+                  "value": "",
+                  "description": "easy, medium, hard"
+                },
+                {
+                  "key": "mode",
+                  "value": "",
+                  "description": "solo, together, both"
+                },
+                {
+                  "key": "premium",
+                  "value": "true",
+                  "description": "Show premium activities"
+                }
+              ]
+            },
+            "description": "Get all activities with optional filters"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Activity Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/activities/{{activity_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["activities", "{{activity_id}}", ""]
+            },
+            "description": "Get detailed information about a specific activity"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Daily Featured",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/activities/daily/",
+              "host": ["{{base_url}}"],
+              "path": ["activities", "daily", ""]
+            },
+            "description": "Get today's featured activities"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/activities/categories/",
+              "host": ["{{base_url}}"],
+              "path": ["activities", "categories", ""]
+            },
+            "description": "Get all activity categories"
+          },
+          "response": []
+        },
+        {
+          "name": "Start Activity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mode\": \"solo\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/activities/{{activity_id}}/start/",
+              "host": ["{{base_url}}"],
+              "path": ["activities", "{{activity_id}}", "start", ""]
+            },
+            "description": "Start an activity session (mode: solo or together)"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.environment.set('session_id', jsonData.session.id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Complete Activity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"session_id\": \"{{session_id}}\",\n  \"responses\": {\n    \"question_1\": \"Our favorite memory was...\",\n    \"question_2\": \"We learned that...\"\n  },\n  \"photos\": [],\n  \"notes\": \"Had a great time doing this activity!\",\n  \"rating\": 5,\n  \"feedback\": \"Loved it! Very meaningful.\",\n  \"shared_with_partner\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/activities/{{activity_id}}/complete/",
+              "host": ["{{base_url}}"],
+              "path": ["activities", "{{activity_id}}", "complete", ""]
+            },
+            "description": "Complete an activity and submit responses"
+          },
+          "response": []
+        },
+        {
+          "name": "Skip Activity",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/activities/{{activity_id}}/skip/",
+              "host": ["{{base_url}}"],
+              "path": ["activities", "{{activity_id}}", "skip", ""]
+            },
+            "description": "Skip an activity (limited per day)"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Progress & Stats",
+      "item": [
+        {
+          "name": "Get Progress Overview",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/progress/overview/",
+              "host": ["{{base_url}}"],
+              "path": ["progress", "overview", ""]
+            },
+            "description": "Get comprehensive progress statistics"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Streak",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/progress/streak/",
+              "host": ["{{base_url}}"],
+              "path": ["progress", "streak", ""]
+            },
+            "description": "Get current streak information"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Bond Score",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/progress/bond-score/",
+              "host": ["{{base_url}}"],
+              "path": ["progress", "bond-score", ""]
+            },
+            "description": "Get bond score and history"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Achievements",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/progress/achievements/",
+              "host": ["{{base_url}}"],
+              "path": ["progress", "achievements", ""]
+            },
+            "description": "Get all badges and milestones (locked and unlocked)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get History",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/progress/history/?limit=20&offset=0&date_from=&date_to=",
+              "host": ["{{base_url}}"],
+              "path": ["progress", "history", ""],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "20"
+                },
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "date_from",
+                  "value": "",
+                  "description": "YYYY-MM-DD"
+                },
+                {
+                  "key": "date_to",
+                  "value": "",
+                  "description": "YYYY-MM-DD"
+                }
+              ]
+            },
+            "description": "Get activity completion history"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Rewards & Gamification",
+      "item": [
+        {
+          "name": "Get Coin Balance",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/rewards/coins/",
+              "host": ["{{base_url}}"],
+              "path": ["rewards", "coins", ""]
+            },
+            "description": "Get coin balance and transaction history"
+          },
+          "response": []
+        },
+        {
+          "name": "Spend Coins",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"item_type\": \"unlock_activity\",\n  \"item_id\": \"{{activity_id}}\",\n  \"cost\": 50\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/rewards/spend-coins/",
+              "host": ["{{base_url}}"],
+              "path": ["rewards", "spend-coins", ""]
+            },
+            "description": "Spend coins to unlock features (item_type: unlock_activity, hint, theme, custom_activity)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Level Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/rewards/levels/",
+              "host": ["{{base_url}}"],
+              "path": ["rewards", "levels", ""]
+            },
+            "description": "Get level information and progress"
+          },
+          "response": []
+        },
+        {
+          "name": "Claim Daily Bonus",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/rewards/claim-daily-bonus/",
+              "host": ["{{base_url}}"],
+              "path": ["rewards", "claim-daily-bonus", ""]
+            },
+            "description": "Claim daily login bonus (5 coins)"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Partner Interaction",
+      "item": [
+        {
+          "name": "Get Partner Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/partner/status/",
+              "host": ["{{base_url}}"],
+              "path": ["partner", "status", ""]
+            },
+            "description": "Get partner's current status and activity"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Partner Activity Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/partner/activity-status/?activity_id={{activity_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["partner", "activity-status", ""],
+              "query": [
+                {
+                  "key": "activity_id",
+                  "value": "{{activity_id}}"
+                }
+              ]
+            },
+            "description": "Check if partner completed a specific activity"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Partner Notifications",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/partner/notifications/",
+              "host": ["{{base_url}}"],
+              "path": ["partner", "notifications", ""]
+            },
+            "description": "Get partner-related notifications"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "item": [
+        {
+          "name": "List Notifications",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/notifications/?unread_only=false&limit=20",
+              "host": ["{{base_url}}"],
+              "path": ["notifications", ""],
+              "query": [
+                {
+                  "key": "unread_only",
+                  "value": "false"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Get all notifications"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Unread Count",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/notifications/unread-count/",
+              "host": ["{{base_url}}"],
+              "path": ["notifications", "unread-count", ""]
+            },
+            "description": "Get count of unread notifications"
+          },
+          "response": []
+        },
+        {
+          "name": "Mark as Read",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/notifications/:notification_id/mark-read/",
+              "host": ["{{base_url}}"],
+              "path": ["notifications", ":notification_id", "mark-read", ""],
+              "variable": [
+                {
+                  "key": "notification_id",
+                  "value": ""
+                }
+              ]
+            },
+            "description": "Mark a notification as read"
+          },
+          "response": []
+        },
+        {
+          "name": "Mark All as Read",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/notifications/mark-all-read/",
+              "host": ["{{base_url}}"],
+              "path": ["notifications", "mark-all-read", ""]
+            },
+            "description": "Mark all notifications as read"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "item": [
+        {
+          "name": "Get Settings",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/settings/get-settings/",
+              "host": ["{{base_url}}"],
+              "path": ["settings", "get-settings", ""]
+            },
+            "description": "Get all user settings"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Settings",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profile\": {\n    \"preferred_language\": \"en\",\n    \"theme\": \"light\"\n  },\n  \"notifications\": {\n    \"daily_reminder\": true,\n    \"reminder_time\": \"19:00:00\",\n    \"partner_activity_notification\": true,\n    \"achievement_notification\": true,\n    \"streak_reminder\": true,\n    \"push_enabled\": true,\n    \"email_enabled\": false\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/settings/update-settings/",
+              "host": ["{{base_url}}"],
+              "path": ["settings", "update-settings", ""]
+            },
+            "description": "Update user settings"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

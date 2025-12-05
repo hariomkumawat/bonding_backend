@@ -1,0 +1,63 @@
+# Django Core
+Django
+djangorestframework
+
+# JWT Authentication
+djangorestframework-simplejwt
+PyJWT
+
+# CORS Headers
+django-cors-headers
+
+# Database
+# psycopg2-binary==2.9.9  # Uncomment for PostgreSQL
+
+# Caching (Redis)
+django-redis
+redis
+
+# API Documentation
+drf-spectacular
+
+# Filtering
+django-filter
+
+# Google OAuth
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+
+# Celery (Background Tasks)
+celery
+
+# Environment Variables
+python-decouple
+python-dotenv
+
+# Image Processing (if needed for profile pictures)
+Pillow
+
+# HTTP Requests
+requests
+
+# Utilities
+pytz
+
+# Development Tools
+django-debug-toolbar  # Only for development
+ipython  # Better Python shell
+
+# Testing
+pytest
+pytest-django
+pytest-cov
+factory-boy  # Test data generation
+
+# Code Quality
+flake8
+black
+isort
+
+# Production Server
+gunicorn  # WSGI server for production
+whitenoise  # Static files serving
