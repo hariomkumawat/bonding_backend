@@ -7,10 +7,10 @@ from celery import Celery
 from celery.schedules import crontab
 
 # Set default Django settings
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bonding_app.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bondingapp.settings')
 
 # Create Celery app
-app = Celery('bonding_app')
+app = Celery('bondingapp')
 
 # Load config from Django settings
 app.config_from_object('django.conf:settings', namespace='CELERY')
