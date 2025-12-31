@@ -29,8 +29,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-change-this-in
 # DEBUG = True
 # ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1','https://bonding-backend.onrender.com/').split(',')
 
-DEBUG = False
-ALLOWED_HOSTS = ['localhost,127.0.0.1','https://bonding-backend.onrender.com/','bonding-backend.onrender.com']
+DEBUG = True
+ALLOWED_HOSTS = ['localhost','127.0.0.1','https://bonding-backend.onrender.com/','bonding-backend.onrender.com','127.0.0.1:8000']
 
 
 # Application definition
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     # Local apps
     'bondingapp',
+    'import_export',
     
     
 ]

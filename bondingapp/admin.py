@@ -1,377 +1,655 @@
+"""
+Django Admin Configuration with Import/Export
+Location: bondingapp/admin.py
+"""
+
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
-from django.contrib.auth.forms import UserChangeForm, UserCreationForm
-from django.utils.translation import gettext_lazy as _
-from django import forms
-from .models import (
-    User, UserPreference, ActivityCategory, Activity, ActivitySession,
-    ActivityCompletion, Streak, Badge, UserBadge, Milestone, UserMilestone,
-    Notification, SkipLimit, CoinTransaction
+from django.utils.html import format_html
+from django.urls import reverse
+from django.utils.safestring import mark_safe
+from import_export import resources, fields
+from import_export.admin import ImportExportModelAdmin, ExportActionMixin
+from import_export.widgets import ForeignKeyWidget, ManyToManyWidget
+from bondingapp.models import (
+    User, UserPreference, ActivityCategory, Activity,
+    ActivitySession, ActivityCompletion, Streak, Badge,
+    UserBadge, Milestone, UserMilestone, Notification,
+    SkipLimit, CoinTransaction
 )
 
+import json
+from import_export import resources, fields, widgets
+from import_export.admin import ImportExportModelAdmin
+from bondingapp.models import Activity, ActivityCategory
 
-# Corrected UserCreationForm - Remove the invalid BaseUserAdmin reference
-class UserCreationForm(UserCreationForm):
+# ============================================
+# RESOURCES (Define what/how to import/export)
+# ============================================
+
+class UserResource(resources.ModelResource):
+    """Resource for User model import/export"""
+    partner = fields.Field(
+        column_name='partner',
+        attribute='partner',
+        widget=ForeignKeyWidget(User, 'email')
+    )
+    
     class Meta:
         model = User
-        fields = ('email', 'username')  # Include username if required; adjust as needed
-        field_classes = {'username': forms.CharField}  # Optional: Customize fields
+        fields = (
+            'id', 'username', 'email', 'first_name', 'last_name', 
+            'age', 'phone_number', 'partner', 'relationship_start_date',
+            'preferred_language', 'theme', 'total_points', 'current_level',
+            'coins', 'is_active', 'created_at'
+        )
+        export_order = fields
+        import_id_fields = ['email']  # Use email as unique identifier for imports
+        skip_unchanged = True
+        report_skipped = True
 
 
-# UserChangeForm is already mostly correct, but ensure Meta is standalone
-class UserChangeForm(UserChangeForm):
+class ActivityCategoryResource(resources.ModelResource):
+    """Resource for ActivityCategory import/export"""
+    
     class Meta:
-        model = User
-        fields = '__all__'  # Or specify: ('email', 'username', ...) for security
+        model = ActivityCategory
+        fields = (
+            'id', 'name_en', 'name_hi', 'description_en', 'description_hi',
+            'icon', 'color', 'display_order', 'is_active'
+        )
+        export_order = fields
+        import_id_fields = ['name_en']
 
+
+class ActivityResource(resources.ModelResource):
+    """Resource for Activity import/export"""
+    category = fields.Field(
+        column_name='category',
+        attribute='category',
+        widget=ForeignKeyWidget(ActivityCategory, 'name_en')
+    )
+    
+    class Meta:
+        model = Activity
+        fields = (
+            'id', 'category', 'title_en', 'title_hi', 'description_en',
+            'description_hi', 'difficulty', 'estimated_time_minutes',
+            'best_time', 'mode', 'points_reward', 'coins_reward',
+            'is_premium', 'unlock_cost_coins', 'is_active', 'is_daily_featured'
+        )
+        export_order = fields
+
+
+class ActivityCompletionResource(resources.ModelResource):
+    """Resource for ActivityCompletion import/export"""
+    user = fields.Field(
+        column_name='user',
+        attribute='user',
+        widget=ForeignKeyWidget(User, 'email')
+    )
+    activity = fields.Field(
+        column_name='activity',
+        attribute='activity',
+        widget=ForeignKeyWidget(Activity, 'title_en')
+    )
+    
+    class Meta:
+        model = ActivityCompletion
+        fields = (
+            'id', 'user', 'activity', 'rating', 'points_earned',
+            'coins_earned', 'shared_with_partner', 'completed_at'
+        )
+        export_order = fields
+
+
+class BadgeResource(resources.ModelResource):
+    """Resource for Badge import/export"""
+    
+    class Meta:
+        model = Badge
+        fields = (
+            'id', 'name_en', 'name_hi', 'description_en', 'description_hi',
+            'icon', 'category', 'criteria', 'points_reward', 'coins_reward',
+            'rarity', 'is_active'
+        )
+        export_order = fields
+
+
+class CoinTransactionResource(resources.ModelResource):
+    """Resource for CoinTransaction import/export"""
+    user = fields.Field(
+        column_name='user',
+        attribute='user',
+        widget=ForeignKeyWidget(User, 'email')
+    )
+    
+    class Meta:
+        model = CoinTransaction
+        fields = (
+            'id', 'user', 'transaction_type', 'amount', 'balance_after',
+            'description', 'created_at'
+        )
+        export_order = fields
+
+
+# ============================================
+# ADMIN CLASSES
+# ============================================
 
 @admin.register(User)
-class UserAdmin(BaseUserAdmin):
-    form = UserChangeForm
-    add_form = UserCreationForm
-    model = User
+class UserAdmin(ImportExportModelAdmin, BaseUserAdmin):
+    """Admin for User model with import/export"""
+    resource_class = UserResource
+    
     list_display = (
-        'username', 'email', 'first_name', 'last_name', 'is_staff', 'is_active',
-        'age', 'current_level', 'total_points', 'coins', 'is_online', 'last_active'
+        'username', 'email', 'partner_link', 'current_level', 
+        'total_points', 'coins', 'is_online', 'created_at'
     )
     list_filter = (
-        'is_staff', 'is_superuser', 'is_active', 'is_online', 'preferred_language', 'theme',
-        'current_level', 'age', ('created_at', admin.DateFieldListFilter),
-        ('last_active', admin.DateFieldListFilter)
+        'is_active', 'is_staff', 'current_level', 
+        'preferred_language', 'theme', 'created_at'
     )
-    search_fields = ('username', 'email', 'first_name', 'last_name', 'phone_number', 'google_id')
-    readonly_fields = ('id', 'created_at', 'updated_at', 'last_active')
+    search_fields = ('username', 'email', 'first_name', 'last_name')
+    ordering = ('-created_at',)
+    
     fieldsets = (
-        (None, {'fields': ('username', 'password')}),
-        (_('Personal info'), {
-            'fields': ('email', 'first_name', 'last_name', 'age', 'profile_picture', 'bio')
+        ('Account', {
+            'fields': ('username', 'email', 'password')
         }),
-        (_('Authentication'), {
-            'fields': ('google_id', 'phone_number', 'is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')
+        ('Personal Info', {
+            'fields': ('first_name', 'last_name', 'age', 'phone_number', 'profile_picture', 'bio')
         }),
-        (_('Relationship'), {
+        ('Relationship', {
             'fields': ('partner', 'relationship_start_date', 'partner_invitation_code')
         }),
-        (_('Preferences'), {
+        ('Preferences', {
             'fields': ('preferred_language', 'theme')
         }),
-        (_('Gamification'), {
+        ('Gamification', {
             'fields': ('total_points', 'current_level', 'coins')
         }),
-        (_('Status'), {
-            'fields': ('is_online', 'last_active')
+        ('Status', {
+            'fields': ('is_active', 'is_staff', 'is_superuser', 'is_online', 'last_active')
         }),
-        (_('Important dates'), {
-            'fields': ('created_at', 'updated_at')
+        ('Permissions', {
+            'fields': ('groups', 'user_permissions'),
+            'classes': ('collapse',)
         }),
     )
-    add_fieldsets = (
-        (None, {
-            'classes': ('wide',),
-            'fields': ('username', 'email', 'password1', 'password2', 'is_staff', 'is_active')}
-        ),
-    )
-    ordering = ('-created_at',)
-    filter_horizontal = ('groups', 'user_permissions',)
-
-    def generate_invitation_code(self, request, obj):
-        if not obj.partner_invitation_code:
-            obj.generate_invitation_code()
-            self.message_user(request, f'Invitation code generated: {obj.partner_invitation_code}')
-        else:
-            self.message_user(request, f'Invitation code already exists: {obj.partner_invitation_code}', level='warning')
-
-    generate_invitation_code.short_description = 'Generate Partner Invitation Code'
-    actions = [generate_invitation_code]
-class UserPreferenceInline(admin.StackedInline):
-    model = UserPreference
-    fields = (
-        'daily_reminder_enabled', 'daily_reminder_time', 'partner_activity_alerts',
-        'streak_reminders', 'milestone_notifications', 'sound_enabled', 'vibration_enabled',
-        'activity_difficulty', 'notification_frequency'
-    )
-    extra = 0
-    can_delete = False
-
-
-class UserBadgeInline(admin.TabularInline):
-    model = UserBadge
-    fields = ('badge', 'unlocked_at', 'is_displayed')
-    readonly_fields = ('unlocked_at',)
-    extra = 0
-
-
-class UserMilestoneInline(admin.TabularInline):
-    model = UserMilestone
-    fields = ('milestone', 'achieved_at', 'partner_also_achieved')
-    readonly_fields = ('achieved_at',)
-    extra = 0
-
-
-class ActivityCompletionInline(admin.TabularInline):
-    model = ActivityCompletion
-    fields = ('activity', 'rating', 'points_earned', 'coins_earned', 'shared_with_partner', 'completed_at')
-    readonly_fields = ('completed_at',)
-    extra = 0
-
-
-class StreakInline(admin.StackedInline):
-    model = Streak
-    fields = ('current_streak', 'longest_streak', 'last_activity_date', 'total_active_days', 'streak_start_date')
-    extra = 0
-    can_delete = False
-
-
-# Extend UserAdmin with inlines if needed, but since User is already registered, we can add inlines via get_inline_instances
-class UserAdminWithInlines(UserAdmin):
-    inlines = [UserPreferenceInline, UserBadgeInline, UserMilestoneInline, ActivityCompletionInline, StreakInline]
-
-# Note: To use inlines, uncomment below and comment out the plain UserAdmin register
-# admin.site.unregister(User)
-# admin.site.register(User, UserAdminWithInlines)
+    
+    readonly_fields = ('last_active', 'created_at', 'updated_at')
+    
+    def partner_link(self, obj):
+        """Display partner as clickable link"""
+        if obj.partner:
+            url = reverse('admin:bondingapp_user_change', args=[obj.partner.id])
+            return format_html('<a href="{}">{}</a>', url, obj.partner.username)
+        return '-'
+    partner_link.short_description = 'Partner'
 
 
 @admin.register(UserPreference)
 class UserPreferenceAdmin(admin.ModelAdmin):
-    list_display = ('user', 'daily_reminder_enabled', 'activity_difficulty', 'notification_frequency', 'updated_at')
-    list_filter = ('daily_reminder_enabled', 'partner_activity_alerts', 'streak_reminders', 'activity_difficulty', 'notification_frequency')
-    search_fields = ('user__username', 'user__email')
-    readonly_fields = ('created_at', 'updated_at')
-    fieldsets = (
-        ('User', {'fields': ('user',)}),
-        ('Notifications', {
-            'fields': ('daily_reminder_enabled', 'daily_reminder_time', 'partner_activity_alerts', 'streak_reminders', 'milestone_notifications')
-        }),
-        ('Sound & Vibration', {'fields': ('sound_enabled', 'vibration_enabled')}),
-        ('Activity Preferences', {'fields': ('activity_difficulty', 'notification_frequency')}),
-        ('Timestamps', {'fields': ('created_at', 'updated_at'), 'classes': ('collapse',)}),
+    """Admin for UserPreference"""
+    list_display = (
+        'user', 'daily_reminder_enabled', 'daily_reminder_time',
+        'partner_activity_alerts', 'activity_difficulty'
     )
-    ordering = ('-updated_at',)
+    list_filter = (
+        'daily_reminder_enabled', 'partner_activity_alerts',
+        'streak_reminders', 'activity_difficulty'
+    )
+    search_fields = ('user__username', 'user__email')
 
 
 @admin.register(ActivityCategory)
-class ActivityCategoryAdmin(admin.ModelAdmin):
-    list_display = ('name_en', 'icon', 'color', 'display_order', 'is_active', 'created_at')
-    list_filter = ('is_active', 'display_order')
-    search_fields = ('name_en', 'name_hi', 'description_en', 'description_hi')
-    list_editable = ('display_order', 'is_active')
-    fieldsets = (
-        ('Basic Info', {'fields': ('name_en', 'name_hi', 'icon', 'color', 'display_order', 'is_active')}),
-        ('Descriptions', {'fields': ('description_en', 'description_hi')}),
-        ('Timestamps', {'fields': ('created_at', 'updated_at'), 'classes': ('collapse',)}),
+class ActivityCategoryAdmin(ImportExportModelAdmin):
+    """Admin for ActivityCategory with import/export"""
+    resource_class = ActivityCategoryResource
+    
+    list_display = (
+        'icon_display', 'name_en', 'name_hi', 'color_display',
+        'display_order', 'activity_count', 'is_active'
     )
-    readonly_fields = ('created_at', 'updated_at')
+    list_filter = ('is_active',)
+    search_fields = ('name_en', 'name_hi')
     ordering = ('display_order', 'name_en')
+    list_editable = ('display_order', 'is_active')
+    
+    def icon_display(self, obj):
+        """Display icon emoji"""
+        return obj.icon
+    icon_display.short_description = 'Icon'
+    
+    def color_display(self, obj):
+        """Display color swatch"""
+        return format_html(
+            '<span style="background-color: {}; padding: 5px 15px; border-radius: 3px; color: white;">{}</span>',
+            obj.color, obj.color
+        )
+    color_display.short_description = 'Color'
+    
+    def activity_count(self, obj):
+        """Count activities in category"""
+        return obj.activities.filter(is_active=True).count()
+    activity_count.short_description = 'Activities'
 
 
-# class ActivityInline(admin.TabularInline):
-#     model = Activity
-#     fields = ('title_en', 'difficulty', 'mode', 'is_active', 'is_daily_featured')
-#     extra = 0
-#     show_change_link = True
-
-
-@admin.register(Activity)
-class ActivityAdmin(admin.ModelAdmin):
-    list_display = ('title_en', 'category', 'difficulty', 'mode', 'estimated_time_minutes', 'points_reward', 'coins_reward', 'is_premium', 'is_active', 'completion_count', 'is_daily_featured')  # Added 'is_daily_featured'
+# @admin.register(Activity)
+class ActivityAdmin(ImportExportModelAdmin):
+    """Admin for Activity with import/export"""
+    resource_class = ActivityResource
+    
+    list_display = (
+        'title_en', 'category', 'difficulty', 'estimated_time_minutes',
+        'mode', 'points_reward', 'coins_reward', 'completion_count',
+        'is_premium', 'is_daily_featured', 'is_active'
+    )
     list_filter = (
-        'category', 'difficulty', 'best_time', 'mode', 'is_premium', 'is_active', 'is_daily_featured',
-        ('created_at', admin.DateFieldListFilter)
+        'category', 'difficulty', 'mode', 'best_time',
+        'is_premium', 'is_daily_featured', 'is_active'
     )
     search_fields = ('title_en', 'title_hi', 'description_en', 'description_hi')
-    list_editable = ('is_active', 'is_daily_featured')
-    # inlines = [ActivityInline]  # Self-referential if needed, but typically not
+    ordering = ('-created_at',)
+    list_editable = ('is_daily_featured', 'is_active')
+    
     fieldsets = (
-        ('Category & Metadata', {'fields': ('category', 'difficulty', 'estimated_time_minutes', 'best_time', 'mode')}),
-        ('Content (English)', {
-            'fields': ('title_en', 'description_en', 'instructions_en', 'materials_needed_en', 'tips_en', 'questions_en')
+        ('Basic Info', {
+            'fields': ('category', 'title_en', 'title_hi', 'description_en', 'description_hi')
         }),
-        ('Content (Hindi)', {
-            'fields': ('title_hi', 'description_hi', 'instructions_hi', 'materials_needed_hi', 'tips_hi', 'questions_hi')
+        ('Instructions', {
+            'fields': ('instructions_en', 'instructions_hi'),
+            'classes': ('collapse',)
         }),
-        ('Gamification & Premium', {
+        ('Metadata', {
+            'fields': ('difficulty', 'estimated_time_minutes', 'best_time', 'mode')
+        }),
+        ('Materials & Tips', {
+            'fields': ('materials_needed_en', 'materials_needed_hi', 'tips_en', 'tips_hi'),
+            'classes': ('collapse',)
+        }),
+        ('Questions', {
+            'fields': ('questions_en', 'questions_hi'),
+            'classes': ('collapse',)
+        }),
+        ('Gamification', {
             'fields': ('points_reward', 'coins_reward', 'is_premium', 'unlock_cost_coins')
         }),
-        ('Status & Analytics', {'fields': ('is_active', 'is_daily_featured', 'completion_count', 'average_rating')}),
-        ('Timestamps', {'fields': ('created_at', 'updated_at'), 'classes': ('collapse',)}),
+        ('Status', {
+            'fields': ('is_active', 'is_daily_featured', 'completion_count', 'average_rating')
+        }),
     )
-    readonly_fields = ('created_at', 'updated_at', 'completion_count', 'average_rating')
-    ordering = ('-is_daily_featured', 'title_en')
+    
+    readonly_fields = ('completion_count', 'average_rating', 'created_at', 'updated_at')
 
 
 @admin.register(ActivitySession)
 class ActivitySessionAdmin(admin.ModelAdmin):
-    list_display = ('user', 'activity', 'status', 'mode', 'started_at', 'completed_at', 'time_spent_seconds')
-    list_filter = ('status', 'mode', ('started_at', admin.DateFieldListFilter), ('completed_at', admin.DateFieldListFilter))
-    search_fields = ('user__username', 'activity__title_en')
-    readonly_fields = ('id', 'started_at', 'completed_at')
-    fieldsets = (
-        ('User & Activity', {'fields': ('user', 'activity', 'status', 'mode')}),
-        ('Partner', {'fields': ('partner_session',)}),
-        ('Timing', {'fields': ('started_at', 'completed_at', 'time_spent_seconds')}),
+    """Admin for ActivitySession"""
+    list_display = (
+        'user', 'activity', 'status', 'mode', 'started_at',
+        'completed_at', 'time_spent_display'
     )
-    ordering = ('-started_at',)
-
-
-# class ActivityCompletionInlineAdmin(ActivityCompletionInline):
-#     max_num = 10
+    list_filter = ('status', 'mode', 'started_at')
+    search_fields = ('user__username', 'activity__title_en')
+    readonly_fields = ('started_at', 'completed_at')
+    
+    def time_spent_display(self, obj):
+        """Display time spent in readable format"""
+        if obj.time_spent_seconds:
+            minutes = obj.time_spent_seconds // 60
+            seconds = obj.time_spent_seconds % 60
+            return f"{minutes}m {seconds}s"
+        return '-'
+    time_spent_display.short_description = 'Time Spent'
 
 
 @admin.register(ActivityCompletion)
-class ActivityCompletionAdmin(admin.ModelAdmin):
-    list_display = ('user', 'activity', 'session', 'rating', 'points_earned', 'coins_earned', 'shared_with_partner', 'completed_at')
-    list_filter = ('shared_with_partner', 'rating', ('completed_at', admin.DateFieldListFilter))
-    search_fields = ('user__username', 'activity__title_en')
-    readonly_fields = ('id', 'session', 'completed_at', 'points_earned', 'coins_earned')
-    # inlines = [ActivityCompletionInlineAdmin]  # Not typically needed, but for responses if extended
-    fieldsets = (
-        ('User & Activity', {'fields': ('user', 'activity', 'session')}),
-        ('Responses', {'fields': ('responses', 'photos', 'notes')}),
-        ('Feedback', {'fields': ('rating', 'feedback')}),
-        ('Rewards', {'fields': ('points_earned', 'coins_earned', 'shared_with_partner')}),
-        ('Timing', {'fields': ('completed_at',)}),
+class ActivityCompletionAdmin(ImportExportModelAdmin):
+    """Admin for ActivityCompletion with import/export"""
+    resource_class = ActivityCompletionResource
+    
+    list_display = (
+        'user', 'activity', 'rating_display', 'points_earned',
+        'coins_earned', 'shared_with_partner', 'completed_at'
     )
-    ordering = ('-completed_at',)
+    list_filter = ('rating', 'shared_with_partner', 'completed_at')
+    search_fields = ('user__username', 'activity__title_en')
+    readonly_fields = ('completed_at',)
+    date_hierarchy = 'completed_at'
+    
+    def rating_display(self, obj):
+        """Display rating as stars"""
+        if obj.rating:
+            return '⭐' * obj.rating
+        return '-'
+    rating_display.short_description = 'Rating'
 
 
 @admin.register(Streak)
 class StreakAdmin(admin.ModelAdmin):
-    list_display = ('user', 'current_streak', 'longest_streak', 'last_activity_date', 'total_active_days')
-    list_filter = ('current_streak', ('last_activity_date', admin.DateFieldListFilter))
+    """Admin for Streak"""
+    list_display = (
+        'user', 'current_streak', 'longest_streak', 'last_activity_date',
+        'total_active_days', 'is_active_display'
+    )
+    list_filter = ('last_activity_date',)
     search_fields = ('user__username',)
     readonly_fields = ('created_at', 'updated_at')
-    fieldsets = (
-        ('User', {'fields': ('user',)}),
-        ('Streak Data', {
-            'fields': ('current_streak', 'longest_streak', 'last_activity_date', 'total_active_days', 'streak_start_date')
-        }),
-        ('Timestamps', {'fields': ('created_at', 'updated_at'), 'classes': ('collapse',)}),
-    )
-    ordering = ('-current_streak', '-last_activity_date',)
+    
+    def is_active_display(self, obj):
+        """Display if streak is active"""
+        return '✅' if obj.is_active() else '❌'
+    is_active_display.short_description = 'Active'
 
 
 @admin.register(Badge)
-class BadgeAdmin(admin.ModelAdmin):
-    list_display = ('name_en', 'icon', 'category', 'rarity', 'display_order', 'is_active', 'criteria')
-    list_filter = ('category', 'rarity', 'is_active', 'display_order')
-    search_fields = ('name_en', 'name_hi', 'description_en', 'description_hi')
-    list_editable = ('display_order', 'is_active')
-    fieldsets = (
-        ('Basic Info', {'fields': ('name_en', 'name_hi', 'icon', 'category', 'rarity', 'display_order', 'is_active')}),
-        ('Descriptions', {'fields': ('description_en', 'description_hi')}),
-        ('Criteria & Rewards', {'fields': ('criteria', 'points_reward', 'coins_reward')}),
-        ('Timestamps', {'fields': ('created_at',), 'classes': ('collapse',)}),
+class BadgeAdmin(ImportExportModelAdmin):
+    """Admin for Badge with import/export"""
+    resource_class = BadgeResource
+    
+    list_display = (
+        'icon_display', 'name_en', 'category', 'rarity',
+        'points_reward', 'coins_reward', 'unlocked_count', 'is_active'
     )
-    readonly_fields = ('created_at',)
-
-
-# class UserBadgeInlineAdmin(UserBadgeInline):
-#     max_num = 20
+    list_filter = ('category', 'rarity', 'is_active')
+    search_fields = ('name_en', 'name_hi')
+    ordering = ('display_order', 'name_en')
+    
+    def icon_display(self, obj):
+        """Display badge icon"""
+        return obj.icon
+    icon_display.short_description = 'Icon'
+    
+    def unlocked_count(self, obj):
+        """Count how many users unlocked this badge"""
+        return UserBadge.objects.filter(badge=obj).count()
+    unlocked_count.short_description = 'Unlocked By'
 
 
 @admin.register(UserBadge)
 class UserBadgeAdmin(admin.ModelAdmin):
+    """Admin for UserBadge"""
     list_display = ('user', 'badge', 'unlocked_at', 'is_displayed')
-    list_filter = ('is_displayed', 'badge__category', 'badge__rarity', ('unlocked_at', admin.DateFieldListFilter))
+    list_filter = ('is_displayed', 'unlocked_at')
     search_fields = ('user__username', 'badge__name_en')
-    readonly_fields = ('id', 'unlocked_at')
-    # inlines = [UserBadgeInlineAdmin]
-    fieldsets = (
-        ('User & Badge', {'fields': ('user', 'badge', 'is_displayed')}),
-        ('Timing', {'fields': ('unlocked_at',)}),
-    )
-    ordering = ('-unlocked_at',)
+    readonly_fields = ('unlocked_at',)
 
 
 @admin.register(Milestone)
 class MilestoneAdmin(admin.ModelAdmin):
-    list_display = ('name_en', 'icon', 'milestone_type', 'criteria_value', 'points_reward', 'coins_reward', 'is_active')
-    list_filter = ('milestone_type', 'is_active')
-    search_fields = ('name_en', 'name_hi', 'description_en', 'description_hi')
-    fieldsets = (
-        ('Basic Info', {'fields': ('name_en', 'name_hi', 'icon', 'milestone_type', 'is_active')}),
-        ('Descriptions', {'fields': ('description_en', 'description_hi')}),
-        ('Criteria & Rewards', {'fields': ('criteria_value', 'points_reward', 'coins_reward')}),
-        ('Timestamps', {'fields': ('created_at',), 'classes': ('collapse',)}),
+    """Admin for Milestone"""
+    list_display = (
+        'icon_display', 'name_en', 'milestone_type', 'criteria_value',
+        'points_reward', 'coins_reward', 'achieved_count', 'is_active'
     )
-    readonly_fields = ('created_at',)
-
-
-# class UserMilestoneInlineAdmin(UserMilestoneInline):
-#     max_num = 15
+    list_filter = ('milestone_type', 'is_active')
+    search_fields = ('name_en', 'name_hi')
+    
+    def icon_display(self, obj):
+        """Display milestone icon"""
+        return obj.icon
+    icon_display.short_description = 'Icon'
+    
+    def achieved_count(self, obj):
+        """Count achievements"""
+        return UserMilestone.objects.filter(milestone=obj).count()
+    achieved_count.short_description = 'Achieved By'
 
 
 @admin.register(UserMilestone)
 class UserMilestoneAdmin(admin.ModelAdmin):
+    """Admin for UserMilestone"""
     list_display = ('user', 'milestone', 'achieved_at', 'partner_also_achieved')
-    list_filter = ('partner_also_achieved', 'milestone__milestone_type', ('achieved_at', admin.DateFieldListFilter))
+    list_filter = ('partner_also_achieved', 'achieved_at')
     search_fields = ('user__username', 'milestone__name_en')
-    readonly_fields = ('id', 'achieved_at')
-    # inlines = [UserMilestoneInlineAdmin]
-    fieldsets = (
-        ('User & Milestone', {'fields': ('user', 'milestone', 'partner_also_achieved')}),
-        ('Timing', {'fields': ('achieved_at',)}),
-    )
-    ordering = ('-achieved_at',)
+    readonly_fields = ('achieved_at',)
 
 
 @admin.register(Notification)
 class NotificationAdmin(admin.ModelAdmin):
-    list_display = ('user', 'notification_type', 'title_en', 'is_read', 'is_sent', 'created_at')
-    list_filter = ('notification_type', 'is_read', 'is_sent', ('created_at', admin.DateFieldListFilter))
-    search_fields = ('user__username', 'title_en', 'title_hi', 'message_en', 'message_hi')
-    readonly_fields = ('id', 'created_at', 'read_at')
-    list_editable = ('is_read', 'is_sent')
-    fieldsets = (
-        ('User', {'fields': ('user',)}),
-        ('Content', {'fields': ('notification_type', 'title_en', 'title_hi', 'message_en', 'message_hi', 'data')}),
-        ('Status', {'fields': ('is_read', 'is_sent', 'read_at')}),
-        ('Timing', {'fields': ('created_at',)}),
+    """Admin for Notification"""
+    list_display = (
+        'user', 'notification_type', 'title_en', 'is_read',
+        'is_sent', 'created_at'
     )
-    ordering = ('-created_at',)
-    actions = ['mark_as_read', 'mark_as_unread']
-
+    list_filter = ('notification_type', 'is_read', 'is_sent', 'created_at')
+    search_fields = ('user__username', 'title_en', 'message_en')
+    readonly_fields = ('created_at', 'read_at')
+    date_hierarchy = 'created_at'
+    
+    actions = ['mark_as_sent', 'mark_as_read']
+    
+    def mark_as_sent(self, request, queryset):
+        """Mark notifications as sent"""
+        updated = queryset.update(is_sent=True)
+        self.message_user(request, f'{updated} notifications marked as sent.')
+    mark_as_sent.short_description = 'Mark selected as sent'
+    
     def mark_as_read(self, request, queryset):
+        """Mark notifications as read"""
+        from django.utils import timezone
         updated = queryset.update(is_read=True, read_at=timezone.now())
         self.message_user(request, f'{updated} notifications marked as read.')
-    mark_as_read.short_description = 'Mark selected notifications as read'
-
-    def mark_as_unread(self, request, queryset):
-        updated = queryset.update(is_read=False, read_at=None)
-        self.message_user(request, f'{updated} notifications marked as unread.')
-    mark_as_unread.short_description = 'Mark selected notifications as unread'
+    mark_as_read.short_description = 'Mark selected as read'
 
 
 @admin.register(SkipLimit)
 class SkipLimitAdmin(admin.ModelAdmin):
-    list_display = ('user', 'date', 'skips_used', 'max_skips_per_day', 'can_skip')
-    list_filter = (('date', admin.DateFieldListFilter),)
+    """Admin for SkipLimit"""
+    list_display = ('user', 'date', 'skips_used', 'max_skips_per_day', 'can_skip_display')
+    list_filter = ('date',)
     search_fields = ('user__username',)
-    readonly_fields = ('date',)
-
-    def can_skip(self, obj):
-        return obj.can_skip()
-    can_skip.boolean = True
-    can_skip.short_description = 'Can Skip More?'
-
-    fieldsets = (
-        ('User & Date', {'fields': ('user', 'date')}),
-        ('Limits', {'fields': ('skips_used', 'max_skips_per_day')}),
-    )
-    ordering = ('-date', 'user')
+    
+    def can_skip_display(self, obj):
+        """Display if user can skip"""
+        return '✅' if obj.can_skip() else '❌'
+    can_skip_display.short_description = 'Can Skip'
 
 
 @admin.register(CoinTransaction)
-class CoinTransactionAdmin(admin.ModelAdmin):
-    list_display = ('user', 'transaction_type', 'amount', 'balance_after', 'description', 'created_at')
-    list_filter = ('transaction_type', ('created_at', admin.DateFieldListFilter))
-    search_fields = ('user__username', 'description', 'related_object_id')
-    readonly_fields = ('id', 'created_at', 'balance_after')
-    fieldsets = (
-        ('User', {'fields': ('user',)}),
-        ('Transaction', {
-            'fields': ('transaction_type', 'amount', 'balance_after', 'description', 'related_object_id', 'related_object_type')
-        }),
-        ('Timing', {'fields': ('created_at',)}),
+class CoinTransactionAdmin(ImportExportModelAdmin):
+    """Admin for CoinTransaction with import/export"""
+    resource_class = CoinTransactionResource
+    
+    list_display = (
+        'user', 'transaction_type', 'amount_display', 'balance_after',
+        'description', 'created_at'
     )
+    list_filter = ('transaction_type', 'created_at')
+    search_fields = ('user__username', 'description')
+    readonly_fields = ('created_at',)
+    date_hierarchy = 'created_at'
+    
+    def amount_display(self, obj):
+        """Display amount with color"""
+        color = 'green' if obj.amount > 0 else 'red'
+        return format_html(
+            '<span style="color: {}; font-weight: bold;">{:+d}</span>',
+            color, obj.amount
+        )
+    amount_display.short_description = 'Amount'
+
+
+# ============================================
+# ADMIN SITE CUSTOMIZATION
+# ============================================
+
+# Custom admin site title and header
+admin.site.site_header = "Bonding App Administration"
+admin.site.site_title = "Bonding App Admin"
+admin.site.index_title = "Welcome to Bonding App Admin Panel"
+
+# Optional: Add custom CSS for better styling
+class CustomAdminSite(admin.AdminSite):
+    """Custom admin site with enhanced styling"""
+    
+    def each_context(self, request):
+        context = super().each_context(request)
+        context['site_header'] = self.site_header
+        context['site_title'] = self.site_title
+        return context
+    
+    
+class JSONWidget(widgets.Widget):
+    """Custom widget to handle JSON fields during import/export"""
+    
+    def clean(self, value, row=None, **kwargs):
+        """Convert string to JSON (for import)"""
+        if not value:
+            return []
+        
+        # If it's already a list/dict, return it
+        if isinstance(value, (list, dict)):
+            return value
+        
+        # If it's a string, try to parse it as JSON
+        if isinstance(value, str):
+            try:
+                return json.loads(value)
+            except json.JSONDecodeError:
+                # If it fails, return empty list
+                return []
+        
+        return []
+    
+    def render(self, value, obj=None):
+        """Convert JSON to string (for export)"""
+        if value is None:
+            return ""
+        return json.dumps(value, ensure_ascii=False)
+
+
+class ActivityResourceWithJSON(resources.ModelResource):
+    """Custom Activity resource that properly handles JSON fields"""
+    
+    # Category as ForeignKey
+    category = fields.Field(
+        column_name='category',
+        attribute='category',
+        widget=widgets.ForeignKeyWidget(ActivityCategory, 'name_en')
+    )
+    
+    # JSON fields with custom widget
+    instructions_en = fields.Field(
+        column_name='instructions_en',
+        attribute='instructions_en',
+        widget=JSONWidget()
+    )
+    instructions_hi = fields.Field(
+        column_name='instructions_hi',
+        attribute='instructions_hi',
+        widget=JSONWidget()
+    )
+    materials_needed_en = fields.Field(
+        column_name='materials_needed_en',
+        attribute='materials_needed_en',
+        widget=JSONWidget()
+    )
+    materials_needed_hi = fields.Field(
+        column_name='materials_needed_hi',
+        attribute='materials_needed_hi',
+        widget=JSONWidget()
+    )
+    tips_en = fields.Field(
+        column_name='tips_en',
+        attribute='tips_en',
+        widget=JSONWidget()
+    )
+    tips_hi = fields.Field(
+        column_name='tips_hi',
+        attribute='tips_hi',
+        widget=JSONWidget()
+    )
+    questions_en = fields.Field(
+        column_name='questions_en',
+        attribute='questions_en',
+        widget=JSONWidget()
+    )
+    questions_hi = fields.Field(
+        column_name='questions_hi',
+        attribute='questions_hi',
+        widget=JSONWidget()
+    )
+    
+    class Meta:
+        model = Activity
+        fields = (
+            'id', 'category', 'title_en', 'title_hi', 
+            'description_en', 'description_hi',
+            'instructions_en', 'instructions_hi',
+            'difficulty', 'estimated_time_minutes', 'best_time', 'mode',
+            'materials_needed_en', 'materials_needed_hi',
+            'tips_en', 'tips_hi',
+            'questions_en', 'questions_hi',
+            'points_reward', 'coins_reward',
+            'is_premium', 'unlock_cost_coins', 
+            'is_active', 'is_daily_featured'
+        )
+        import_id_fields = ['id']  # Use UUID as unique identifier
+        skip_unchanged = True
+        report_skipped = True
+    
+    def before_import_row(self, row, **kwargs):
+        """Pre-process row before import"""
+        # Ensure category exists (get or create)
+        category_name = row.get('category')
+        if category_name:
+            category, created = ActivityCategory.objects.get_or_create(
+                name_en=category_name,
+                defaults={
+                    'name_hi': category_name,
+                    'description_en': f'{category_name} activities',
+                    'description_hi': f'{category_name} गतिविधियाँ',
+                    'icon': '💬',
+                    'color': '#FFB6C1'
+                }
+            )
+            row['category'] = category.name_en
+
+
+# Update your ActivityAdmin to use this resource
+@admin.register(Activity)
+class ActivityAdmin(ImportExportModelAdmin):
+    """Admin for Activity with custom JSON import/export"""
+    resource_class = ActivityResourceWithJSON  # ✅ Use custom resource
+    
+    list_display = (
+        'title_en', 'category', 'difficulty', 'estimated_time_minutes',
+        'mode', 'points_reward', 'coins_reward', 'completion_count',
+        'is_premium', 'is_daily_featured', 'is_active'
+    )
+    list_filter = (
+        'category', 'difficulty', 'mode', 'best_time',
+        'is_premium', 'is_daily_featured', 'is_active'
+    )
+    search_fields = ('title_en', 'title_hi', 'description_en', 'description_hi')
     ordering = ('-created_at',)
+    list_editable = ('is_daily_featured', 'is_active')
+    
+    fieldsets = (
+        ('Basic Info', {
+            'fields': ('category', 'title_en', 'title_hi', 'description_en', 'description_hi')
+        }),
+        ('Instructions', {
+            'fields': ('instructions_en', 'instructions_hi'),
+        }),
+        ('Metadata', {
+            'fields': ('difficulty', 'estimated_time_minutes', 'best_time', 'mode')
+        }),
+        ('Materials & Tips', {
+            'fields': ('materials_needed_en', 'materials_needed_hi', 'tips_en', 'tips_hi'),
+        }),
+        ('Questions', {
+            'fields': ('questions_en', 'questions_hi'),
+        }),
+        ('Gamification', {
+            'fields': ('points_reward', 'coins_reward', 'is_premium', 'unlock_cost_coins')
+        }),
+        ('Status', {
+            'fields': ('is_active', 'is_daily_featured', 'completion_count', 'average_rating')
+        }),
+    )
+    
+    readonly_fields = ('completion_count', 'average_rating', 'created_at', 'updated_at')

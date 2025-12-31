@@ -61,3 +61,5 @@ isort
 # Production Server
 gunicorn  # WSGI server for production
 whitenoise  # Static files serving
+
+django-import-export

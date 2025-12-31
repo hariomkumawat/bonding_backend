@@ -1,0 +1,551 @@
+[
+  {
+    "category": "Communication",
+    "title_en": "Three Things Today",
+    "title_hi": "आज की तीन बातें",
+    "description_en": "Share three things that happened in your day",
+    "description_hi": "अपने दिन की तीन बातें साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Sit comfortably facing each other",
+      "Take turns sharing three things from your day",
+      "One positive thing that happened",
+      "One challenging thing you faced",
+      "One thing you're grateful for",
+      "Listen without interrupting"
+    ],
+    "instructions_hi": [
+      "आराम से एक-दूसरे के सामने बैठें",
+      "बारी-बारी से अपने दिन की तीन बातें साझा करें",
+      "एक अच्छी बात जो हुई",
+      "एक चुनौतीपूर्ण बात जिसका सामना किया",
+      "एक बात जिसके लिए आप आभारी हैं",
+      "बिना रोके सुनें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Maintain eye contact while sharing",
+      "Show genuine interest in their responses",
+      "Avoid checking your phone during this time"
+    ],
+    "tips_hi": [
+      "साझा करते समय आँख से संपर्क बनाए रखें",
+      "उनकी प्रतिक्रियाओं में वास्तविक रुचि दिखाएं",
+      "इस समय के दौरान अपना फोन न देखें"
+    ],
+    "questions_en": [
+      "What was the highlight of your day?",
+      "What challenge did you overcome today?",
+      "What made you smile today?"
+    ],
+    "questions_hi": [
+      "आपके दिन की मुख्य बात क्या थी?",
+      "आज आपने किस चुनौती पर काबू पाया?",
+      "आज आपको किस बात ने मुस्कुराया?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Favorite Things",
+    "title_hi": "पसंदीदा चीज़ें",
+    "description_en": "Share your favorite things in different categories",
+    "description_hi": "विभिन्न श्रेणियों में अपनी पसंदीदा चीज़ें साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Choose 5 categories from the list",
+      "Take turns sharing your favorites",
+      "Explain why it's your favorite",
+      "Ask follow-up questions"
+    ],
+    "instructions_hi": [
+      "सूची में से 5 श्रेणियाँ चुनें",
+      "बारी-बारी से अपनी पसंदीदा चीज़ें साझा करें",
+      "बताएं कि यह आपकी पसंदीदा क्यों है",
+      "अनुवर्ती प्रश्न पूछें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be specific about why you love it",
+      "Share memories associated with it",
+      "Listen to discover new things about your partner"
+    ],
+    "tips_hi": [
+      "इस बारे में विशिष्ट रहें कि आप इसे क्यों पसंद करते हैं",
+      "इससे जुड़ी यादें साझा करें",
+      "अपने साथी के बारे में नई चीजें जानने के लिए सुनें"
+    ],
+    "questions_en": [
+      "Favorite color and why?",
+      "Favorite food or cuisine?",
+      "Favorite movie or TV show?",
+      "Favorite season of the year?",
+      "Favorite childhood memory?"
+    ],
+    "questions_hi": [
+      "पसंदीदा रंग और क्यों?",
+      "पसंदीदा भोजन या व्यंजन?",
+      "पसंदीदा फिल्म या टीवी शो?",
+      "साल का पसंदीदा मौसम?",
+      "पसंदीदा बचपन की याद?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Compliment Exchange",
+    "title_hi": "तारीफ का आदान-प्रदान",
+    "description_en": "Give genuine compliments to each other",
+    "description_hi": "एक-दूसरे को सच्ची तारीफ दें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Sit facing each other",
+      "Take turns giving 3 compliments each",
+      "Be specific and genuine",
+      "Focus on personality, actions, or qualities",
+      "Say thank you after receiving a compliment"
+    ],
+    "instructions_hi": [
+      "एक-दूसरे के सामने बैठें",
+      "बारी-बारी से 3 तारीफ दें",
+      "विशिष्ट और सच्चे रहें",
+      "व्यक्तित्व, कार्यों या गुणों पर ध्यान दें",
+      "तारीफ मिलने के बाद धन्यवाद कहें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Avoid physical appearance compliments only",
+      "Mention specific examples",
+      "Be sincere and heartfelt"
+    ],
+    "tips_hi": [
+      "केवल शारीरिक दिखावट की तारीफ से बचें",
+      "विशिष्ट उदाहरणों का उल्लेख करें",
+      "ईमानदार और दिल से बोलें"
+    ],
+    "questions_en": [
+      "What quality do you admire most in me?",
+      "When did I make you proud recently?",
+      "What do I do that makes you feel loved?"
+    ],
+    "questions_hi": [
+      "आप मुझमें किस गुण की सबसे अधिक प्रशंसा करते हैं?",
+      "हाल ही में मैंने आपको कब गर्व महसूस कराया?",
+      "मैं क्या करता हूं जो आपको प्यार महसूस कराता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Emoji Story",
+    "title_hi": "इमोजी कहानी",
+    "description_en": "Create a story using only emojis and guess each other's stories",
+    "description_hi": "केवल इमोजी का उपयोग करके एक कहानी बनाएं और एक-दूसरे की कहानियों का अनुमान लगाएं",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Think of a memorable moment together",
+      "Describe it using 5-10 emojis only",
+      "Share your emoji sequence",
+      "Partner guesses what the story is",
+      "Take turns creating stories"
+    ],
+    "instructions_hi": [
+      "एक साथ एक यादगार पल के बारे में सोचें",
+      "केवल 5-10 इमोजी का उपयोग करके इसका वर्णन करें",
+      "अपना इमोजी अनुक्रम साझा करें",
+      "साथी अनुमान लगाता है कि कहानी क्या है",
+      "बारी-बारी से कहानियां बनाएं"
+    ],
+    "materials_needed_en": ["Phone or paper"],
+    "materials_needed_hi": ["फोन या कागज"],
+    "tips_en": [
+      "Start with simple stories",
+      "Use common emojis",
+      "Have fun with interpretation"
+    ],
+    "tips_hi": [
+      "सरल कहानियों से शुरू करें",
+      "सामान्य इमोजी का उपयोग करें",
+      "व्याख्या के साथ मज़े करें"
+    ],
+    "questions_en": [
+      "Can you guess this story?",
+      "What memory does this remind you of?",
+      "Which emoji represents us best?"
+    ],
+    "questions_hi": [
+      "क्या आप इस कहानी का अनुमान लगा सकते हैं?",
+      "यह आपको किस स्मृति की याद दिलाता है?",
+      "कौन सा इमोजी हमारा सबसे अच्छा प्रतिनिधित्व करता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Gratitude Circle",
+    "title_hi": "आभार चक्र",
+    "description_en": "Express gratitude for things about each other",
+    "description_hi": "एक-दूसरे के बारे में चीजों के लिए आभार व्यक्त करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Sit comfortably together",
+      "Take turns saying 'I'm grateful for...'",
+      "Complete at least 5 rounds each",
+      "Be specific about what you appreciate",
+      "End with a hug or thank you"
+    ],
+    "instructions_hi": [
+      "एक साथ आराम से बैठें",
+      "बारी-बारी से कहें 'मैं आभारी हूं...'",
+      "प्रत्येक कम से कम 5 राउंड पूरे करें",
+      "आप जिसकी सराहना करते हैं उसके बारे में विशिष्ट रहें",
+      "गले लगाकर या धन्यवाद कहकर समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Include small things they do daily",
+      "Mention recent gestures",
+      "Be genuine and heartfelt"
+    ],
+    "tips_hi": [
+      "छोटी चीजें शामिल करें जो वे रोजाना करते हैं",
+      "हाल के इशारों का उल्लेख करें",
+      "सच्चे और दिल से रहें"
+    ],
+    "questions_en": [
+      "What small thing did I do that meant a lot?",
+      "What do you appreciate about our relationship?",
+      "What am I grateful for in you today?"
+    ],
+    "questions_hi": [
+      "मैंने कौन सी छोटी बात की जिसका बहुत मतलब था?",
+      "आप हमारे रिश्ते के बारे में क्या सराहना करते हैं?",
+      "आज मैं आपमें किस बात के लिए आभारी हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Would You Rather?",
+    "title_hi": "आप क्या पसंद करेंगे?",
+    "description_en": "Answer fun 'Would You Rather' questions together",
+    "description_hi": "एक साथ मज़ेदार 'आप क्या पसंद करेंगे?' प्रश्नों का उत्तर दें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Take turns asking questions",
+      "Each person explains their choice",
+      "No judgment on answers",
+      "Discuss why you chose that option",
+      "Complete at least 10 questions"
+    ],
+    "instructions_hi": [
+      "बारी-बारी से प्रश्न पूछें",
+      "प्रत्येक व्यक्ति अपनी पसंद बताए",
+      "जवाबों पर कोई निर्णय नहीं",
+      "चर्चा करें कि आपने वह विकल्प क्यों चुना",
+      "कम से कम 10 प्रश्न पूरे करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Start with light-hearted questions",
+      "Respect different opinions",
+      "Use it to learn about each other"
+    ],
+    "tips_hi": [
+      "हल्के-फुल्के सवालों से शुरू करें",
+      "विभिन्न विचारों का सम्मान करें",
+      "एक-दूसरे के बारे में जानने के लिए इसका उपयोग करें"
+    ],
+    "questions_en": [
+      "Beach vacation or mountain retreat?",
+      "Movie night at home or dinner out?",
+      "Morning person or night owl?",
+      "Cook together or order in?",
+      "Adventure date or relaxing date?",
+      "Save money or spend on experiences?",
+      "City life or countryside living?",
+      "Plan everything or be spontaneous?",
+      "Big party or intimate gathering?",
+      "Read a book or watch a movie?"
+    ],
+    "questions_hi": [
+      "समुद्र तट की छुट्टी या पहाड़ी पलायन?",
+      "घर पर मूवी नाइट या बाहर डिनर?",
+      "सुबह का व्यक्ति या रात का उल्लू?",
+      "एक साथ पकाएं या ऑर्डर करें?",
+      "एडवेंचर डेट या आरामदायक डेट?",
+      "पैसे बचाएं या अनुभवों पर खर्च करें?",
+      "शहर का जीवन या ग्रामीण जीवन?",
+      "सब कुछ योजना बनाएं या सहज बनें?",
+      "बड़ी पार्टी या अंतरंग सभा?",
+      "किताब पढ़ें या फिल्म देखें?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Rose, Thorn, Bud",
+    "title_hi": "गुलाब, कांटा, कली",
+    "description_en": "Share your rose (good), thorn (challenge), and bud (hope) of the day",
+    "description_hi": "अपने दिन का गुलाब (अच्छा), कांटा (चुनौती), और कली (आशा) साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Share your 'Rose' - something good that happened",
+      "Share your 'Thorn' - a challenge you faced",
+      "Share your 'Bud' - something you're looking forward to",
+      "Listen actively to your partner",
+      "Offer support for their thorns"
+    ],
+    "instructions_hi": [
+      "अपना 'गुलाब' साझा करें - कुछ अच्छा जो हुआ",
+      "अपना 'कांटा' साझा करें - एक चुनौती जिसका आपने सामना किया",
+      "अपनी 'कली' साझा करें - कुछ जिसकी आप प्रतीक्षा कर रहे हैं",
+      "अपने साथी को सक्रिय रूप से सुनें",
+      "उनके कांटों के लिए समर्थन प्रदान करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be honest about your challenges",
+      "Celebrate each other's roses",
+      "Support each other's buds"
+    ],
+    "tips_hi": [
+      "अपनी चुनौतियों के बारे में ईमानदार रहें",
+      "एक-दूसरे के गुलाबों का जश्न मनाएं",
+      "एक-दूसरे की कलियों का समर्थन करें"
+    ],
+    "questions_en": [
+      "What was your rose today?",
+      "What thorn did you overcome?",
+      "What bud are you excited about?"
+    ],
+    "questions_hi": [
+      "आज आपका गुलाब क्या था?",
+      "आपने किस कांटे पर काबू पाया?",
+      "आप किस कली के बारे में उत्साहित हैं?"
+    ]
+  },
+
+  {
+    "category": "Communication",
+    "title_en": "Two Truths, One Lie",
+    "title_hi": "दो सच, एक झूठ",
+    "description_en": "Share three statements and guess which one is false",
+    "description_hi": "तीन कथन साझा करें और अनुमान लगाएं कि कौन सा गलत है",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Think of 2 true statements about yourself",
+      "Create 1 believable lie",
+      "Share all three statements",
+      "Partner guesses which is the lie",
+      "Reveal the answer and discuss",
+      "Take turns for 3 rounds each"
+    ],
+    "instructions_hi": [
+      "अपने बारे में 2 सच्चे कथन सोचें",
+      "1 विश्वसनीय झूठ बनाएं",
+      "सभी तीन कथन साझा करें",
+      "साथी अनुमान लगाता है कि झूठ कौन सा है",
+      "जवाब प्रकट करें और चर्चा करें",
+      "प्रत्येक 3 राउंड के लिए बारी-बारी से"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Make the lie believable",
+      "Use interesting facts for truths",
+      "Have fun with the reveals"
+    ],
+    "tips_hi": [
+      "झूठ को विश्वसनीय बनाएं",
+      "सच के लिए दिलचस्प तथ्यों का उपयोग करें",
+      "खुलासे के साथ मज़े करें"
+    ],
+    "questions_en": [
+      "Which statement do you think is false?",
+      "What made you suspicious?",
+      "Did any truth surprise you?"
+    ],
+    "questions_hi": [
+      "आपको कौन सा कथन गलत लगता है?",
+      "आपको किस बात ने संदेहास्पद बनाया?",
+      "क्या किसी सच ने आपको आश्चर्यचकित किया?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "If You Really Knew Me",
+    "title_hi": "यदि आप वास्तव में मुझे जानते",
+    "description_en": "Complete the sentence 'If you really knew me, you'd know...'",
+    "description_hi": "वाक्य पूरा करें 'यदि आप वास्तव में मुझे जानते, तो आप जानते...'",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Take turns completing the sentence",
+      "Share at least 5 statements each",
+      "Be vulnerable and honest",
+      "Listen without interrupting",
+      "Ask follow-up questions"
+    ],
+    "instructions_hi": [
+      "बारी-बारी से वाक्य पूरा करें",
+      "प्रत्येक कम से कम 5 कथन साझा करें",
+      "कमजोर और ईमानदार रहें",
+      "बिना रोके सुनें",
+      "अनुवर्ती प्रश्न पूछें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Share things your partner might not know",
+      "Be authentic",
+      "Create a safe space for sharing"
+    ],
+    "tips_hi": [
+      "ऐसी चीजें साझा करें जो आपका साथी नहीं जानता",
+      "प्रामाणिक रहें",
+      "साझा करने के लिए एक सुरक्षित स्थान बनाएं"
+    ],
+    "questions_en": [
+      "If you really knew me, you'd know I worry about...",
+      "If you really knew me, you'd know I dream of...",
+      "If you really knew me, you'd know I need...",
+      "If you really knew me, you'd know I love when...",
+      "If you really knew me, you'd know I feel most loved when..."
+    ],
+    "questions_hi": [
+      "यदि आप वास्तव में मुझे जानते, तो आप जानते कि मैं चिंता करता हूं...",
+      "यदि आप वास्तव में मुझे जानते, तो आप जानते कि मैं सपना देखता हूं...",
+      "यदि आप वास्तव में मुझे जानते, तो आप जानते कि मुझे चाहिए...",
+      "यदि आप वास्तव में मुझे जानते, तो आप जानते कि मुझे पसंद है जब...",
+      "यदि आप वास्तव में मुझे जानते, तो आप जानते कि मैं सबसे अधिक प्यार महसूस करता हूं जब..."
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Quick Fire Questions",
+    "title_hi": "त्वरित प्रश्न",
+    "description_en": "Answer rapid-fire questions to know each other better",
+    "description_hi": "एक-दूसरे को बेहतर जानने के लिए तेज़ प्रश्नों के उत्तर दें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Set a timer for 5 minutes each",
+      "Ask questions rapidly",
+      "Answer with first thought",
+      "No overthinking",
+      "Have fun and laugh together"
+    ],
+    "instructions_hi": [
+      "प्रत्येक के लिए 5 मिनट का टाइमर सेट करें",
+      "तेजी से प्रश्न पूछें",
+      "पहले विचार के साथ उत्तर दें",
+      "कोई अधिक सोच नहीं",
+      "मज़े करें और एक साथ हंसें"
+    ],
+    "materials_needed_en": ["Timer"],
+    "materials_needed_hi": ["टाइमर"],
+    "tips_en": [
+      "Keep it light and fun",
+      "Don't judge the answers",
+      "Be spontaneous"
+    ],
+    "tips_hi": [
+      "इसे हल्का और मजेदार रखें",
+      "जवाबों का न्याय न करें",
+      "सहज रहें"
+    ],
+    "questions_en": [
+      "Coffee or tea?",
+      "Cats or dogs?",
+      "Beach or mountains?",
+      "Sweet or savory?",
+      "Morning or night?",
+      "Summer or winter?",
+      "Pizza or pasta?",
+      "Text or call?",
+      "Save or spend?",
+      "Netflix or YouTube?",
+      "Early or fashionably late?",
+      "Cook or order?",
+      "Fiction or non-fiction?",
+      "Sing or dance?",
+      "Road trip or flight?"
+    ],
+    "questions_hi": [
+      "कॉफी या चाय?",
+      "बिल्लियाँ या कुत्ते?",
+      "समुद्र तट या पहाड़?",
+      "मीठा या नमकीन?",
+      "सुबह या रात?",
+      "गर्मी या सर्दी?",
+      "पिज्जा या पास्ता?",
+      "टेक्स्ट या कॉल?",
+      "बचाएं या खर्च करें?",
+      "नेटफ्लिक्स या यूट्यूब?",
+      "जल्दी या फैशनेबली देर से?",
+      "पकाएं या ऑर्डर करें?",
+      "कल्पना या गैर-कल्पना?",
+      "गाएं या नृत्य करें?",
+      "रोड ट्रिप या उड़ान?"
+    ]
+  }
+]
