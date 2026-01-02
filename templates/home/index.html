@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Bonding App - Transform Your Relationship</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #2C3E50;
+            overflow-x: hidden;
+            background: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            padding: 1.2rem 5%;
+            box-shadow: 0 2px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        header.scrolled {
+            padding: 0.8rem 5%;
+            box-shadow: 0 4px 40px rgba(0,0,0,0.12);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #FF6B6B;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2C3E50;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FF6B6B;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            color: white;
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(255, 107, 107, 0.5);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: #2C3E50;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 10rem 5% 6rem;
+            background: linear-gradient(135deg, #FFF5F7 0%, #F3E5F5 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .floating-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 2rem;
+            color: #FFB6C1;
+            opacity: 0.1;
+            animation: floatHeart 15s infinite;
+        }
+
+        @keyframes floatHeart {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.1; }
+            90% { opacity: 0.1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6, #FF6B6B);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientFlow 3s ease infinite;
+        }
+
+        @keyframes gradientFlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.4rem;
+            color: #5D6D7E;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2C3E50;
+            font-weight: 500;
+        }
+
+        .hero-feature-item i {
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 40px rgba(255, 107, 107, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(255, 107, 107, 0.5);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #9B59B6;
+            padding: 1.2rem 3rem;
+            border: 2px solid #9B59B6;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.4s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: #9B59B6;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(155, 89, 182, 0.3);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .phone-mockup {
+            position: relative;
+            background: #1a1a1a;
+            border-radius: 50px;
+            padding: 12px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+            animation: floatPhone 4s ease-in-out infinite;
+        }
+
+        @keyframes floatPhone {
+            0%, 100% { transform: translateY(0) rotate(-2deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+        }
+
+        .phone-notch {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 25px;
+            background: #1a1a1a;
+            border-radius: 0 0 20px 20px;
+            z-index: 2;
+        }
+
+        .phone-screen {
+            background: linear-gradient(135deg, #FFB6C1 0%, #9B59B6 100%);
+            border-radius: 40px;
+            padding: 50px 25px 30px;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .screen-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .screen-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .screen-icon i {
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .screen-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .screen-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: floatElement 3s ease-in-out infinite;
+        }
+
+        .floating-elements:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .floating-elements:nth-child(2) { top: 70%; right: 15%; animation-delay: 1s; }
+        .floating-elements:nth-child(3) { bottom: 15%; left: 20%; animation-delay: 2s; }
+
+        @keyframes floatElement {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(20px, 20px); }
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: white;
+            padding: 2rem 5%;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+
+        .trust-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.3rem;
+        }
+
+        .trust-label {
+            color: #5D6D7E;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 5%;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 5rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(155, 89, 182, 0.1));
+            color: #9B59B6;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #2C3E50;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #5D6D7E;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #FFF5F7 0%, #F3E5F5 100%);
+            padding: 3rem;
+            border-radius: 25px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            opacity: 0;
+            transition: opacity 0.4s;
+            z-index: 0;
+        }
+
+        .feature-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            border-color: #FFB6C1;
+        }
+
+        .feature-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            transition: transform 0.4s;
+            color: #FF6B6B;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .feature-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #2C3E50;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: #5D6D7E;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 8rem 5%;
+            background: linear-gradient(135deg, #FFF5F7 0%, #F3E5F5 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .step {
+            position: relative;
+            text-align: center;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s;
+        }
+
+        .step:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .step-number {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: -4.5rem auto 2rem;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            position: relative;
+        }
+
+        .step-number::after {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            border: 3px solid rgba(255, 107, 107, 0.3);
+            border-radius: 50%;
+            animation: ripple 2s infinite;
+        }
+
+        @keyframes ripple {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+
+        .step h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #2C3E50;
+            font-weight: 700;
+        }
+
+        .step p {
+            color: #5D6D7E;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* Activities Showcase */
+        .activities-showcase {
+            padding: 8rem 5%;
+            background: white;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .activity-card {
+            background: linear-gradient(135deg, #FFF5F7 0%, #F3E5F5 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            border-color: #FFB6C1;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .activity-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #FF6B6B;
+        }
+
+        .activity-card h4 {
+            font-size: 1.3rem;
+            color: #2C3E50;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .activity-card p {
+            color: #5D6D7E;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 8rem 5%;
+            background: linear-gradient(135deg, #FFF5F7 0%, #F3E5F5 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+
+        .quote-icon {
+            font-size: 3rem;
+            color: #FFB6C1;
+            opacity: 0.3;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5D6D7E;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .author-info h5 {
+            font-size: 1.1rem;
+            color: #2C3E50;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            font-size: 0.9rem;
+            color: #5D6D7E;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 8rem 5%;
+            background: white;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, #FFF5F7 0%, #F3E5F5 100%);
+            padding: 3rem;
+            border-radius: 25px;
+            text-align: center;
+            border: 3px solid transparent;
+            transition: all 0.4s;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            color: white;
+            transform: scale(1.05);
+            border-color: #FFD700;
+        }
+
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #FFD700;
+            color: #2C3E50;
+            padding: 0.5rem 2rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .pricing-card.featured:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .pricing-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price span {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .pricing-period {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .pricing-features li i {
+            color: #4CAF50;
+            font-size: 1.2rem;
+        }
+
+        .pricing-card.featured .pricing-features li {
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .pricing-btn {
+            width: 100%;
+            padding: 1.2rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .pricing-card:not(.featured) .pricing-btn {
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            color: white;
+        }
+
+        .pricing-card.featured .pricing-btn {
+            background: white;
+            color: #9B59B6;
+        }
+
+        .pricing-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 8rem 5%;
+            background: linear-gradient(135deg, #FFF5F7 0%, #F3E5F5 100%);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            padding: 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: #2C3E50;
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            color: #FF6B6B;
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+            color: #9B59B6;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 2rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 2rem 2rem;
+        }
+
+        .faq-answer p {
+            color: #5D6D7E;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 8rem 5%;
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+            border-radius: 50%;
+            top: -300px;
+            right: -300px;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-content h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .cta-content p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: #9B59B6;
+            padding: 1.3rem 3.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.15rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #2C3E50;
+            color: white;
+            padding: 5rem 5% 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FF6B6B;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            color: #BDC3C7;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background: linear-gradient(135deg, #FF6B6B, #9B59B6);
+            transform: translateY(-3px);
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: #BDC3C7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #FF6B6B;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: #BDC3C7;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 1024px) {
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+                padding: 2rem 0;
+                gap: 0;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 0;
+                width: 100%;
+                padding: 1rem 0;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 1rem;
+            }
+
+            .nav-links .header-cta {
+                margin-top: 1rem;
+                display: inline-block;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .header-cta {
+                display: none;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-features {
+                justify-content: center;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .activities-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .trust-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .steps-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .activities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .pricing-card.featured:hover {
+                transform: translateY(-10px) scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 8rem 5% 4rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .cta-content h2 {
+                font-size: 2.5rem;
+            }
+
+            .cta-content p {
+                font-size: 1.1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .phone-screen {
+                min-height: 500px;
+                padding: 40px 20px 25px;
+            }
+
+            .screen-icon {
+                font-size: 4rem;
+            }
+
+            .screen-title {
+                font-size: 1.5rem;
+            }
+
+            .screen-subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1rem;
+            }
+
+            .btn-primary,
+            .btn-secondary,
+            .btn-white {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .trust-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .trust-number {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .feature-card,
+            .step,
+            .activity-card,
+            .testimonial {
+                padding: 2rem;
+            }
+
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .phone-container {
+                max-width: 320px;
+            }
+
+            .phone-screen {
+                min-height: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                Love Bonding App
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#download" class="header-cta">Get Started</a></li>
+            </ul>
+            <!-- <a href="#download" class="header-cta">Get Started</a> -->
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-hearts">
+            <i class="fas fa-heart heart" style="left: 10%; animation-delay: 0s;"></i>
+            <i class="fas fa-heart heart" style="left: 30%; animation-delay: 3s;"></i>
+            <i class="fas fa-heart heart" style="left: 50%; animation-delay: 6s;"></i>
+            <i class="fas fa-heart heart" style="left: 70%; animation-delay: 9s;"></i>
+            <i class="fas fa-heart heart" style="left: 90%; animation-delay: 12s;"></i>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Build Stronger Bonds Through Daily Connection</h1>
+                <p class="subtitle">Transform your relationship with meaningful activities, deep conversations, and fun challenges designed for couples who want to grow together.</p>
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <i class="fas fa-check"></i>
+                        Daily Activities
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-check"></i>
+                        Track Progress
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-check"></i>
+                        Build Intimacy
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">
+                        Start Free Today
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#how-it-works" class="btn-secondary">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-container">
+                    <div class="phone-mockup">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="floating-elements"></div>
+                            <div class="floating-elements"></div>
+                            <div class="floating-elements"></div>
+                            <div class="screen-content">
+                                <div class="screen-icon">
+                                    <i class="fas fa-heart-circle-check"></i>
+                                </div>
+                                <h3 class="screen-title">15 Day Streak!</h3>
+                                <p class="screen-subtitle">You're building an unbreakable bond</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-content">
+            <div class="trust-item">
+                <div class="trust-number">100K+</div>
+                <div class="trust-label">Happy Couples</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-number">2M+</div>
+                <div class="trust-label">Activities Completed</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-number">4.9★</div>
+                <div class="trust-label">App Store Rating</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-number">95%</div>
+                <div class="trust-label">Feel More Connected</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features fade-in" id="features">
+        <div class="section-header">
+            <span class="section-badge">WHY COUPLES LOVE US</span>
+            <h2 class="section-title">Features That Bring You Closer</h2>
+            <p class="section-subtitle">Everything you need to nurture your relationship, strengthen communication, and create lasting memories together.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-comments feature-icon"></i>
+                <h3>Deep Conversations</h3>
+                <p>Discover thoughtful questions and conversation starters that help you understand each other on a deeper level and strengthen emotional intimacy.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bullseye feature-icon"></i>
+                <h3>Daily Challenges</h3>
+                <p>Fresh activities every day keep your relationship exciting. From fun games to meaningful tasks, there's always something new to try together.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line feature-icon"></i>
+                <h3>Progress Tracking</h3>
+                <p>Watch your bond score grow, maintain streaks, and celebrate achievements. Visual progress keeps you motivated and engaged.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-trophy feature-icon"></i>
+                <h3>Rewards System</h3>
+                <p>Earn points, unlock badges, and level up your relationship status. Gamification makes growing together fun and rewarding.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-friends feature-icon"></i>
+                <h3>Flexible Modes</h3>
+                <p>Complete activities solo or together in real-time. Whether you're apart or together, stay connected at your own pace.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bell feature-icon"></i>
+                <h3>Smart Reminders</h3>
+                <p>Gentle notifications ensure you never miss a moment to connect. Customize reminders to fit your schedule perfectly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works fade-in" id="how-it-works">
+        <div class="section-header">
+            <span class="section-badge">SIMPLE & EFFECTIVE</span>
+            <h2 class="section-title">Start Strengthening Your Bond in Minutes</h2>
+            <p class="section-subtitle">Three easy steps to begin your journey toward a deeper, more connected relationship.</p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Sign Up Together</h3>
+                <p>Create your profile and invite your partner with a unique code. Set your relationship details and preferences to personalize your experience.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Choose Your Activity</h3>
+                <p>Browse curated activities across categories like communication, fun games, intimacy builders, and learning together. Pick what resonates with you both.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Grow & Celebrate</h3>
+                <p>Complete activities, track your progress, and unlock rewards. Watch your bond score increase as you build a stronger connection every day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Showcase -->
+    <section class="activities-showcase fade-in" id="activities">
+        <div class="section-header">
+            <span class="section-badge">EXPLORE ACTIVITIES</span>
+            <h2 class="section-title">Hundreds of Ways to Connect</h2>
+            <p class="section-subtitle">From playful games to profound conversations, discover activities designed for every mood and moment.</p>
+        </div>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <i class="fas fa-question-circle activity-icon"></i>
+                <h4>20 Questions</h4>
+                <p>Take turns asking revealing questions to deepen your understanding of each other.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-heart activity-icon"></i>
+                <h4>Love Languages</h4>
+                <p>Discover and understand how you each give and receive love.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-palette activity-icon"></i>
+                <h4>Creative Projects</h4>
+                <p>Build something together and create lasting memories through shared creativity.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-eye activity-icon"></i>
+                <h4>Eye Contact Challenge</h4>
+                <p>Build intimacy through sustained eye contact and meaningful presence.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-book activity-icon"></i>
+                <h4>Gratitude Journal</h4>
+                <p>Share what you appreciate about each other and your relationship.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-gamepad activity-icon"></i>
+                <h4>Couple Games</h4>
+                <p>Play interactive games designed specifically for two people in love.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-star activity-icon"></i>
+                <h4>Dream Planning</h4>
+                <p>Visualize and plan your future together with guided exercises.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-camera activity-icon"></i>
+                <h4>Photo Challenges</h4>
+                <p>Capture special moments with themed photo missions and create memories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials fade-in" id="testimonials">
+        <div class="section-header">
+            <span class="section-badge">SUCCESS STORIES</span>
+            <h2 class="section-title">Real Couples, Real Results</h2>
+            <p class="section-subtitle">See how Love Bonding App has transformed relationships around the world.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">This app saved our relationship during a rough patch. The daily activities gave us structured ways to reconnect, and we learned to communicate better than ever before.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SK</div>
+                    <div class="author-info">
+                        <h5>Sarah & Kevin</h5>
+                        <p>Together 4 years</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">We were stuck in a routine, but Love Bonding App brought back the excitement! The variety of activities keeps things fresh and we look forward to our daily challenges.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MP</div>
+                    <div class="author-info">
+                        <h5>Maria & Peter</h5>
+                        <p>Together 2 years</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">As a long-distance couple, this app has been a lifesaver. We stay connected through activities even when we're apart. It's like having a relationship coach in our pocket!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JA</div>
+                    <div class="author-info">
+                        <h5>Jessica & Alex</h5>
+                        <p>Together 3 years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing fade-in" id="pricing">
+        <div class="section-header">
+            <span class="section-badge">FLEXIBLE PLANS</span>
+            <h2 class="section-title">Choose Your Path to Connection</h2>
+            <p class="section-subtitle">Start free and upgrade anytime to unlock the full potential of your relationship.</p>
+        </div>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3 class="pricing-name">Free</h3>
+                <div class="pricing-price">$0<span>/month</span></div>
+                <p class="pricing-period">Perfect to get started</p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 5 daily activities</li>
+                    <li><i class="fas fa-check"></i> Basic progress tracking</li>
+                    <li><i class="fas fa-check"></i> Streak counter</li>
+                    <li><i class="fas fa-check"></i> Standard rewards</li>
+                    <li><i class="fas fa-check"></i> Activity history</li>
+                </ul>
+                <button class="pricing-btn">Start Free</button>
+            </div>
+            <div class="pricing-card featured">
+                <h3 class="pricing-name">Premium</h3>
+                <div class="pricing-price">$4.99<span>/month</span></div>
+                <p class="pricing-period">Best value for committed couples</p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Unlimited activities</li>
+                    <li><i class="fas fa-check"></i> Advanced insights & analytics</li>
+                    <li><i class="fas fa-check"></i> Exclusive deep-dive activities</li>
+                    <li><i class="fas fa-check"></i> Priority support</li>
+                    <li><i class="fas fa-check"></i> Ad-free experience</li>
+                    <li><i class="fas fa-check"></i> Custom activity builder</li>
+                    <li><i class="fas fa-check"></i> Relationship counselor tips</li>
+                    <li><i class="fas fa-check"></i> Early access to new features</li>
+                </ul>
+                <button class="pricing-btn">Go Premium</button>
+            </div>
+            <div class="pricing-card">
+                <h3 class="pricing-name">Couples Therapy</h3>
+                <div class="pricing-price">$19.99<span>/month</span></div>
+                <p class="pricing-period">Professional guidance included</p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Everything in Premium</li>
+                    <li><i class="fas fa-check"></i> Monthly video counseling session</li>
+                    <li><i class="fas fa-check"></i> Personalized activity plan</li>
+                    <li><i class="fas fa-check"></i> Expert relationship resources</li>
+                    <li><i class="fas fa-check"></i> Conflict resolution tools</li>
+                    <li><i class="fas fa-check"></i> Couples assessment reports</li>
+                </ul>
+                <button class="pricing-btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq fade-in">
+        <div class="section-header">
+            <span class="section-badge">GOT QUESTIONS?</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about Love Bonding App</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How does Love Bonding App work?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Love Bonding App provides daily activities and challenges designed for couples. You and your partner sign up, connect your profiles, and start completing activities together. Each activity helps you communicate better, have fun, and deepen your connection.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can we use it if we're in a long-distance relationship?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Love Bonding App is perfect for long-distance couples. Many activities can be completed remotely, and you can share your responses and progress with each other even when apart.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What if my partner and I have different schedules?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No problem! Activities can be completed in Solo Mode where each partner completes them at their own pace, or Together Mode for real-time synchronization when you're both available.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is my data private and secure?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Your data is encrypted and completely private. Only you and your partner can see your activity responses and relationship information. We never share your personal data with third parties.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I cancel my subscription anytime?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your premium subscription at any time. You'll continue to have premium access until the end of your billing period, after which you'll revert to the free plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="download">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Relationship?</h2>
+            <p>Join over 100,000 couples who are building deeper connections, creating lasting memories, and falling in love all over again.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-white">
+                    <i class="fab fa-apple"></i>
+                    Download for iOS
+                </a>
+                <a href="#" class="btn-white">
+                    <i class="fab fa-google-play"></i>
+                    Download for Android
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-heart"></i>
+                    Love Bonding App
+                </div>
+                <p>Helping couples build stronger, more meaningful relationships through daily connection and growth.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul class="footer-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#download">Download App</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Love Bonding App. All rights reserved. Designed with ❤️ for happy couples.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other FAQ items
+                faqItems.forEach(otherItem => otherItem.classList.remove('active'));
+                
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

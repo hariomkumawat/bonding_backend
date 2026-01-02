@@ -17,8 +17,9 @@ from rest_framework_simplejwt.views import (
     TokenVerifyView,
 )
 
-
+from bondingapp.core.views import index
 urlpatterns = [
+    path('', index, name='home'),
     # Admin
     path('admin/', admin.site.urls),
     

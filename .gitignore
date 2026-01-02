@@ -1,0 +1,10 @@
+
+# Most common & recommended (ignores any .sqlite3 file anywhere)
+*.sqlite3
+
+# or more specific if your file is always in root
+db.sqlite3
+
+# or if it's in a subfolder (e.g. inside bonding/ or manage/)
+bonding/db.sqlite3
+# */db.sqlite3           ← ignores db.sqlite3 in any subfolder

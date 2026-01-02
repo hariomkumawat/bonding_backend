@@ -34,7 +34,7 @@ from bondingapp.core.serializers import (
     ProgressOverviewSerializer, BondScoreHistorySerializer,
     PartnerStatusSerializer, PartnerActivityStatusSerializer
 )
-
+from django.shortcuts import render
 User = get_user_model()
 
 
@@ -1463,4 +1463,5 @@ class SettingsViewSet(viewsets.GenericViewSet):
     #     })
         
         
-        
+def index(request):
+    return render(request, 'home/index.html')

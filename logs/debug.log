@@ -950,3 +950,366 @@ INFO 2026-01-02 11:40:35,026 autoreload 16760 37832 D:\django_project\bonding\bo
 INFO 2026-01-02 11:40:36,191 autoreload 39428 20036 Watching for file changes with StatReloader
 INFO 2026-01-02 11:40:39,241 autoreload 39428 20036 D:\django_project\bonding\bonding\settings.py changed, reloading.
 INFO 2026-01-02 11:40:40,552 autoreload 468 37324 Watching for file changes with StatReloader
+INFO 2026-01-02 15:08:45,051 autoreload 27960 43756 Watching for file changes with StatReloader
+INFO 2026-01-02 15:11:27,142 autoreload 27960 43756 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:11:28,059 autoreload 15156 24420 Watching for file changes with StatReloader
+INFO 2026-01-02 15:11:43,784 autoreload 15156 24420 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:11:44,823 autoreload 19740 12976 Watching for file changes with StatReloader
+ERROR 2026-01-02 15:14:08,805 log 19740 34720 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:14:08,811 basehttp 19740 34720 "GET / HTTP/1.1" 500 98835
+WARNING 2026-01-02 15:14:09,057 basehttp 19740 34720 "GET /favicon.ico HTTP/1.1" 404 3988
+INFO 2026-01-02 15:14:21,062 autoreload 19740 12976 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:14:21,967 autoreload 23036 27756 Watching for file changes with StatReloader
+ERROR 2026-01-02 15:14:23,377 log 23036 17644 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2026-01-02 15:14:23,382 basehttp 23036 17644 "GET / HTTP/1.1" 500 98780
+INFO 2026-01-02 15:15:08,907 autoreload 23036 27756 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:15:10,004 autoreload 5612 29992 Watching for file changes with StatReloader
+ERROR 2026-01-02 15:15:10,631 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:10,636 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:11,287 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:11,290 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:11,523 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:11,525 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:11,755 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:11,757 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:11,982 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:11,985 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:12,325 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:12,328 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:12,555 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:12,557 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:12,813 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:12,815 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:13,049 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:13,052 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:13,296 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:13,298 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+ERROR 2026-01-02 15:15:23,856 log 5612 1356 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: landing/index.html
+ERROR 2026-01-02 15:15:23,858 basehttp 5612 1356 "GET / HTTP/1.1" 500 98972
+INFO 2026-01-02 15:15:24,070 autoreload 5612 29992 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:15:25,480 autoreload 14104 35992 Watching for file changes with StatReloader
+INFO 2026-01-02 15:15:26,040 basehttp 14104 28048 "GET / HTTP/1.1" 200 0
+INFO 2026-01-02 15:15:26,144 basehttp 14104 28048 "GET / HTTP/1.1" 200 0
+INFO 2026-01-02 15:15:26,424 basehttp 14104 28048 "GET / HTTP/1.1" 200 0
+ERROR 2026-01-02 15:22:11,098 log 14104 41980 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'google_login' not found. 'google_login' is not a valid view function or pattern name.
+ERROR 2026-01-02 15:22:11,107 basehttp 14104 41980 "GET / HTTP/1.1" 500 132358
+INFO 2026-01-02 15:22:35,357 autoreload 14104 35992 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:22:36,301 autoreload 26796 1340 Watching for file changes with StatReloader
+INFO 2026-01-02 15:28:59,464 autoreload 26796 1340 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:29:00,370 autoreload 21812 29824 Watching for file changes with StatReloader
+INFO 2026-01-02 15:29:02,092 autoreload 21812 29824 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:29:02,995 autoreload 41048 25924 Watching for file changes with StatReloader
+INFO 2026-01-02 15:29:04,524 autoreload 41048 25924 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:29:05,365 autoreload 19544 33236 Watching for file changes with StatReloader
+INFO 2026-01-02 15:29:11,100 autoreload 19544 33236 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:29:12,035 autoreload 8872 22720 Watching for file changes with StatReloader
+INFO 2026-01-02 15:29:16,902 autoreload 8872 22720 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:29:17,759 autoreload 17788 23464 Watching for file changes with StatReloader
+INFO 2026-01-02 15:29:36,090 autoreload 17788 23464 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:29:36,960 autoreload 1228 36852 Watching for file changes with StatReloader
+INFO 2026-01-02 15:29:59,018 basehttp 1228 16848 "GET /api/redoc/ HTTP/1.1" 200 731
+WARNING 2026-01-02 15:30:00,961 basehttp 1228 29408 "GET /favicon.ico HTTP/1.1" 404 3829
+INFO 2026-01-02 15:30:01,167 basehttp 1228 16848 "GET /api/schema/ HTTP/1.1" 200 53068
+WARNING 2026-01-02 15:30:01,877 basehttp 1228 16848 "GET / HTTP/1.1" 404 3778
+INFO 2026-01-02 15:30:12,235 autoreload 1228 36852 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:30:13,028 autoreload 15868 6488 Watching for file changes with StatReloader
+INFO 2026-01-02 15:30:15,727 autoreload 15868 6488 D:\django_project\bonding\bondingapp\core\views.py changed, reloading.
+INFO 2026-01-02 15:30:17,131 autoreload 42588 20516 Watching for file changes with StatReloader
+WARNING 2026-01-02 15:30:17,602 basehttp 42588 11812 "GET / HTTP/1.1" 404 3778
+WARNING 2026-01-02 15:30:17,699 basehttp 42588 11812 "GET / HTTP/1.1" 404 3778
+WARNING 2026-01-02 15:30:18,253 basehttp 42588 11812 "GET / HTTP/1.1" 404 3778
+WARNING 2026-01-02 15:30:18,445 basehttp 42588 11812 "GET / HTTP/1.1" 404 3778
+WARNING 2026-01-02 15:30:18,619 basehttp 42588 11812 "GET / HTTP/1.1" 404 3778
+INFO 2026-01-02 15:30:30,802 autoreload 42588 20516 D:\django_project\bonding\bonding\urls.py changed, reloading.
+INFO 2026-01-02 15:30:31,582 autoreload 4124 32516 Watching for file changes with StatReloader
+INFO 2026-01-02 15:30:35,067 autoreload 4124 32516 D:\django_project\bonding\bonding\urls.py changed, reloading.
+INFO 2026-01-02 15:30:35,832 autoreload 34528 15188 Watching for file changes with StatReloader
+INFO 2026-01-02 15:31:45,601 autoreload 1136 3128 Watching for file changes with StatReloader
+INFO 2026-01-02 15:31:54,372 autoreload 1136 3128 D:\django_project\bonding\bonding\urls.py changed, reloading.
+INFO 2026-01-02 15:31:55,101 autoreload 16192 5768 Watching for file changes with StatReloader
+INFO 2026-01-02 15:31:58,611 autoreload 16192 5768 D:\django_project\bonding\bonding\urls.py changed, reloading.
+INFO 2026-01-02 15:31:59,318 autoreload 37560 38328 Watching for file changes with StatReloader
+INFO 2026-01-02 15:32:04,793 autoreload 37560 38328 D:\django_project\bonding\bonding\urls.py changed, reloading.
+INFO 2026-01-02 15:32:05,532 autoreload 26444 9792 Watching for file changes with StatReloader
+ERROR 2026-01-02 15:32:07,664 log 26444 15000 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_project\bonding\bondingapp\core\views.py", line 1467, in index
+    return render(request, 'home/index.html')
+  File "D:\django_project\bonding\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\django_project\bonding\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\django_project\bonding\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'google_login' not found. 'google_login' is not a valid view function or pattern name.
+ERROR 2026-01-02 15:32:07,673 basehttp 26444 15000 "GET / HTTP/1.1" 500 134672
+INFO 2026-01-02 15:32:25,992 basehttp 26444 15000 "GET / HTTP/1.1" 200 0
+INFO 2026-01-02 15:32:46,772 basehttp 26444 10824 "GET / HTTP/1.1" 200 0
+INFO 2026-01-02 15:36:09,874 basehttp 26444 15000 "GET / HTTP/1.1" 200 21328
+WARNING 2026-01-02 15:37:25,983 basehttp 26444 15000 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4096
+INFO 2026-01-02 15:40:46,439 basehttp 26444 15000 "GET / HTTP/1.1" 200 54686
+WARNING 2026-01-02 15:40:46,478 basehttp 26444 15000 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4096
+INFO 2026-01-02 15:42:06,078 basehttp 26444 15000 "GET / HTTP/1.1" 200 54686
+INFO 2026-01-02 15:42:37,455 basehttp 26444 15000 "GET / HTTP/1.1" 200 54726
+WARNING 2026-01-02 15:42:40,235 basehttp 26444 15000 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4096
+INFO 2026-01-02 15:45:30,347 basehttp 26444 6548 "GET / HTTP/1.1" 200 55450
+WARNING 2026-01-02 15:45:30,383 basehttp 26444 6548 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4096
+INFO 2026-01-02 15:45:36,356 basehttp 26444 6548 "GET / HTTP/1.1" 200 55450
+INFO 2026-01-02 15:45:50,419 basehttp 26444 6548 "GET / HTTP/1.1" 200 54730
+INFO 2026-01-02 15:51:04,443 basehttp 26444 15840 "GET / HTTP/1.1" 200 73983
+INFO 2026-01-02 15:52:32,971 basehttp 26444 15840 "GET / HTTP/1.1" 200 54831
+INFO 2026-01-02 16:00:45,279 basehttp 26444 3872 "GET / HTTP/1.1" 200 59944
+WARNING 2026-01-02 16:01:01,557 basehttp 26444 3872 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4096
+INFO 2026-01-02 16:01:32,510 basehttp 26444 3872 "GET / HTTP/1.1" 200 59953
