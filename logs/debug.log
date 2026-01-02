@@ -941,3 +941,12 @@ INFO 2026-01-02 11:26:05,453 basehttp 35568 26724 "GET /admin/jsi18n/ HTTP/1.1" 
 WARNING 2026-01-02 11:26:05,648 basehttp 35568 26724 "GET /favicon.ico HTTP/1.1" 404 3829
 INFO 2026-01-02 11:26:08,000 basehttp 35568 26724 "GET /admin/bondingapp/activitycategory/ HTTP/1.1" 200 21675
 INFO 2026-01-02 11:26:08,033 basehttp 35568 26724 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-02 11:27:00,150 autoreload 32336 34040 Watching for file changes with StatReloader
+INFO 2026-01-02 11:27:01,733 basehttp 32336 2844 "GET /admin/bondingapp/activity/ HTTP/1.1" 200 41679
+INFO 2026-01-02 11:27:01,778 basehttp 32336 2844 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-01-02 11:40:21,810 autoreload 32336 34040 D:\django_project\bonding\bonding\settings.py changed, reloading.
+INFO 2026-01-02 11:40:23,144 autoreload 16760 37832 Watching for file changes with StatReloader
+INFO 2026-01-02 11:40:35,026 autoreload 16760 37832 D:\django_project\bonding\bonding\settings.py changed, reloading.
+INFO 2026-01-02 11:40:36,191 autoreload 39428 20036 Watching for file changes with StatReloader
+INFO 2026-01-02 11:40:39,241 autoreload 39428 20036 D:\django_project\bonding\bonding\settings.py changed, reloading.
+INFO 2026-01-02 11:40:40,552 autoreload 468 37324 Watching for file changes with StatReloader
