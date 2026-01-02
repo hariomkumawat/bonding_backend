@@ -1,0 +1,1273 @@
+[
+  
+  {
+    "category": "Communication",
+    "title_en": "Weather Report",
+    "title_hi": "मौसम रिपोर्ट",
+    "description_en": "Describe your emotional state using weather metaphors",
+    "description_hi": "मौसम रूपकों का उपयोग करके अपनी भावनात्मक स्थिति का वर्णन करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Describe your emotional state as weather",
+      "Example: 'I'm partly cloudy with sunshine peeking through",
+      "Explain what the weather represents",
+      "Listen to your partner's forecast",
+      "Offer comfort for stormy days"
+    ],
+    "instructions_hi": [
+      "अपनी भावनात्मक स्थिति को मौसम के रूप में वर्णित करें",
+      "उदाहरण: 'मैं आंशिक रूप से बादल छाए हुए हूं जिसमें धूप झांक रही है",
+      "समझाएं कि मौसम क्या दर्शाता है",
+      "अपने साथी के पूर्वानुमान को सुनें",
+      "तूफानी दिनों के लिए आराम प्रदान करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be creative with metaphors",
+      "It's okay to be 'stormy",
+      "Weather changes - feelings do too"
+    ],
+    "tips_hi": [
+      "रूपकों के साथ रचनात्मक रहें",
+      "'तूफानी' होना ठीक है",
+      "मौसम बदलता है - भावनाएं भी बदलती हैं"
+    ],
+    "questions_en": [
+      "What's your emotional weather today?",
+      "Are there any clouds on your horizon?",
+      "What brought the sunshine?",
+      "Do you see any storms coming?"
+    ],
+    "questions_hi": [
+      "आज आपका भावनात्मक मौसम क्या है?",
+      "क्या आपके क्षितिज पर कोई बादल हैं?",
+      "धूप क्या लाई?",
+      "क्या आप कोई तूफान आते देखते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "One Wish for Tomorrow",
+    "title_hi": "कल के लिए एक इच्छा",
+    "description_en": "Share what you hope for tomorrow",
+    "description_hi": "साझा करें कि आप कल के लिए क्या आशा करते हैं",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person shares one wish for tomorrow",
+      "It can be small or significant",
+      "Explain why it matters",
+      "Support each other's wishes",
+      "End with encouragement"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति कल के लिए एक इच्छा साझा करता है",
+      "यह छोटा या महत्वपूर्ण हो सकता है",
+      "समझाएं कि यह क्यों मायने रखता है",
+      "एक-दूसरे की इच्छाओं का समर्थन करें",
+      "प्रोत्साहन के साथ समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be hopeful and positive",
+      "Make wishes achievable",
+      "Offer to help make it happen"
+    ],
+    "tips_hi": [
+      "आशावादी और सकारात्मक रहें",
+      "इच्छाओं को प्राप्त करने योग्य बनाएं",
+      "इसे होने में मदद करने की पेशकश करें"
+    ],
+    "questions_en": [
+      "What's one thing you hope happens tomorrow?",
+      "What would make tomorrow special?",
+      "What are you looking forward to?",
+      "How can I help your wish come true?"
+    ],
+    "questions_hi": [
+      "एक चीज क्या है जो आप उम्मीद करते हैं कल होगी?",
+      "कल को विशेष क्या बनाएगा?",
+      "आप किसकी प्रतीक्षा कर रहे हैं?",
+      "मैं आपकी इच्छा को सच करने में कैसे मदद कर सकता हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Song That Describes My Mood",
+    "title_hi": "गीत जो मेरे मूड का वर्णन करता है",
+    "description_en": "Pick a song that matches your current mood and share why",
+    "description_hi": "एक गीत चुनें जो आपके वर्तमान मूड से मेल खाता है और साझा करें क्यों",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person picks a song for their mood",
+      "Share the title or play it together",
+      "Explain why it resonates",
+      "Discuss the emotions it evokes",
+      "Create a shared playlist"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति अपने मूड के लिए एक गीत चुनता है",
+      "शीर्षक साझा करें या इसे एक साथ चलाएं",
+      "समझाएं कि यह क्यों गूंजता है",
+      "इससे उत्पन्न भावनाओं पर चर्चा करें",
+      "एक साझा प्लेलिस्ट बनाएं"
+    ],
+    "materials_needed_en": ["Music player or phone"],
+    "materials_needed_hi": ["संगीत प्लेयर या फोन"],
+    "tips_en": [
+      "Choose based on lyrics or melody",
+      "Share why the song is meaningful",
+      "Listen to each other's choices"
+    ],
+    "tips_hi": [
+      "बोल या धुन के आधार पर चुनें",
+      "साझा करें कि गीत सार्थक क्यों है",
+      "एक-दूसरे की पसंद सुनें"
+    ],
+    "questions_en": [
+      "What song represents how you feel right now?",
+      "What lyrics speak to you today?",
+      "What music lifts your spirits?",
+      "What song reminds you of us?"
+    ],
+    "questions_hi": [
+      "कौन सा गीत दर्शाता है कि आप अभी कैसा महसूस करते हैं?",
+      "कौन से बोल आज आपसे बात करते हैं?",
+      "कौन सा संगीत आपकी आत्मा को उठाता है?",
+      "कौन सा गीत आपको हमारी याद दिलाता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Gratitude Before Sleep",
+    "title_hi": "सोने से पहले आभार",
+    "description_en": "Share three things you're grateful for before sleeping",
+    "description_hi": "सोने से पहले तीन चीजें साझा करें जिनके लिए आप आभारी हैं",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Get comfortable together",
+      "Each person shares 3 gratitudes",
+      "Include at least one about your partner",
+      "Be specific and heartfelt",
+      "End with a goodnight message"
+    ],
+    "instructions_hi": [
+      "एक साथ आरामदायक हो जाएं",
+      "प्रत्येक व्यक्ति 3 आभार साझा करता है",
+      "अपने साथी के बारे में कम से कम एक शामिल करें",
+      "विशिष्ट और दिल से रहें",
+      "शुभरात्रि संदेश के साथ समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Focus on the day's blessings",
+      "Include small and big things",
+      "Make it a nightly ritual"
+    ],
+    "tips_hi": [
+      "दिन के आशीर्वाद पर ध्यान दें",
+      "छोटी और बड़ी चीजें शामिल करें",
+      "इसे रात का अनुष्ठान बनाएं"
+    ],
+    "questions_en": [
+      "What am I grateful for today?",
+      "What did you do that I appreciate?",
+      "What moment today brought me joy?",
+      "What blessing should I not take for granted?"
+    ],
+    "questions_hi": [
+      "आज मैं किसके लिए आभारी हूं?",
+      "आपने क्या किया जिसकी मैं सराहना करता हूं?",
+      "आज कौन सा पल मुझे खुशी लाया?",
+      "कौन सा आशीर्वाद मुझे हल्के में नहीं लेना चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Morning Intentions",
+    "title_hi": "सुबह के इरादे",
+    "description_en": "Share your intentions and goals for the day ahead",
+    "description_hi": "आने वाले दिन के लिए अपने इरादे और लक्ष्य साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "morning",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Start your day together with this",
+      "Each person shares 2-3 intentions",
+      "Include personal and relationship goals",
+      "Wish each other well",
+      "Check in at day's end"
+    ],
+    "instructions_hi": [
+      "इसके साथ अपना दिन शुरू करें",
+      "प्रत्येक व्यक्ति 2-3 इरादे साझा करता है",
+      "व्यक्तिगत और संबंध लक्ष्यों को शामिल करें",
+      "एक-दूसरे को शुभकामनाएं दें",
+      "दिन के अंत में चेक-इन करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Set positive, achievable intentions",
+      "Support each other's goals",
+      "Start the day connected"
+    ],
+    "tips_hi": [
+      "सकारात्मक, प्राप्त करने योग्य इरादे सेट करें",
+      "एक-दूसरे के लक्ष्यों का समर्थन करें",
+      "जुड़े हुए दिन की शुरुआत करें"
+    ],
+    "questions_en": [
+      "What do I want to accomplish today?",
+      "How do I want to show up today?",
+      "What energy do I want to bring?",
+      "How can we support each other today?"
+    ],
+    "questions_hi": [
+      "आज मैं क्या हासिल करना चाहता हूं?",
+      "मैं आज कैसे दिखना चाहता हूं?",
+      "मैं कौन सी ऊर्जा लाना चाहता हूं?",
+      "आज हम एक-दूसरे का समर्थन कैसे कर सकते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Love Language Discovery",
+    "title_hi": "प्रेम भाषा की खोज",
+    "description_en": "Discuss and understand each other's love languages",
+    "description_hi": "एक-दूसरे की प्रेम भाषाओं पर चर्चा करें और समझें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 20,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Review the 5 love languages together",
+      "Each person ranks them in order of importance",
+      "Share examples of when you feel most loved",
+      "Discuss how to better express love",
+      "Create an action plan"
+    ],
+    "instructions_hi": [
+      "5 प्रेम भाषाओं की एक साथ समीक्षा करें",
+      "प्रत्येक व्यक्ति उन्हें महत्व के क्रम में रैंक करता है",
+      "उदाहरण साझा करें जब आप सबसे अधिक प्यार महसूस करते हैं",
+      "चर्चा करें कि प्यार को बेहतर कैसे व्यक्त करें",
+      "एक कार्य योजना बनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be honest about your needs",
+      "Don't judge each other's languages",
+      "Focus on understanding, not changing"
+    ],
+    "tips_hi": [
+      "अपनी जरूरतों के बारे में ईमानदार रहें",
+      "एक-दूसरे की भाषाओं का न्याय न करें",
+      "बदलने पर नहीं, समझने पर ध्यान दें"
+    ],
+    "questions_en": [
+      "What makes you feel most loved? (Words, Touch, Gifts, Acts, Time)",
+      "When do you feel least loved?",
+      "How can I better speak your love language?",
+      "What specific actions mean the most to you?",
+      "How did you learn to give/receive love?"
+    ],
+    "questions_hi": [
+      "आपको सबसे अधिक प्यार कब महसूस होता है? (शब्द, स्पर्श, उपहार, कृत्य, समय)",
+      "आप कम से कम प्यार कब महसूस करते हैं?",
+      "मैं आपकी प्रेम भाषा बेहतर कैसे बोल सकता हूं?",
+      "कौन से विशिष्ट कार्य आपके लिए सबसे अधिक मायने रखते हैं?",
+      "आपने प्यार देना/प्राप्त करना कैसे सीखा?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Future Dreams Together",
+    "title_hi": "साथ में भविष्य के सपने",
+    "description_en": "Share and discuss your dreams and aspirations for the future",
+    "description_hi": "भविष्य के लिए अपने सपने और आकांक्षाएं साझा करें और चर्चा करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person shares 5 future dreams",
+      "Include 1-year, 5-year, and lifetime goals",
+      "Discuss which dreams are shared",
+      "Talk about how to support each other",
+      "Create a vision for your future together"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति 5 भविष्य के सपने साझा करता है",
+      "1-वर्ष, 5-वर्ष, और जीवन भर के लक्ष्य शामिल करें",
+      "चर्चा करें कि कौन से सपने साझा हैं",
+      "बात करें कि एक-दूसरे का समर्थन कैसे करें",
+      "अपने भविष्य के लिए एक दृष्टि बनाएं"
+    ],
+    "materials_needed_en": ["Paper and pen (optional)"],
+    "materials_needed_hi": ["कागज और कलम (वैकल्पिक)"],
+    "tips_en": [
+      "Dream big together",
+      "Be supportive of individual dreams",
+      "Find common goals to pursue"
+    ],
+    "tips_hi": [
+      "एक साथ बड़े सपने देखें",
+      "व्यक्तिगत सपनों के लिए सहायक रहें",
+      "आगे बढ़ने के लिए सामान्य लक्ष्य खोजें"
+    ],
+    "questions_en": [
+      "Where do you see us in 5 years?",
+      "What's one dream you want to achieve together?",
+      "What personal goal can I help you with?",
+      "What does our ideal life look like?",
+      "What experiences do you want us to have?"
+    ],
+    "questions_hi": [
+      "आप हमें 5 साल में कहां देखते हैं?",
+      "एक सपना क्या है जिसे आप एक साथ हासिल करना चाहते हैं?",
+      "मैं किस व्यक्तिगत लक्ष्य में आपकी मदद कर सकता हूं?",
+      "हमारा आदर्श जीवन कैसा दिखता है?",
+      "कौन से अनुभव आप हमें चाहते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Vulnerability Hour",
+    "title_hi": "भेद्यता घंटा",
+    "description_en": "Create a safe space to share fears, insecurities, and vulnerabilities",
+    "description_hi": "भय, असुरक्षा और कमजोरियों को साझा करने के लिए एक सुरक्षित स्थान बनाएं",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Create a comfortable, private setting",
+      "Agree to listen without judgment",
+      "Take turns sharing vulnerabilities",
+      "Share 3 fears or insecurities each",
+      "Offer support and reassurance",
+      "End with affirmations"
+    ],
+    "instructions_hi": [
+      "एक आरामदायक, निजी सेटिंग बनाएं",
+      "बिना किसी निर्णय के सुनने के लिए सहमत हों",
+      "बारी-बारी से कमजोरियां साझा करें",
+      "प्रत्येक 3 भय या असुरक्षा साझा करें",
+      "समर्थन और आश्वासन प्रदान करें",
+      "पुष्टि के साथ समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be brave and honest",
+      "Hold space for emotions",
+      "Reassure and validate feelings"
+    ],
+    "tips_hi": [
+      "बहादुर और ईमानदार रहें",
+      "भावनाओं के लिए स्थान रखें",
+      "भावनाओं को आश्वस्त और मान्य करें"
+    ],
+    "questions_en": [
+      "What fear keeps you up at night?",
+      "What insecurity do you struggle with?",
+      "What do you worry about in our relationship?",
+      "What makes you feel inadequate?",
+      "What past hurt still affects you?",
+      "How can I make you feel more secure?"
+    ],
+    "questions_hi": [
+      "कौन सा डर आपको रात में जगाए रखता है?",
+      "आप किस असुरक्षा से संघर्ष करते हैं?",
+      "आप हमारे रिश्ते में किस बात की चिंता करते हैं?",
+      "क्या आपको अपर्याप्त महसूस कराता है?",
+      "कौन सी पिछली चोट अभी भी आपको प्रभावित करती है?",
+      "मैं आपको अधिक सुरक्षित कैसे महसूस करा सकता हूं?"
+    ]
+  },
+
+  {
+    "category": "Communication",
+    "title_en": "Conflict Resolution Practice",
+    "title_hi": "संघर्ष समाधान अभ्यास",
+    "description_en": "Discuss how you handle disagreements and improve conflict resolution",
+    "description_hi": "चर्चा करें कि आप असहमति को कैसे संभालते हैं और संघर्ष समाधान में सुधार करते हैं",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Discuss your conflict styles",
+      "Share what triggers you",
+      "Talk about what helps during conflicts",
+      "Create 'fair fighting' rules together",
+      "Practice 'I feel' statements"
+    ],
+    "instructions_hi": [
+      "अपनी संघर्ष शैलियों पर चर्चा करें",
+      "साझा करें कि क्या आपको ट्रिगर करता है",
+      "संघर्ष के दौरान क्या मदद करता है, इस बारे में बात करें",
+      "एक साथ 'निष्पक्ष लड़ाई' नियम बनाएं",
+      "'मुझे लगता है' कथनों का अभ्यास करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Stay calm during discussion",
+      "Focus on solutions, not blame",
+      "Commit to healthy conflict"
+    ],
+    "tips_hi": [
+      "चर्चा के दौरान शांत रहें",
+      "दोष नहीं, समाधान पर ध्यान दें",
+      "स्वस्थ संघर्ष के लिए प्रतिबद्ध रहें"
+    ],
+    "questions_en": [
+      "How do you typically handle conflict?",
+      "What triggers escalation for you?",
+      "What helps you calm down during fights?",
+      "What words or actions hurt most?",
+      "What can we do differently next time?",
+      "How soon after a fight should we talk?"
+    ],
+    "questions_hi": [
+      "आप आमतौर पर संघर्ष को कैसे संभालते हैं?",
+      "आपके लिए वृद्धि को क्या ट्रिगर करता है?",
+      "लड़ाई के दौरान आपको शांत होने में क्या मदद करता है?",
+      "कौन से शब्द या कार्य सबसे अधिक चोट पहुंचाते हैं?",
+      "अगली बार हम अलग क्या कर सकते हैं?",
+      "लड़ाई के कितनी जल्दी बाद हमें बात करनी चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Financial Values Discussion",
+    "title_hi": "वित्तीय मूल्य चर्चा",
+    "description_en": "Talk openly about money, spending habits, and financial goals",
+    "description_hi": "पैसे, खर्च की आदतों और वित्तीय लक्ष्यों के बारे में खुलकर बात करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Share your money backgrounds",
+      "Discuss spending vs saving attitudes",
+      "Talk about financial fears",
+      "Set shared financial goals",
+      "Create a budget philosophy together"
+    ],
+    "instructions_hi": [
+      "अपनी धन पृष्ठभूमि साझा करें",
+      "खर्च बनाम बचत दृष्टिकोण पर चर्चा करें",
+      "वित्तीय भय के बारे में बात करें",
+      "साझा वित्तीय लक्ष्य निर्धारित करें",
+      "एक साथ बजट दर्शन बनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be honest without shame",
+      "Respect different money values",
+      "Focus on partnership, not control"
+    ],
+    "tips_hi": [
+      "बिना शर्म के ईमानदार रहें",
+      "विभिन्न धन मूल्यों का सम्मान करें",
+      "नियंत्रण पर नहीं, साझेदारी पर ध्यान दें"
+    ],
+    "questions_en": [
+      "What did your family teach you about money?",
+      "Are you a spender or saver?",
+      "What financial goal is most important to you?",
+      "What purchases do you not regret?",
+      "What's your biggest money fear?",
+      "How should we handle shared expenses?"
+    ],
+    "questions_hi": [
+      "आपके परिवार ने आपको पैसे के बारे में क्या सिखाया?",
+      "क्या आप खर्च करने वाले हैं या बचत करने वाले?",
+      "कौन सा वित्तीय लक्ष्य आपके लिए सबसे महत्वपूर्ण है?",
+      "कौन सी खरीदारी पर आपको पछतावा नहीं है?",
+      "आपका सबसे बड़ा पैसा डर क्या है?",
+      "हमें साझा खर्चों को कैसे संभालना चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Relationship History Sharing",
+    "title_hi": "संबंध इतिहास साझाकरण",
+    "description_en": "Share past relationship experiences and lessons learned",
+    "description_hi": "पिछले संबंध अनुभव और सबक साझा करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Share only what feels comfortable",
+      "Focus on lessons, not details",
+      "Discuss patterns you've noticed",
+      "Talk about what you want differently",
+      "Reassure each other"
+    ],
+    "instructions_hi": [
+      "केवल वही साझा करें जो आरामदायक लगे",
+      "विवरण पर नहीं, सबक पर ध्यान दें",
+      "पैटर्न पर चर्चा करें जो आपने देखे हैं",
+      "बात करें कि आप क्या अलग चाहते हैं",
+      "एक-दूसरे को आश्वस्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Listen without jealousy",
+      "Focus on growth",
+      "Be grateful for lessons learned"
+    ],
+    "tips_hi": [
+      "ईर्ष्या के बिना सुनें",
+      "विकास पर ध्यान दें",
+      "सीखे गए सबक के लिए आभारी रहें"
+    ],
+    "questions_en": [
+      "What did past relationships teach you?",
+      "What patterns do you want to break?",
+      "What do you appreciate about our relationship?",
+      "What mistakes won't you repeat?",
+      "How have you grown from past relationships?"
+    ],
+    "questions_hi": [
+      "पिछले रिश्तों ने आपको क्या सिखाया?",
+      "आप कौन से पैटर्न तोड़ना चाहते हैं?",
+      "आप हमारे रिश्ते के बारे में क्या सराहना करते हैं?",
+      "कौन सी गलतियाँ आप दोहराएंगे नहीं?",
+      "आप पिछले रिश्तों से कैसे बढ़े हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Quality Time Preferences",
+    "title_hi": "गुणवत्ता समय प्राथमिकताएं",
+    "description_en": "Discuss how you each prefer to spend quality time together",
+    "description_hi": "चर्चा करें कि आप प्रत्येक एक साथ गुणवत्ता समय कैसे बिताना पसंद करते हैं",
+    "difficulty": "medium",
+    "estimated_time_minutes": 20,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "List your top 5 favorite activities together",
+      "Rank them by preference",
+      "Discuss why each is meaningful",
+      "Find activities you both enjoy",
+      "Schedule regular quality time"
+    ],
+    "instructions_hi": [
+      "एक साथ अपनी शीर्ष 5 पसंदीदा गतिविधियों की सूची बनाएं",
+      "उन्हें प्राथमिकता के अनुसार रैंक करें",
+      "चर्चा करें कि प्रत्येक सार्थक क्यों है",
+      "ऐसी गतिविधियाँ खोजें जिनका आप दोनों आनंद लेते हैं",
+      "नियमित गुणवत्ता समय निर्धारित करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be open to trying new things",
+      "Quality over quantity",
+      "Make time intentional"
+    ],
+    "tips_hi": [
+      "नई चीजों को आजमाने के लिए खुले रहें",
+      "मात्रा पर गुणवत्ता",
+      "समय को जानबूझकर बनाएं"
+    ],
+    "questions_en": [
+      "What activities make you feel closest to me?",
+      "What's your ideal date?",
+      "Do you prefer active or relaxed time together?",
+      "What activity brings you joy?",
+      "How much alone time vs together time do you need?"
+    ],
+    "questions_hi": [
+      "कौन सी गतिविधियाँ आपको मेरे सबसे करीब महसूस कराती हैं?",
+      "आपकी आदर्श तारीख क्या है?",
+      "क्या आप एक साथ सक्रिय या आरामदायक समय पसंद करते हैं?",
+      "कौन सी गतिविधि आपको खुशी देती है?",
+      "आपको कितना अकेला समय बनाम एक साथ समय चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Appreciation Deep Dive",
+    "title_hi": "प्रशंसा गहरी डुबकी",
+    "description_en": "Go deeper into specific things you appreciate about each other",
+    "description_hi": "एक-दूसरे के बारे में विशिष्ट चीजों में गहराई से जाएं जिनकी आप सराहना करते हैं",
+    "difficulty": "medium",
+    "estimated_time_minutes": 20,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Take turns sharing appreciations",
+      "Be specific with examples",
+      "Cover different categories",
+      "Share 10 appreciations each",
+      "Explain why each matters"
+    ],
+    "instructions_hi": [
+      "बारी-बारी से प्रशंसा साझा करें",
+      "उदाहरणों के साथ विशिष्ट रहें",
+      "विभिन्न श्रेणियों को कवर करें",
+      "प्रत्येक 10 प्रशंसा साझा करें",
+      "समझाएं कि प्रत्येक क्यों मायने रखता है"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Include personality traits",
+      "Mention daily habits",
+      "Acknowledge growth you've seen"
+    ],
+    "tips_hi": [
+      "व्यक्तित्व लक्षण शामिल करें",
+      "दैनिक आदतों का उल्लेख करें",
+      "आपने जो विकास देखा है उसे स्वीकार करें"
+    ],
+    "questions_en": [
+      "What quality of yours makes our relationship better?",
+      "What small habit of yours do I love?",
+      "How have you grown since we met?",
+      "What talent of yours amazes me?",
+      "What sacrifice have you made for us?",
+      "What makes you irreplaceable to me?"
+    ],
+    "questions_hi": [
+      "आपका कौन सा गुण हमारे रिश्ते को बेहतर बनाता है?",
+      "आपकी कौन सी छोटी आदत मुझे पसंद है?",
+      "जब से हम मिले हैं आप कैसे बढ़े हैं?",
+      "आपकी कौन सी प्रतिभा मुझे चकित करती है?",
+      "आपने हमारे लिए क्या बलिदान दिया है?",
+      "क्या आपको मेरे लिए अपूरणीय बनाता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Communication Styles",
+    "title_hi": "संचार शैलियाँ",
+    "description_en": "Understand how each of you communicates and processes information",
+    "description_hi": "समझें कि आप प्रत्येक कैसे संवाद करते हैं और जानकारी को संसाधित करते हैं",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Discuss your communication preferences",
+      "Share what helps you feel heard",
+      "Talk about what shuts you down",
+      "Identify your conflict styles",
+      "Create communication agreements"
+    ],
+    "instructions_hi": [
+      "अपनी संचार प्राथमिकताओं पर चर्चा करें",
+      "साझा करें कि क्या आपको सुना जाना महसूस कराता है",
+      "बात करें कि क्या आपको बंद कर देता है",
+      "अपनी संघर्ष शैलियों की पहचान करें",
+      "संचार समझौते बनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be honest about your needs",
+      "Learn each other's cues",
+      "Practice active listening"
+    ],
+    "tips_hi": [
+      "अपनी जरूरतों के बारे में ईमानदार रहें",
+      "एक-दूसरे के संकेत सीखें",
+      "सक्रिय सुनने का अभ्यास करें"
+    ],
+    "questions_en": [
+      "Do you need time to process or talk immediately?",
+      "What tone or words trigger you?",
+      "How do you prefer to receive feedback?",
+      "What makes you feel unheard?",
+      "Do you prefer direct or gentle communication?",
+      "What helps you open up?"
+    ],
+    "questions_hi": [
+      "क्या आपको प्रक्रिया करने या तुरंत बात करने के लिए समय चाहिए?",
+      "कौन सा स्वर या शब्द आपको ट्रिगर करता है?",
+      "आप प्रतिक्रिया प्राप्त करना कैसे पसंद करते हैं?",
+      "क्या आपको अनसुना महसूस कराता है?",
+      "क्या आप प्रत्यक्ष या कोमल संचार पसंद करते हैं?",
+      "क्या आपको खुलने में मदद करता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Core Values Alignment",
+    "title_hi": "मूल मूल्य संरेखण",
+    "description_en": "Identify and discuss your core values and beliefs",
+    "description_hi": "अपने मूल मूल्यों और विश्वासों की पहचान करें और चर्चा करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "List your top 10 core values",
+      "Rank them in order of importance",
+      "Share why each value matters",
+      "Identify shared values",
+      "Discuss differences respectfully"
+    ],
+    "instructions_hi": [
+      "अपने शीर्ष 10 मूल मूल्यों की सूची बनाएं",
+      "उन्हें महत्व के क्रम में रैंक करें",
+      "साझा करें कि प्रत्येक मूल्य क्यों मायने रखता है",
+      "साझा मूल्यों की पहचान करें",
+      "सम्मानपूर्वक मतभेदों पर चर्चा करें"
+    ],
+    "materials_needed_en": ["Paper and pen"],
+    "materials_needed_hi": ["कागज और कलम"],
+    "tips_en": [
+      "Be authentic about your values",
+      "Respect different priorities",
+      "Find common ground"
+    ],
+    "tips_hi": [
+      "अपने मूल्यों के बारे में प्रामाणिक रहें",
+      "विभिन्न प्राथमिकताओं का सम्मान करें",
+      "सामान्य आधार खोजें"
+    ],
+    "questions_en": [
+      "What values guide your decisions?",
+      "Where did you learn these values?",
+      "Which values are non-negotiable?",
+      "How do your values show up daily?",
+      "Where do our values align?",
+      "How can we honor each other's values?"
+    ],
+    "questions_hi": [
+      "कौन से मूल्य आपके निर्णयों का मार्गदर्शन करते हैं?",
+      "आपने ये मूल्य कहाँ से सीखे?",
+      "कौन से मूल्य गैर-परक्राम्य हैं?",
+      "आपके मूल्य रोजाना कैसे दिखाई देते हैं?",
+      "हमारे मूल्य कहाँ संरेखित होते हैं?",
+      "हम एक-दूसरे के मूल्यों का सम्मान कैसे कर सकते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Relationship Checkup",
+    "title_hi": "संबंध जांच",
+    "description_en": "Assess the health of different areas of your relationship",
+    "description_hi": "अपने रिश्ते के विभिन्न क्षेत्रों के स्वास्थ्य का आकलन करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Rate each area from 1-10",
+      "Discuss ratings openly",
+      "Identify strengths to celebrate",
+      "Pinpoint areas needing improvement",
+      "Create action plan for growth"
+    ],
+    "instructions_hi": [
+      "प्रत्येक क्षेत्र को 1-10 से रेट करें",
+      "रेटिंग पर खुलकर चर्चा करें",
+      "जश्न मनाने के लिए ताकत की पहचान करें",
+      "सुधार की आवश्यकता वाले क्षेत्रों को इंगित करें",
+      "विकास के लिए कार्य योजना बनाएं"
+    ],
+    "materials_needed_en": ["Paper and pen"],
+    "materials_needed_hi": ["कागज और कलम"],
+    "tips_en": [
+      "Be honest but kind",
+      "Focus on growth, not blame",
+      "Celebrate what's working"
+    ],
+    "tips_hi": [
+      "ईमानदार लेकिन दयालु रहें",
+      "दोष पर नहीं, विकास पर ध्यान दें",
+      "जो काम कर रहा है उसका जश्न मनाएं"
+    ],
+    "questions_en": [
+      "Communication (1-10)",
+      "Physical intimacy (1-10)",
+      "Emotional connection (1-10)",
+      "Quality time (1-10)",
+      "Trust (1-10)",
+      "Fun and laughter (1-10)",
+      "Conflict resolution (1-10)",
+      "Support and encouragement (1-10)",
+      "Shared goals (1-10)",
+      "Overall satisfaction (1-10)"
+    ],
+    "questions_hi": [
+      "संचार (1-10)",
+      "शारीरिक अंतरंगता (1-10)",
+      "भावनात्मक संबंध (1-10)",
+      "गुणवत्ता समय (1-10)",
+      "विश्वास (1-10)",
+      "मज़ा और हंसी (1-10)",
+      "संघर्ष समाधान (1-10)",
+      "समर्थन और प्रोत्साहन (1-10)",
+      "साझा लक्ष्य (1-10)",
+      "समग्र संतुष्टि (1-10)"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Bucket List Creation",
+    "title_hi": "बकेट लिस्ट निर्माण",
+    "description_en": "Create a shared bucket list of experiences you want together",
+    "description_hi": "अनुभवों की एक साझा बकेट सूची बनाएं जो आप एक साथ चाहते हैं",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person lists 20 experiences",
+      "Include travel, activities, milestones",
+      "Share and combine lists",
+      "Prioritize top 10 together",
+      "Make a plan for the first one"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति 20 अनुभवों को सूचीबद्ध करता है",
+      "यात्रा, गतिविधियां, मील के पत्थर शामिल करें",
+      "सूचियों को साझा करें और मिलाएं",
+      "एक साथ शीर्ष 10 को प्राथमिकता दें",
+      "पहले के लिए एक योजना बनाएं"
+    ],
+    "materials_needed_en": ["Paper and pen"],
+    "materials_needed_hi": ["कागज और कलम"],
+    "tips_en": [
+      "Dream without limits",
+      "Include achievable and ambitious items",
+      "Make it exciting and meaningful"
+    ],
+    "tips_hi": [
+      "बिना सीमा के सपने देखें",
+      "प्राप्त करने योग्य और महत्वाकांक्षी वस्तुओं को शामिल करें",
+      "इसे रोमांचक और सार्थक बनाएं"
+    ],
+    "questions_en": [
+      "What place do you want to visit together?",
+      "What adventure do you want to experience?",
+      "What skill do you want to learn together?",
+      "What milestone do you want to celebrate?",
+      "What memory do you want to create?"
+    ],
+    "questions_hi": [
+      "आप एक साथ किस स्थान पर जाना चाहते हैं?",
+      "आप कौन सा रोमांच अनुभव करना चाहते हैं?",
+      "आप एक साथ कौन सा कौशल सीखना चाहते हैं?",
+      "आप किस मील के पत्थर का जश्न मनाना चाहते हैं?",
+      "आप कौन सी याद बनाना चाहते हैं?"
+    ]
+  },
+
+  {
+    "category": "Communication",
+    "title_en": "Growth Goals for Us",
+    "title_hi": "हमारे लिए विकास लक्ष्य",
+    "description_en": "Set relationship growth goals for the next 3-6 months",
+    "description_hi": "अगले 3-6 महीनों के लिए संबंध विकास लक्ष्य निर्धारित करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Identify 3 areas you want to improve",
+      "Set specific, measurable goals",
+      "Discuss how to support each other",
+      "Create accountability system",
+      "Schedule check-in dates"
+    ],
+    "instructions_hi": [
+      "3 क्षेत्रों की पहचान करें जिन्हें आप सुधारना चाहते हैं",
+      "विशिष्ट, मापने योग्य लक्ष्य निर्धारित करें",
+      "चर्चा करें कि एक-दूसरे का समर्थन कैसे करें",
+      "जवाबदेही प्रणाली बनाएं",
+      "चेक-इन तिथियां निर्धारित करें"
+    ],
+    "materials_needed_en": ["Paper and pen"],
+    "materials_needed_hi": ["कागज और कलम"],
+    "tips_en": [
+      "Make goals realistic",
+      "Focus on teamwork",
+      "Celebrate progress together"
+    ],
+    "tips_hi": [
+      "लक्ष्यों को यथार्थवादी बनाएं",
+      "टीमवर्क पर ध्यान दें",
+      "एक साथ प्रगति का जश्न मनाएं"
+    ],
+    "questions_en": [
+      "What aspect of our relationship needs more attention?",
+      "What habit should we develop together?",
+      "What can we do weekly to stay connected?",
+      "What boundary should we set?",
+      "What tradition should we start?"
+    ],
+    "questions_hi": [
+      "हमारे रिश्ते के किस पहलू को अधिक ध्यान देने की आवश्यकता है?",
+      "हमें एक साथ कौन सी आदत विकसित करनी चाहिए?",
+      "जुड़े रहने के लिए हम साप्ताहिक रूप से क्या कर सकते हैं?",
+      "हमें कौन सी सीमा निर्धारित करनी चाहिए?",
+      "हमें कौन सी परंपरा शुरू करनी चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Favorite Memories Together",
+    "title_hi": "एक साथ पसंदीदा यादें",
+    "description_en": "Revisit and celebrate your best moments together",
+    "description_hi": "एक साथ अपने सर्वश्रेष्ठ क्षणों को फिर से देखें और मनाएं",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person shares 5 favorite memories",
+      "Describe them in vivid detail",
+      "Share what made them special",
+      "Look at photos if available",
+      "Discuss creating more memories"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति 5 पसंदीदा यादें साझा करता है",
+      "उन्हें जीवंत विवरण में वर्णन करें",
+      "साझा करें कि क्या उन्हें विशेष बनाया",
+      "यदि उपलब्ध हो तो फ़ोटो देखें",
+      "और यादें बनाने पर चर्चा करें"
+    ],
+    "materials_needed_en": ["Photos (optional)"],
+    "materials_needed_hi": ["फ़ोटो (वैकल्पिक)"],
+    "tips_en": [
+      "Include small and big moments",
+      "Share how you felt",
+      "Relive the joy together"
+    ],
+    "tips_hi": [
+      "छोटे और बड़े क्षणों को शामिल करें",
+      "साझा करें कि आपने कैसा महसूस किया",
+      "एक साथ खुशी को फिर से जिएं"
+    ],
+    "questions_en": [
+      "What's your favorite date we've had?",
+      "What moment made you fall deeper in love?",
+      "What's the funniest thing that happened to us?",
+      "What surprise do you remember most?",
+      "What challenge brought us closer?"
+    ],
+    "questions_hi": [
+      "हमारी पसंदीदा तारीख क्या है?",
+      "किस पल ने आपको और प्यार में गिरा दिया?",
+      "हमारे साथ सबसे मज़ेदार बात क्या हुई?",
+      "आपको कौन सा आश्चर्य सबसे अधिक याद है?",
+      "किस चुनौती ने हमें करीब लाया?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "What I Admire About You",
+    "title_hi": "मैं आपके बारे में क्या प्रशंसा करता हूं",
+    "description_en": "Express deep admiration for each other's qualities and character",
+    "description_hi": "एक-दूसरे के गुणों और चरित्र के लिए गहरी प्रशंसा व्यक्त करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 20,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "List 7 qualities you admire",
+      "Focus on character, not appearance",
+      "Give specific examples",
+      "Share why each quality matters",
+      "Express gratitude for who they are"
+    ],
+    "instructions_hi": [
+      "7 गुणों की सूची बनाएं जिनकी आप प्रशंसा करते हैं",
+      "दिखावट पर नहीं, चरित्र पर ध्यान दें",
+      "विशिष्ट उदाहरण दें",
+      "साझा करें कि प्रत्येक गुण क्यों मायने रखता है",
+      "वे कौन हैं इसके लिए आभार व्यक्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be sincere and heartfelt",
+      "Mention how it impacts you",
+      "Acknowledge their uniqueness"
+    ],
+    "tips_hi": [
+      "ईमानदार और दिल से रहें",
+      "उल्लेख करें कि यह आपको कैसे प्रभावित करता है",
+      "उनकी विशिष्टता को स्वीकार करें"
+    ],
+    "questions_en": [
+      "What strength of yours do I admire most?",
+      "How does your kindness show?",
+      "What about your work ethic inspires me?",
+      "What courage have I seen in you?",
+      "What makes your heart beautiful?",
+      "How do you make others feel valued?",
+      "What wisdom have you shown me?"
+    ],
+    "questions_hi": [
+      "आपकी कौन सी ताकत मैं सबसे अधिक प्रशंसा करता हूं?",
+      "आपकी दयालुता कैसे दिखाई देती है?",
+      "आपकी कार्य नैतिकता के बारे में क्या मुझे प्रेरित करता है?",
+      "मैंने आपमें क्या साहस देखा है?",
+      "क्या आपके दिल को सुंदर बनाता है?",
+      "आप दूसरों को मूल्यवान कैसे महसूस कराते हैं?",
+      "आपने मुझे क्या ज्ञान दिखाया है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "How We've Grown Together",
+    "title_hi": "हम एक साथ कैसे बढ़े हैं",
+    "description_en": "Reflect on personal and relationship growth since being together",
+    "description_hi": "एक साथ होने के बाद से व्यक्तिगत और संबंध विकास पर विचार करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Discuss who you were when you met",
+      "Share how you've changed",
+      "Acknowledge growth from challenges",
+      "Celebrate positive changes",
+      "Express gratitude for the journey"
+    ],
+    "instructions_hi": [
+      "चर्चा करें कि जब आप मिले तो आप कौन थे",
+      "साझा करें कि आप कैसे बदले हैं",
+      "चुनौतियों से विकास को स्वीकार करें",
+      "सकारात्मक परिवर्तनों का जश्न मनाएं",
+      "यात्रा के लिए आभार व्यक्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Focus on positive growth",
+      "Acknowledge both individual and shared growth",
+      "Be proud of your journey"
+    ],
+    "tips_hi": [
+      "सकारात्मक विकास पर ध्यान दें",
+      "व्यक्तिगत और साझा विकास दोनों को स्वीकार करें",
+      "अपनी यात्रा पर गर्व करें"
+    ],
+    "questions_en": [
+      "How have I grown because of you?",
+      "What beliefs have changed?",
+      "What skills have we developed?",
+      "What fears have we overcome?",
+      "How is our relationship stronger now?",
+      "What have we learned about love?"
+    ],
+    "questions_hi": [
+      "मैं आपके कारण कैसे बढ़ा हूं?",
+      "कौन से विश्वास बदल गए हैं?",
+      "हमने कौन से कौशल विकसित किए हैं?",
+      "हमने किन भय पर काबू पाया है?",
+      "अब हमारा रिश्ता कैसे मजबूत है?",
+      "हमने प्यार के बारे में क्या सीखा है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Stress and Support Check",
+    "title_hi": "तनाव और समर्थन जांच",
+    "description_en": "Share current stressors and discuss how to support each other",
+    "description_hi": "वर्तमान तनाव साझा करें और चर्चा करें कि एक-दूसरे का समर्थन कैसे करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 20,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Share what's currently stressing you",
+      "Rate stress level 1-10",
+      "Discuss what helps reduce stress",
+      "Ask what support is needed",
+      "Offer specific ways to help"
+    ],
+    "instructions_hi": [
+      "साझा करें कि वर्तमान में आपको क्या तनाव दे रहा है",
+      "तनाव स्तर 1-10 रेट करें",
+      "चर्चा करें कि तनाव कम करने में क्या मदद करता है",
+      "पूछें कि क्या समर्थन की आवश्यकता है",
+      "मदद करने के लिए विशिष्ट तरीके प्रदान करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Listen without trying to fix",
+      "Validate their feelings",
+      "Offer practical support"
+    ],
+    "tips_hi": [
+      "ठीक करने की कोशिश किए बिना सुनें",
+      "उनकी भावनाओं को मान्य करें",
+      "व्यावहारिक समर्थन प्रदान करें"
+    ],
+    "questions_en": [
+      "What's weighing on your mind?",
+      "How can I lighten your load?",
+      "What do you need from me right now?",
+      "Should I listen, advise, or distract?",
+      "What would make this week easier?",
+      "How can we decompress together?"
+    ],
+    "questions_hi": [
+      "आपके दिमाग पर क्या वजन है?",
+      "मैं आपका बोझ कैसे हल्का कर सकता हूं?",
+      "अभी आपको मुझसे क्या चाहिए?",
+      "क्या मुझे सुनना, सलाह देना या विचलित करना चाहिए?",
+      "इस सप्ताह को क्या आसान बना सकता है?",
+      "हम एक साथ डीकंप्रेस कैसे कर सकते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Apology and Forgiveness",
+    "title_hi": "माफी और क्षमा",
+    "description_en": "Address any unresolved hurts with genuine apologies and forgiveness",
+    "description_hi": "सच्ची माफी और क्षमा के साथ किसी भी अनसुलझे दर्द को संबोधित करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Create a safe, judgment-free space",
+      "Share any lingering hurt",
+      "Offer sincere apologies",
+      "Practice forgiveness",
+      "Discuss how to move forward",
+      "End with reconciliation"
+    ],
+    "instructions_hi": [
+      "एक सुरक्षित, निर्णय-मुक्त स्थान बनाएं",
+      "किसी भी लंबित दर्द को साझा करें",
+      "ईमानदार माफी दें",
+      "क्षमा का अभ्यास करें",
+      "चर्चा करें कि आगे कैसे बढ़ें",
+      "सुलह के साथ समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be humble and accountable",
+      "Avoid defensiveness",
+      "Choose forgiveness over resentment"
+    ],
+    "tips_hi": [
+      "विनम्र और जवाबदेह रहें",
+      "रक्षात्मकता से बचें",
+      "नाराजगी पर क्षमा चुनें"
+    ],
+    "questions_en": [
+      "Is there anything I haven't apologized for?",
+      "What hurt is still affecting you?",
+      "How can I make amends?",
+      "What do you need to forgive me?",
+      "How can we prevent this in future?",
+      "Can we start fresh from here?"
+    ],
+    "questions_hi": [
+      "क्या कुछ है जिसके लिए मैंने माफी नहीं मांगी है?",
+      "कौन सा दर्द अभी भी आपको प्रभावित कर रहा है?",
+      "मैं सुधार कैसे कर सकता हूं?",
+      "मुझे माफ करने के लिए आपको क्या चाहिए?",
+      "हम भविष्य में इसे कैसे रोक सकते हैं?",
+      "क्या हम यहां से नए सिरे से शुरू कर सकते हैं?"
+    ]
+  }
+]

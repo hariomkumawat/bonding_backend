@@ -1,0 +1,761 @@
+[{
+    "category": "Communication",
+    "title_en": "Unspoken Thoughts",
+    "title_hi": "अनकहे विचार",
+    "description_en": "Share thoughts and feelings you've been holding back",
+    "description_hi": "उन विचारों और भावनाओं को साझा करें जिन्हें आप रोक रहे हैं",
+    "difficulty": "deep",
+    "estimated_time_minutes": 35,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Create a completely safe, judgment-free space",
+      "Take turns sharing unspoken thoughts",
+      "Start with 'I've never told you",
+      "Listen with empathy and openness",
+      "Ask clarifying questions gently",
+      "Thank each other for the vulnerability"
+    ],
+    "instructions_hi": [
+      "पूरी तरह से सुरक्षित, निर्णय-मुक्त स्थान बनाएं",
+      "बारी-बारी से अनकहे विचार साझा करें",
+      "'मैंने आपको कभी नहीं बताया' से शुरू करें",
+      "सहानुभूति और खुलेपन के साथ सुनें",
+      "धीरे से स्पष्ट प्रश्न पूछें",
+      "कमजोरता के लिए एक-दूसरे को धन्यवाद दें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Start with smaller unspoken thoughts",
+      "Build courage gradually",
+      "Remember this deepens intimacy"
+    ],
+    "tips_hi": [
+      "छोटे अनकहे विचारों से शुरू करें",
+      "धीरे-धीरे साहस बनाएं",
+      "याद रखें कि यह अंतरंगता को गहरा करता है"
+    ],
+    "questions_en": [
+      "I've never told you that I feel",
+      "Something I've been afraid to share is",
+      "I've been holding back from saying",
+      "A fear I haven't expressed is",
+      "Something I wish you knew about me is",
+      "I've wanted to tell you that"
+    ],
+    "questions_hi": [
+      "मैंने आपको कभी नहीं बताया कि मुझे लगता है",
+      "कुछ जो मैं साझा करने से डर रहा हूं वह है",
+      "मैं कहने से रोक रहा हूं",
+      "एक डर जो मैंने व्यक्त नहीं किया है",
+      "कुछ जो मैं चाहता हूं कि आप मेरे बारे में जानें",
+      "मैं आपको बताना चाहता था कि"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Healing Old Wounds",
+    "title_hi": "पुराने घावों को भरना",
+    "description_en": "Address past hurts that still affect you and begin healing together",
+    "description_hi": "पिछली चोटों को संबोधित करें जो अभी भी आपको प्रभावित करती हैं और एक साथ उपचार शुरू करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 40,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Identify old wounds that need healing",
+      "Share the hurt without blame",
+      "Listen with compassion and validation",
+      "Acknowledge the pain caused",
+      "Discuss what healing looks like",
+      "Create a healing action plan"
+    ],
+    "instructions_hi": [
+      "पुराने घावों की पहचान करें जिन्हें उपचार की आवश्यकता है",
+      "बिना दोष के चोट साझा करें",
+      "करुणा और सत्यापन के साथ सुनें",
+      "कारण दर्द को स्वीकार करें",
+      "चर्चा करें कि उपचार कैसा दिखता है",
+      "एक उपचार कार्य योजना बनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Focus on healing, not reopening wounds",
+      "Validate all feelings",
+      "Be patient with the process"
+    ],
+    "tips_hi": [
+      "उपचार पर ध्यान दें, घावों को फिर से खोलने पर नहीं",
+      "सभी भावनाओं को मान्य करें",
+      "प्रक्रिया के साथ धैर्यवान रहें"
+    ],
+    "questions_en": [
+      "What old hurt still affects me?",
+      "What happened that I haven't fully healed from?",
+      "How has this wound shaped our relationship?",
+      "What do I need to heal this?",
+      "Can you help me heal from this?",
+      "What would closure look like?"
+    ],
+    "questions_hi": [
+      "कौन सी पुरानी चोट अभी भी मुझे प्रभावित करती है?",
+      "क्या हुआ जिससे मैं पूरी तरह से ठीक नहीं हुआ हूं?",
+      "इस घाव ने हमारे रिश्ते को कैसे आकार दिया है?",
+      "इसे ठीक करने के लिए मुझे क्या चाहिए?",
+      "क्या आप मुझे इससे ठीक होने में मदद कर सकते हैं?",
+      "समापन कैसा दिखेगा?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Deepest Regrets",
+    "title_hi": "गहरे पछतावे",
+    "description_en": "Share your deepest regrets with compassion and understanding",
+    "description_hi": "करुणा और समझ के साथ अपने गहरे पछतावे साझा करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 35,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Create a compassionate space",
+      "Share 3-5 deep regrets",
+      "Include both personal and relationship regrets",
+      "Listen without judgment",
+      "Offer forgiveness and understanding",
+      "Discuss how to move forward"
+    ],
+    "instructions_hi": [
+      "एक करुणामय स्थान बनाएं",
+      "3-5 गहरे पछतावे साझा करें",
+      "व्यक्तिगत और संबंध दोनों पछतावे शामिल करें",
+      "बिना निर्णय के सुनें",
+      "क्षमा और समझ प्रदान करें",
+      "चर्चा करें कि आगे कैसे बढ़ें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Regret is part of being human",
+      "Focus on learning and growth",
+      "Practice self-compassion"
+    ],
+    "tips_hi": [
+      "पछतावा मानव होने का हिस्सा है",
+      "सीखने और विकास पर ध्यान दें",
+      "आत्म-करुणा का अभ्यास करें"
+    ],
+    "questions_en": [
+      "What's my biggest regret in life?",
+      "What do I wish I had done differently in our relationship?",
+      "What opportunity did I miss?",
+      "What words do I wish I could take back?",
+      "What time have I wasted?",
+      "How can I make peace with this regret?"
+    ],
+    "questions_hi": [
+      "मेरे जीवन में सबसे बड़ा पछतावा क्या है?",
+      "मैं हमारे रिश्ते में क्या अलग करना चाहता था?",
+      "मैंने कौन सा अवसर खो दिया?",
+      "कौन से शब्द मैं वापस लेना चाहता हूं?",
+      "मैंने कौन सा समय बर्बाद किया है?",
+      "मैं इस पछतावे के साथ शांति कैसे बना सकता हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "What I've Learned From You",
+    "title_hi": "मैंने आपसे क्या सीखा है",
+    "description_en": "Discuss profound lessons you've learned from each other",
+    "description_hi": "गहन सबक पर चर्चा करें जो आपने एक-दूसरे से सीखे हैं",
+    "difficulty": "deep",
+    "estimated_time_minutes": 30,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Reflect on how your partner has taught you",
+      "Share 7-10 significant lessons learned",
+      "Include life lessons, not just relationship tips",
+      "Discuss how these lessons changed you",
+      "Express gratitude for their wisdom"
+    ],
+    "instructions_hi": [
+      "विचार करें कि आपके साथी ने आपको कैसे सिखाया है",
+      "7-10 महत्वपूर्ण सीखे गए पाठ साझा करें",
+      "जीवन के पाठ शामिल करें, न कि केवल संबंध टिप्स",
+      "चर्चा करें कि इन पाठों ने आपको कैसे बदल दिया",
+      "उनकी बुद्धिमत्ता के लिए आभार व्यक्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be specific about lessons",
+      "Show how you've applied them",
+      "Acknowledge their positive influence"
+    ],
+    "tips_hi": [
+      "पाठों के बारे में विशिष्ट रहें",
+      "दिखाएं कि आपने उन्हें कैसे लागू किया है",
+      "उनके सकारात्मक प्रभाव को स्वीकार करें"
+    ],
+    "questions_en": [
+      "What life lesson have you taught me?",
+      "How have you changed my perspective?",
+      "What strength have I developed from knowing you?",
+      "What wisdom have you shared?",
+      "What have you taught me about love?",
+      "How have you made me a better person?"
+    ],
+    "questions_hi": [
+      "आपने मुझे कौन सा जीवन पाठ सिखाया है?",
+      "आपने मेरे दृष्टिकोण को कैसे बदल दिया है?",
+      "आपको जानने से मैंने कौन सी ताकत विकसित की है?",
+      "आपने कौन सी बुद्धिमत्ता साझा की है?",
+      "आपने मुझे प्यार के बारे में क्या सिखाया है?",
+      "आपने मुझे बेहतर व्यक्ति कैसे बनाया है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Spiritual and Philosophical Beliefs",
+    "title_hi": "आध्यात्मिक और दार्शनिक विश्वास",
+    "description_en": "Explore your spiritual, religious, and philosophical beliefs deeply",
+    "description_hi": "अपने आध्यात्मिक, धार्मिक और दार्शनिक विश्वासों का गहराई से अन्वेषण करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 40,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Share your spiritual/religious background",
+      "Discuss current beliefs and practices",
+      "Talk about what gives life meaning",
+      "Explore questions about existence",
+      "Respect different belief systems",
+      "Find common spiritual ground"
+    ],
+    "instructions_hi": [
+      "अपनी आध्यात्मिक/धार्मिक पृष्ठभूमि साझा करें",
+      "वर्तमान विश्वासों और प्रथाओं पर चर्चा करें",
+      "बात करें कि जीवन को क्या अर्थ देता है",
+      "अस्तित्व के बारे में प्रश्नों का अन्वेषण करें",
+      "विभिन्न विश्वास प्रणालियों का सम्मान करें",
+      "सामान्य आध्यात्मिक आधार खोजें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Keep an open mind",
+      "Don't try to convert or convince",
+      "Seek understanding, not agreement"
+    ],
+    "tips_hi": [
+      "खुला दिमाग रखें",
+      "परिवर्तित या समझाने की कोशिश न करें",
+      "समझ की तलाश करें, समझौते की नहीं"
+    ],
+    "questions_en": [
+      "What do you believe about God/higher power?",
+      "What happens after death in your view?",
+      "What gives your life meaning?",
+      "What spiritual practices matter to you?",
+      "How do our beliefs differ or align?",
+      "What existential questions do you ponder?"
+    ],
+    "questions_hi": [
+      "आप भगवान/उच्च शक्ति के बारे में क्या विश्वास करते हैं?",
+      "आपके विचार में मृत्यु के बाद क्या होता है?",
+      "आपके जीवन को क्या अर्थ देता है?",
+      "कौन सी आध्यात्मिक प्रथाएं आपके लिए मायने रखती हैं?",
+      "हमारे विश्वास कैसे भिन्न या संरेखित हैं?",
+      "आप किन अस्तित्वगत प्रश्नों पर विचार करते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Life's Purpose Discussion",
+    "title_hi": "जीवन के उद्देश्य की चर्चा",
+    "description_en": "Explore your individual sense of purpose and meaning in life",
+    "description_hi": "जीवन में अपने व्यक्तिगत उद्देश्य और अर्थ का अन्वेषण करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 40,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Reflect deeply on your life's purpose",
+      "Share what makes you feel alive",
+      "Discuss your calling or passion",
+      "Talk about legacy and contribution",
+      "Explore how purposes can support each other",
+      "Create a shared sense of purpose"
+    ],
+    "instructions_hi": [
+      "अपने जीवन के उद्देश्य पर गहराई से विचार करें",
+      "साझा करें कि क्या आपको जीवित महसूस कराता है",
+      "अपनी बुलाहट या जुनून पर चर्चा करें",
+      "विरासत और योगदान के बारे में बात करें",
+      "पता लगाएं कि उद्देश्य एक-दूसरे का समर्थन कैसे कर सकते हैं",
+      "उद्देश्य की एक साझा भावना बनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Purpose can evolve over time",
+      "It's okay to still be searching",
+      "Support each other's purpose journey"
+    ],
+    "tips_hi": [
+      "उद्देश्य समय के साथ विकसित हो सकता है",
+      "अभी भी खोजना ठीक है",
+      "एक-दूसरे की उद्देश्य यात्रा का समर्थन करें"
+    ],
+    "questions_en": [
+      "What is my life's purpose?",
+      "What makes me feel most alive?",
+      "What contribution do I want to make?",
+      "What am I here to learn or teach?",
+      "How does our relationship serve my purpose?",
+      "What legacy do I want to leave?"
+    ],
+    "questions_hi": [
+      "मेरे जीवन का उद्देश्य क्या है?",
+      "मुझे सबसे अधिक जीवित क्या महसूस कराता है?",
+      "मैं क्या योगदान देना चाहता हूं?",
+      "मैं यहां क्या सीखने या सिखाने के लिए हूं?",
+      "हमारा रिश्ता मेरे उद्देश्य की सेवा कैसे करता है?",
+      "मैं क्या विरासत छोड़ना चाहता हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Death and Legacy Talk",
+    "title_hi": "मृत्यु और विरासत बात",
+    "description_en": "Discuss mortality, death, and the legacy you want to leave",
+    "description_hi": "मृत्यु दर, मृत्यु और आप जो विरासत छोड़ना चाहते हैं, उस पर चर्चा करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 45,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 25,
+    "coins_reward": 25,
+    "is_premium": true,
+    "unlock_cost_coins": 50,
+    "instructions_en": [
+      "Approach with sensitivity and openness",
+      "Discuss your mortality awareness",
+      "Share how you want to be remembered",
+      "Talk about end-of-life wishes",
+      "Discuss fears about death",
+      "Create meaning from mortality"
+    ],
+    "instructions_hi": [
+      "संवेदनशीलता और खुलेपन के साथ दृष्टिकोण करें",
+      "अपनी मृत्यु दर जागरूकता पर चर्चा करें",
+      "साझा करें कि आप कैसे याद किए जाना चाहते हैं",
+      "जीवन के अंत की इच्छाओं के बारे में बात करें",
+      "मृत्यु के बारे में भय पर चर्चा करें",
+      "मृत्यु दर से अर्थ बनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "This can be emotional - be gentle",
+      "Discussing death helps us live fully",
+      "Create practical plans if needed"
+    ],
+    "tips_hi": [
+      "यह भावनात्मक हो सकता है - कोमल रहें",
+      "मृत्यु पर चर्चा हमें पूरी तरह से जीने में मदद करती है",
+      "यदि आवश्यक हो तो व्यावहारिक योजनाएं बनाएं"
+    ],
+    "questions_en": [
+      "What are my fears about death?",
+      "How do I want to be remembered?",
+      "What legacy do I want to leave?",
+      "What would I regret not doing?",
+      "What matters most as life ends?",
+      "How should we honor each other if one dies?"
+    ],
+    "questions_hi": [
+      "मृत्यु के बारे में मेरे भय क्या हैं?",
+      "मैं कैसे याद किया जाना चाहता हूं?",
+      "मैं क्या विरासत छोड़ना चाहता हूं?",
+      "मुझे क्या न करने का पछतावा होगा?",
+      "जीवन समाप्त होने पर सबसे अधिक क्या मायने रखता है?",
+      "यदि एक मर जाता है तो हमें एक-दूसरे का सम्मान कैसे करना चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Core Identity Exploration",
+    "title_hi": "मूल पहचान अन्वेषण",
+    "description_en": "Understand each other's deepest sense of self and identity",
+    "description_hi": "एक-दूसरे की स्वयं और पहचान की गहरी भावना को समझें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 40,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Discuss what defines your identity",
+      "Share core aspects of who you are",
+      "Talk about identity evolution",
+      "Explore identity in relationship",
+      "Discuss maintaining self while in partnership",
+      "Celebrate each other's uniqueness"
+    ],
+    "instructions_hi": [
+      "चर्चा करें कि आपकी पहचान को क्या परिभाषित करता है",
+      "आप कौन हैं इसके मूल पहलुओं को साझा करें",
+      "पहचान विकास के बारे में बात करें",
+      "संबंध में पहचान का अन्वेषण करें",
+      "साझेदारी में रहते हुए स्वयं को बनाए रखने पर चर्चा करें",
+      "एक-दूसरे की विशिष्टता का जश्न मनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Identity is multifaceted",
+      "Allow space for individual identity",
+      "Support identity growth"
+    ],
+    "tips_hi": [
+      "पहचान बहुआयामी है",
+      "व्यक्तिगत पहचान के लिए स्थान की अनुमति दें",
+      "पहचान विकास का समर्थन करें"
+    ],
+    "questions_en": [
+      "What are the core parts of my identity?",
+      "How do I define myself?",
+      "What roles are central to who I am?",
+      "How has my identity evolved?",
+      "Do I maintain my identity in this relationship?",
+      "What makes me uniquely me?"
+    ],
+    "questions_hi": [
+      "मेरी पहचान के मूल भाग क्या हैं?",
+      "मैं खुद को कैसे परिभाषित करता हूं?",
+      "कौन सी भूमिकाएं मेरे केंद्र में हैं?",
+      "मेरी पहचान कैसे विकसित हुई है?",
+      "क्या मैं इस रिश्ते में अपनी पहचान बनाए रखता हूं?",
+      "मुझे विशिष्ट रूप से मैं क्या बनाता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Shame and Acceptance",
+    "title_hi": "शर्म और स्वीकृति",
+    "description_en": "Share shameful moments and practice radical acceptance",
+    "description_hi": "शर्मनाक क्षणों को साझा करें और कट्टरपंथी स्वीकृति का अभ्यास करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 40,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 25,
+    "coins_reward": 25,
+    "is_premium": true,
+    "unlock_cost_coins": 50,
+    "instructions_en": [
+      "Create the safest possible space",
+      "Share moments you feel ashamed about",
+      "Listen with complete acceptance",
+      "Validate their experience",
+      "Offer unconditional love and support",
+      "Practice releasing shame together"
+    ],
+    "instructions_hi": [
+      "सबसे सुरक्षित संभव स्थान बनाएं",
+      "ऐसे क्षण साझा करें जिनके बारे में आपको शर्म महसूस होती है",
+      "पूर्ण स्वीकृति के साथ सुनें",
+      "उनके अनुभव को मान्य करें",
+      "बिना शर्त प्यार और समर्थन प्रदान करें",
+      "एक साथ शर्म जारी करने का अभ्यास करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Shame thrives in secrecy",
+      "Sharing shame reduces its power",
+      "Acceptance heals shame"
+    ],
+    "tips_hi": [
+      "शर्म गोपनीयता में पनपती है",
+      "शर्म साझा करना इसकी शक्ति को कम करता है",
+      "स्वीकृति शर्म को ठीक करती है"
+    ],
+    "questions_en": [
+      "What am I most ashamed of?",
+      "What part of me do I hide in shame?",
+      "What mistake brings me shame?",
+      "Can you love me despite this shame?",
+      "What would releasing this shame feel like?",
+      "How can we heal shame together?"
+    ],
+    "questions_hi": [
+      "मुझे सबसे अधिक शर्म किस बात की है?",
+      "मैं खुद का कौन सा हिस्सा शर्म में छिपाता हूं?",
+      "कौन सी गलती मुझे शर्म लाती है?",
+      "क्या आप इस शर्म के बावजूद मुझसे प्यार कर सकते हैं?",
+      "इस शर्म को छोड़ना कैसा महसूस होगा?",
+      "हम एक साथ शर्म को कैसे ठीक कर सकते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Our Relationship Narrative",
+    "title_hi": "हमारी संबंध कथा",
+    "description_en": "Write your complete love story together from beginning to now",
+    "description_hi": "शुरुआत से अब तक अपनी पूरी प्रेम कहानी एक साथ लिखें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 50,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Start from how you met",
+      "Include major milestones and turning points",
+      "Share each person's perspective",
+      "Add challenges overcome together",
+      "Include moments of growth",
+      "Write your ongoing story"
+    ],
+    "instructions_hi": [
+      "आप कैसे मिले से शुरू करें",
+      "प्रमुख मील के पत्थर और मोड़ शामिल करें",
+      "प्रत्येक व्यक्ति का दृष्टिकोण साझा करें",
+      "एक साथ पार की गई चुनौतियां जोड़ें",
+      "विकास के क्षण शामिल करें",
+      "अपनी चल रही कहानी लिखें"
+    ],
+    "materials_needed_en": [
+      "Paper and pen or computer"
+    ],
+    "materials_needed_hi": [
+      "कागज और कलम या कंप्यूटर"
+    ],
+    "tips_en": [
+      "Include both perspectives",
+      "Make it detailed and vivid",
+      "Save this for future reading"
+    ],
+    "tips_hi": [
+      "दोनों दृष्टिकोण शामिल करें",
+      "इसे विस्तृत और जीवंत बनाएं",
+      "भविष्य में पढ़ने के लिए इसे सहेजें"
+    ],
+    "questions_en": [
+      "How did we meet?",
+      "What attracted us to each other?",
+      "What were the major turning points?",
+      "What challenges did we overcome?",
+      "How have we grown together?",
+      "What's the next chapter in our story?"
+    ],
+    "questions_hi": [
+      "हम कैसे मिले?",
+      "हमें एक-दूसरे की ओर क्या आकर्षित किया?",
+      "प्रमुख मोड़ क्या थे?",
+      "हमने कौन सी चुनौतियों पर काबू पाया?",
+      "हम एक साथ कैसे बढ़े हैं?",
+      "हमारी कहानी में अगला अध्याय क्या है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "What Breaking Up Would Mean",
+    "title_hi": "ब्रेकअप का क्या मतलब होगा",
+    "description_en": "Have an honest discussion about what losing each other would mean",
+    "description_hi": "एक-दूसरे को खोने का क्या मतलब होगा, इस पर ईमानदार चर्चा करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 35,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 25,
+    "coins_reward": 25,
+    "is_premium": true,
+    "unlock_cost_coins": 50,
+    "instructions_en": [
+      "Approach this with maturity and honesty",
+      "Discuss what you'd lose",
+      "Share what makes you stay",
+      "Talk about relationship value",
+      "Reaffirm commitment",
+      "Use this to deepen appreciation"
+    ],
+    "instructions_hi": [
+      "इसे परिपक्वता और ईमानदारी के साथ करें",
+      "चर्चा करें कि आप क्या खो देंगे",
+      "साझा करें कि क्या आपको रहने के लिए बनाता है",
+      "संबंध मूल्य के बारे में बात करें",
+      "प्रतिबद्धता की पुष्टि करें",
+      "प्रशंसा को गहरा करने के लिए इसका उपयोग करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "This isn't about threatening breakup",
+      "It's about understanding value",
+      "Use it to strengthen commitment"
+    ],
+    "tips_hi": [
+      "यह ब्रेकअप की धमकी देने के बारे में नहीं है",
+      "यह मूल्य को समझने के बारे में है",
+      "प्रतिबद्धता को मजबूत करने के लिए इसका उपयोग करें"
+    ],
+    "questions_en": [
+      "What would I lose if we broke up?",
+      "What makes me choose to stay?",
+      "What would life be without you?",
+      "What makes our relationship worth fighting for?",
+      "What fear does this thought bring up?",
+      "Why am I committed to this relationship?"
+    ],
+    "questions_hi": [
+      "यदि हम टूट जाते हैं तो मैं क्या खो दूंगा?",
+      "मुझे रहने के लिए क्या चुनने को कहता है?",
+      "आपके बिना जीवन कैसा होगा?",
+      "हमारे रिश्ते को लड़ने के लायक क्या बनाता है?",
+      "यह विचार किस डर को लाता है?",
+      "मैं इस रिश्ते के लिए प्रतिबद्ध क्यों हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Commitment Level Check",
+    "title_hi": "प्रतिबद्धता स्तर जांच",
+    "description_en": "Discuss your commitment levels and future intentions",
+    "description_hi": "अपने प्रतिबद्धता स्तरों और भविष्य के इरादों पर चर्चा करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 35,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Rate commitment level on scale 1-10",
+      "Discuss what commitment means to each",
+      "Talk about future plans together",
+      "Address any commitment fears",
+      "Align on relationship trajectory",
+      "Make commitment agreements"
+    ],
+    "instructions_hi": [
+      "1-10 के पैमाने पर प्रतिबद्धता स्तर रेट करें",
+      "चर्चा करें कि प्रतिबद्धता प्रत्येक के लिए क्या मायने रखती है",
+      "एक साथ भविष्य की योजनाओं के बारे में बात करें",
+      "किसी भी प्रतिबद्धता भय को संबोधित करें",
+      "संबंध प्रक्षेपवक्र पर संरेखित करें",
+      "प्रतिबद्धता समझौते करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be honest about commitment level",
+      "Different levels need discussion",
+      "Work toward alignment"
+    ],
+    "tips_hi": [
+      "प्रतिबद्धता स्तर के बारे में ईमानदार रहें",
+      "विभिन्न स्तरों पर चर्चा की आवश्यकता है",
+      "संरेखण की ओर काम करें"
+    ],
+    "questions_en": [
+      "What's my commitment level (1-10)?",
+      "What does commitment mean to me?",
+      "Where do I see us in 5 years?",
+      "What commitment fears do I have?",
+      "Are we on the same page about future?",
+      "What would deepen my commitment?"
+    ],
+    "questions_hi": [
+      "मेरा प्रतिबद्धता स्तर क्या है (1-10)?",
+      "प्रतिबद्धता मेरे लिए क्या मायने रखती है?",
+      "मैं हमें 5 साल में कहां देखता हूं?",
+      "मुझे कौन से प्रतिबद्धता भय हैं?",
+      "क्या हम भविष्य के बारे में एक ही पृष्ठ पर हैं?",
+      "मेरी प्रतिबद्धता को क्या गहरा करेगा?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Sexual Intimacy Deep Dive",
+    "title_hi": "यौन अंतरंगता गहरी डुबकी",
+    "description_en": "Have an open, honest conversation about physical intimacy and desires",
+    "description_hi": "शारीरिक अंतरंगता और इच्छाओं के बारे में खुली, ईमानदार बातचीत करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 40,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 25,
+    "coins_reward": 25,
+    "is_premium": true,
+    "unlock_cost_coins": 50,
+    "instructions_en": [
+      "Create a completely safe, judgment-free space",
+      "Discuss desires, needs, and boundaries",
+      "Share what makes you feel desired",
+      "Talk about frequency and satisfaction",
+      "Discuss fantasies if comfortable",
+      "Address any concerns openly"
+    ],
+    "instructions_hi": [
+      "पूरी तरह से सुरक्षित, निर्णय-मुक्त स्थान बनाएं",
+      "इच्छाओं, जरूरतों और सीमाओं पर चर्चा करें",
+      "साझा करें कि क्या आपको वांछित महसूस कराता है",
+      "आवृत्ति और संतुष्टि के बारे में बात करें",
+      "यदि आरामदायक हो तो कल्पनाओं पर चर्चा करें",
+      "किसी भी चिंता को खुलकर संबोधित करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Use 'I' statements",
+      "Focus on connection, not performance",
+      "Be vulnerable and honest"
+    ],
+    "tips_hi": [
+      "'मैं' कथनों का उपयोग करें",
+      "प्रदर्शन पर नहीं, कनेक्शन पर ध्यान दें",
+      "कमजोर और ईमानदार रहें"
+    ],
+    "questions_en": [
+      "What makes me feel desired?",
+      "What do I need more/less of?",
+      "Am I satisfied with our intimacy?",
+      "What boundaries are important?",
+      "What can we explore together?",
+      "How can we deepen physical connection?"
+    ],
+    "questions_hi": [
+      "मुझे क्या वांछित महसूस कराता है?",
+      "मुझे किसकी अधिक/कम आवश्यकता है?",
+      "क्या मैं हमारी अंतरंगता से संतुष्ट हूं?",
+      "कौन सी सीमाएं महत्वपूर्ण हैं?",
+      "हम एक साथ क्या खोज सकते हैं?",
+      "हम शारीरिक कनेक्शन को कैसे गहरा कर सकते हैं?"
+    ]
+  }
+]

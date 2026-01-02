@@ -1,0 +1,424 @@
+[
+  {
+    
+    "title_en": "Emoji Story Challenge",
+    "title_hi": "इमोजी कहानी चुनौती",
+    "description_en": "Create a fun story using only emojis and let your partner guess what it means",
+    "description_hi": "केवल इमोजी का उपयोग करके एक मजेदार कहानी बनाएं और अपने साथी को अनुमान लगाने दें",
+    "instructions_en": [
+      "Partner 1: Create a story using 8-10 emojis (like your day, a memory, or a movie)",
+      "Send the emoji sequence to your partner",
+      "Partner 2: Try to guess what the story means",
+      "Take turns and create 3 emoji stories each",
+      "Share your funniest interpretations"
+    ],
+    "instructions_hi": [
+      "साथी 1: 8-10 इमोजी का उपयोग करके एक कहानी बनाएं (जैसे आपका दिन, एक याद, या एक फिल्म)",
+      "अपने साथी को इमोजी अनुक्रम भेजें",
+      "साथी 2: अनुमान लगाने की कोशिश करें कि कहानी का क्या अर्थ है",
+      "बारी-बारी से और प्रत्येक 3 इमोजी कहानियां बनाएं",
+      "अपनी सबसे मज़ेदार व्याख्याओं को साझा करें"
+    ],
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "together",
+    "materials_needed_en": ["Phone with emoji keyboard"],
+    "materials_needed_hi": ["इमोजी कीबोर्ड वाला फोन"],
+    "tips_en": [
+      "Start with simple stories like 'my morning routine'",
+      "Use expressive emojis to make it easier",
+      "Don't overthink - have fun with it!"
+    ],
+    "tips_hi": [
+      "'मेरी सुबह की दिनचर्या' जैसी सरल कहानियों से शुरू करें",
+      "इसे आसान बनाने के लिए अभिव्यंजक इमोजी का उपयोग करें",
+      "ज्यादा मत सोचो - इसका आनंद लें!"
+    ],
+    "questions_en": [
+      "Which emoji story was the hardest to guess?",
+      "What was the funniest interpretation?",
+      "Did you learn any new emojis your partner uses often?"
+    ],
+    "questions_hi": [
+      "कौन सी इमोजी कहानी का अनुमान लगाना सबसे कठिन था?",
+      "सबसे मज़ेदार व्याख्या क्या थी?",
+      "क्या आपने कोई नई इमोजी सीखी जो आपका साथी अक्सर उपयोग करता है?"
+    ],
+    "points_reward": 10,
+    "coins_reward": 10,
+    "category": "Fun"
+  },
+  {
+   
+    "title_en": "Dance Party for Two",
+    "title_hi": "दो लोगों के लिए डांस पार्टी",
+    "description_en": "Play your favorite songs and have an impromptu dance party together",
+    "description_hi": "अपने पसंदीदा गाने बजाएं और एक साथ अचानक डांस पार्टी करें",
+    "instructions_en": [
+      "Each person picks 3 favorite songs",
+      "Clear some space in your room",
+      "Take turns playing songs and dance together",
+      "Try silly dance moves and make each other laugh",
+      "Record a 10-second clip of your best moves (optional)"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति 3 पसंदीदा गाने चुनें",
+      "अपने कमरे में कुछ जगह खाली करें",
+      "बारी-बारी से गाने बजाएं और एक साथ नृत्य करें",
+      "मूर्खतापूर्ण नृत्य चालें आजमाएं और एक-दूसरे को हंसाएं",
+      "अपनी सर्वश्रेष्ठ चालों का 10-सेकंड का क्लिप रिकॉर्ड करें (वैकल्पिक)"
+    ],
+    "difficulty": "easy",
+    "estimated_time_minutes": 20,
+    "best_time": "evening",
+    "mode": "together",
+    "materials_needed_en": ["Music player or phone", "Space to dance"],
+    "materials_needed_hi": ["म्यूजिक प्लेयर या फोन", "नृत्य करने के लिए जगह"],
+    "tips_en": [
+      "Don't worry about looking good - just have fun!",
+      "Mix fast and slow songs for variety",
+      "Try dancing styles from different cultures"
+    ],
+    "tips_hi": [
+      "अच्छा दिखने की चिंता न करें - बस मजे करें!",
+      "विविधता के लिए तेज और धीमे गाने मिलाएं",
+      "विभिन्न संस्कृतियों की नृत्य शैलियों को आजमाएं"
+    ],
+    "questions_en": [
+      "Which song made you dance the most?",
+      "What's one dance move your partner did that made you laugh?",
+      "Would you do this again?"
+    ],
+    "questions_hi": [
+      "किस गाने ने आपको सबसे ज्यादा नृत्य कराया?",
+      "आपके साथी की एक नृत्य चाल क्या थी जिसने आपको हंसाया?",
+      "क्या आप इसे फिर से करेंगे?"
+    ],
+    "points_reward": 15,
+    "coins_reward": 12,
+    "category": "Fun"
+  },
+  {
+   
+    "title_en": "Funny Face Photo Booth",
+    "title_hi": "मज़ेदार चेहरे फोटो बूथ",
+    "description_en": "Take silly photos together with different funny expressions and poses",
+    "description_hi": "विभिन्न मज़ेदार भावों और मुद्राओं के साथ एक साथ मूर्खतापूर्ण तस्वीरें लें",
+    "instructions_en": [
+      "Set up your phone camera with a timer or selfie mode",
+      "Take 10 photos with different themes: angry faces, sad faces, surprised faces, silly faces, romantic faces",
+      "Try copying famous meme faces",
+      "Use props if available (hats, glasses, pillows)",
+      "Choose your favorite 3 photos to save"
+    ],
+    "instructions_hi": [
+      "टाइमर या सेल्फी मोड के साथ अपने फोन कैमरे को सेट करें",
+      "विभिन्न थीम के साथ 10 तस्वीरें लें: गुस्सा चेहरे, उदास चेहरे, हैरान चेहरे, मूर्ख चेहरे, रोमांटिक चेहरे",
+      "प्रसिद्ध मीम चेहरों की नकल करने का प्रयास करें",
+      "यदि उपलब्ध हो तो प्रॉप्स का उपयोग करें (टोपी, चश्मा, तकिए)",
+      "सहेजने के लिए अपनी पसंदीदा 3 तस्वीरें चुनें"
+    ],
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "together",
+    "materials_needed_en": ["Phone camera", "Props (optional)"],
+    "materials_needed_hi": ["फोन कैमरा", "प्रॉप्स (वैकल्पिक)"],
+    "tips_en": [
+      "Good lighting makes photos more fun",
+      "Don't be shy - the sillier the better!",
+      "Try taking photos from different angles"
+    ],
+    "tips_hi": [
+      "अच्छी रोशनी तस्वीरों को और मज़ेदार बनाती है",
+      "शर्मीले मत बनो - जितना मूर्खतापूर्ण उतना बेहतर!",
+      "विभिन्न कोणों से तस्वीरें लेने का प्रयास करें"
+    ],
+    "questions_en": [
+      "Which photo was your favorite?",
+      "Which expression was hardest to make?",
+      "Would you share these photos with friends?"
+    ],
+    "questions_hi": [
+      "कौन सी तस्वीर आपकी पसंदीदा थी?",
+      "कौन सा भाव बनाना सबसे कठिन था?",
+      "क्या आप इन तस्वीरों को दोस्तों के साथ साझा करेंगे?"
+    ],
+    "points_reward": 15,
+    "coins_reward": 12,
+    "category": "Fun"
+  },
+  {
+    
+    "title_en": "Rapid Fire Questions",
+    "title_hi": "रैपिड फायर सवाल",
+    "description_en": "Answer quick fun questions without thinking too much - first answer that comes to mind!",
+    "description_hi": "ज्यादा सोचे बिना त्वरित मज़ेदार सवालों के जवाब दें - जो पहला जवाब दिमाग में आए!",
+    "instructions_en": [
+      "Set a timer for 10 seconds per question",
+      "Partner 1 asks questions, Partner 2 answers quickly",
+      "No thinking - just say the first thing that comes to mind",
+      "Switch roles after 10 questions",
+      "Laugh at the unexpected answers!"
+    ],
+    "instructions_hi": [
+      "प्रति प्रश्न 10 सेकंड के लिए टाइमर सेट करें",
+      "साथी 1 सवाल पूछता है, साथी 2 जल्दी जवाब देता है",
+      "कोई सोच नहीं - बस पहली बात कहो जो दिमाग में आए",
+      "10 सवालों के बाद भूमिकाएं बदलें",
+      "अप्रत्याशित उत्तरों पर हंसें!"
+    ],
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "together",
+    "materials_needed_en": ["Timer", "List of questions (provided in app)"],
+    "materials_needed_hi": ["टाइमर", "सवालों की सूची (ऐप में प्रदान की गई)"],
+    "tips_en": [
+      "Keep questions light and fun",
+      "Don't judge the answers - it's all for fun",
+      "The sillier the answer, the better!"
+    ],
+    "tips_hi": [
+      "सवालों को हल्का और मज़ेदार रखें",
+      "उत्तरों को जज न करें - यह सब मज़े के लिए है",
+      "जितना मूर्खतापूर्ण उत्तर, उतना बेहतर!"
+    ],
+    "questions_en": [
+      "Pizza or Burger?",
+      "Beach or Mountains?",
+      "Superpower you'd want?",
+      "Celebrity you'd swap lives with?",
+      "Favorite childhood cartoon?",
+      "Morning person or Night owl?",
+      "Coffee or Tea?",
+      "Cats or Dogs?",
+      "Summer or Winter?",
+      "Book or Movie?",
+      "What surprised you most about your partner's answers?",
+      "Did any answer make you laugh out loud?",
+      "What's one answer you want to discuss more?"
+    ],
+    "questions_hi": [
+      "पिज्जा या बर्गर?",
+      "समुद्र तट या पहाड़?",
+      "आप कौन सी महाशक्ति चाहेंगे?",
+      "आप किस सेलिब्रिटी के साथ जीवन बदलना चाहेंगे?",
+      "पसंदीदा बचपन का कार्टून?",
+      "सुबह का व्यक्ति या रात का उल्लू?",
+      "कॉफी या चाय?",
+      "बिल्ली या कुत्ते?",
+      "गर्मी या सर्दी?",
+      "किताब या फिल्म?",
+      "अपने साथी के उत्तरों के बारे में आपको सबसे ज्यादा क्या हैरान किया?",
+      "क्या किसी जवाब ने आपको जोर से हंसाया?",
+      "एक उत्तर क्या है जिस पर आप अधिक चर्चा करना चाहते हैं?"
+    ],
+    "points_reward": 15,
+    "coins_reward": 12,
+    "category": "Fun"
+  },
+  {
+    
+    "title_en": "Mimic Master Challenge",
+    "title_hi": "मिमिक मास्टर चुनौती",
+    "description_en": "Imitate famous people, animals, or each other and guess who's being mimicked",
+    "description_hi": "प्रसिद्ध लोगों, जानवरों या एक-दूसरे की नकल करें और अनुमान लगाएं कि किसकी नकल की जा रही है",
+    "instructions_en": [
+      "Partner 1 picks a category: Celebrity, Animal, or Each Other",
+      "Act it out without speaking (use gestures, expressions, sounds)",
+      "Partner 2 has 30 seconds to guess",
+      "Take turns doing 5 mimics each",
+      "Award points for correct guesses"
+    ],
+    "instructions_hi": [
+      "साथी 1 एक श्रेणी चुनता है: सेलिब्रिटी, जानवर, या एक-दूसरे",
+      "बिना बोले इसे अभिनय करें (इशारों, भावों, ध्वनियों का उपयोग करें)",
+      "साथी 2 के पास अनुमान लगाने के लिए 30 सेकंड हैं",
+      "बारी-बारी से प्रत्येक 5 नकलें करें",
+      "सही अनुमानों के लिए अंक दें"
+    ],
+    "difficulty": "easy",
+    "estimated_time_minutes": 20,
+    "best_time": "anytime",
+    "mode": "together",
+    "materials_needed_en": ["Timer"],
+    "materials_needed_hi": ["टाइमर"],
+    "tips_en": [
+      "Exaggerate your movements for better effect",
+      "Focus on signature moves or expressions",
+      "It's okay to be silly - that's the fun part!"
+    ],
+    "tips_hi": [
+      "बेहतर प्रभाव के लिए अपने आंदोलनों को बढ़ा-चढ़ाकर दिखाएं",
+      "हस्ताक्षर चालों या भावों पर ध्यान दें",
+      "मूर्खतापूर्ण होना ठीक है - यही मज़ेदार हिस्सा है!"
+    ],
+    "questions_en": [
+      "Which mimic was the easiest to guess?",
+      "Which one had you both laughing the most?",
+      "Who's better at mimicking - you or your partner?"
+    ],
+    "questions_hi": [
+      "कौन सी नकल का अनुमान लगाना सबसे आसान था?",
+      "किसने आप दोनों को सबसे ज्यादा हंसाया?",
+      "नकल करने में कौन बेहतर है - आप या आपका साथी?"
+    ],
+    "points_reward": 20,
+    "coins_reward": 15,
+    "category": "Fun"
+  },
+  {
+    
+    "title_en": "Build a Blanket Fort",
+    "title_hi": "कंबल का किला बनाएं",
+    "description_en": "Get creative and build a cozy fort using blankets, pillows, and furniture",
+    "description_hi": "रचनात्मक हो जाएं और कंबल, तकिए और फर्नीचर का उपयोग करके एक आरामदायक किला बनाएं",
+    "instructions_en": [
+      "Gather all available blankets, pillows, and sheets",
+      "Use chairs, sofas, or tables as fort support",
+      "Work together to create a cozy space",
+      "Decorate the inside with fairy lights or cushions (optional)",
+      "Spend 15 minutes inside chatting or playing a game"
+    ],
+    "instructions_hi": [
+      "सभी उपलब्ध कंबल, तकिए और चादरें इकट्ठा करें",
+      "किले के समर्थन के रूप में कुर्सियों, सोफे या टेबल का उपयोग करें",
+      "एक आरामदायक स्थान बनाने के लिए एक साथ काम करें",
+      "फेयरी लाइट्स या कुशन से अंदर सजाएं (वैकल्पिक)",
+      "अंदर 15 मिनट बातचीत करते हुए या गेम खेलते हुए बिताएं"
+    ],
+    "difficulty": "easy",
+    "estimated_time_minutes": 30,
+    "best_time": "evening",
+    "mode": "together",
+    "materials_needed_en": ["Blankets", "Pillows", "Chairs/Furniture", "Fairy lights (optional)"],
+    "materials_needed_hi": ["कंबल", "तकिए", "कुर्सियां/फर्नीचर", "फेयरी लाइट्स (वैकल्पिक)"],
+    "tips_en": [
+      "Use clips or heavy books to hold blankets in place",
+      "Make it spacious enough for both of you",
+      "Add snacks for extra coziness!"
+    ],
+    "tips_hi": [
+      "कंबलों को जगह पर रखने के लिए क्लिप या भारी किताबों का उपयोग करें",
+      "इसे आप दोनों के लिए पर्याप्त विशाल बनाएं",
+      "अतिरिक्त आराम के लिए स्नैक्स जोड़ें!"
+    ],
+    "questions_en": [
+      "How did you work together to build it?",
+      "What would you add to make it even better?",
+      "On a scale of 1-10, how cozy was your fort?"
+    ],
+    "questions_hi": [
+      "आपने इसे बनाने के लिए एक साथ कैसे काम किया?",
+      "इसे और भी बेहतर बनाने के लिए आप क्या जोड़ेंगे?",
+      "1-10 के पैमाने पर, आपका किला कितना आरामदायक था?"
+    ],
+    "points_reward": 25,
+    "coins_reward": 18,
+    "category": "Fun"
+  },
+  {
+    
+    "title_en": "Sing Karaoke Duet",
+    "title_hi": "कराओके युगल गाना गाएं",
+    "description_en": "Pick a favorite song and sing together - even if you're terrible singers!",
+    "description_hi": "एक पसंदीदा गाना चुनें और एक साथ गाएं - भले ही आप भयानक गायक हों!",
+    "instructions_en": [
+      "Choose a song you both know (or use karaoke app/YouTube)",
+      "Decide who sings which parts",
+      "Practice once together",
+      "Perform your duet with full energy!",
+      "Record it if you dare (optional)"
+    ],
+    "instructions_hi": [
+      "एक गाना चुनें जिसे आप दोनों जानते हैं (या कराओके ऐप/यूट्यूब का उपयोग करें)",
+      "तय करें कौन कौन से भाग गाता है",
+      "एक बार एक साथ अभ्यास करें",
+      "पूरी ऊर्जा के साथ अपना युगल गीत प्रस्तुत करें!",
+      "यदि आप साहस करते हैं तो इसे रिकॉर्ड करें (वैकल्पिक)"
+    ],
+    "difficulty": "medium",
+    "estimated_time_minutes": 20,
+    "best_time": "evening",
+    "mode": "together",
+    "materials_needed_en": ["Phone with music/karaoke app", "Lyrics (optional)"],
+    "materials_needed_hi": ["संगीत/कराओके ऐप के साथ फोन", "गीत (वैकल्पिक)"],
+    "tips_en": [
+      "Don't worry about being perfect - have fun!",
+      "Use hairbrush as microphone for added drama",
+      "Choose songs with clear duet parts"
+    ],
+    "tips_hi": [
+      "पूर्ण होने की चिंता न करें - मज़े करें!",
+      "अतिरिक्त नाटक के लिए हेयरब्रश को माइक्रोफोन के रूप में उपयोग करें",
+      "स्पष्ट युगल भागों वाले गाने चुनें"
+    ],
+    "questions_en": [
+      "How well did you harmonize together?",
+      "Would you perform this for friends?",
+      "What's your next karaoke song going to be?"
+    ],
+    "questions_hi": [
+      "आप दोनों ने एक साथ कितना अच्छा सामंजस्य किया?",
+      "क्या आप दोस्तों के लिए यह प्रदर्शन करेंगे?",
+      "आपका अगला कराओके गाना क्या होगा?"
+    ],
+    "points_reward": 25,
+    "coins_reward": 18,
+    "category": "Fun"
+  },
+  {
+    
+    "title_en": "Blindfolded Taste Test",
+    "title_hi": "आंखों पर पट्टी बांधकर स्वाद परीक्षण",
+    "description_en": "Guess different foods while blindfolded - a fun sensory challenge!",
+    "description_hi": "आंखों पर पट्टी बांधकर विभिन्न खाद्य पदार्थों का अनुमान लगाएं - एक मजेदार संवेदी चुनौती!",
+    "instructions_en": [
+      "Gather 8-10 different food items (sweet, salty, sour, spicy)",
+      "Partner 1 wears blindfold",
+      "Partner 2 feeds small bites, one at a time",
+      "Guess what each food is",
+      "Switch roles and repeat",
+      "Count how many each person guessed correctly"
+    ],
+    "instructions_hi": [
+      "8-10 विभिन्न खाद्य पदार्थ इकट्ठा करें (मीठा, नमकीन, खट्टा, मसालेदार)",
+      "साथी 1 आंख पर पट्टी बांधता है",
+      "साथी 2 एक समय में छोटे-छोटे टुकड़े खिलाता है",
+      "अनुमान लगाएं कि प्रत्येक भोजन क्या है",
+      "भूमिकाएं बदलें और दोहराएं",
+      "गिनें कि प्रत्येक व्यक्ति ने कितनों का सही अनुमान लगाया"
+    ],
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "materials_needed_en": ["Blindfold or scarf", "8-10 different foods", "Small plates"],
+    "materials_needed_hi": ["पट्टी या स्कार्फ", "8-10 विभिन्न खाद्य पदार्थ", "छोटी प्लेटें"],
+    "tips_en": [
+      "Use foods with distinct tastes",
+      "Include some tricky ones like pickles or spices",
+      "Keep water nearby to cleanse palate"
+    ],
+    "tips_hi": [
+      "विशिष्ट स्वाद वाले खाद्य पदार्थों का उपयोग करें",
+      "अचार या मसालों जैसे कुछ मुश्किल शामिल करें",
+      "स्वाद साफ करने के लिए पानी पास रखें"
+    ],
+    "questions_en": [
+      "Which food was easiest to identify?",
+      "Which one completely fooled you?",
+      "What surprised you most about tasting without seeing?"
+    ],
+    "questions_hi": [
+      "किस भोजन की पहचान करना सबसे आसान था?",
+      "किसने आपको पूरी तरह से मूर्ख बनाया?",
+      "बिना देखे स्वाद लेने के बारे में आपको सबसे ज्यादा क्या हैरान किया?"
+    ],
+    "points_reward": 30,
+    "coins_reward": 20,
+    "category": "Fun"
+  }
+]

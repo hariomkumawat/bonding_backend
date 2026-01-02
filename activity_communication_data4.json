@@ -1,0 +1,750 @@
+[
+  {
+    "category": "Communication",
+    "title_en": "Relationship Rituals",
+    "title_hi": "संबंध अनुष्ठान",
+    "description_en": "Create and discuss meaningful rituals and traditions for your relationship",
+    "description_hi": "अपने रिश्ते के लिए सार्थक अनुष्ठान और परंपराएं बनाएं और चर्चा करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "List current rituals you have",
+      "Brainstorm new ones to add",
+      "Discuss daily, weekly, monthly rituals",
+      "Choose 3 to start immediately",
+      "Commit to maintaining them"
+    ],
+    "instructions_hi": [
+      "वर्तमान अनुष्ठानों की सूची बनाएं",
+      "जोड़ने के लिए नए विचार करें",
+      "दैनिक, साप्ताहिक, मासिक अनुष्ठानों पर चर्चा करें",
+      "तुरंत शुरू करने के लिए 3 चुनें",
+      "उन्हें बनाए रखने के लिए प्रतिबद्ध हों"
+    ],
+    "materials_needed_en": [
+      "Paper and pen"
+    ],
+    "materials_needed_hi": [
+      "कागज और कलम"
+    ],
+    "tips_en": [
+      "Make them simple and sustainable",
+      "Include connection-building rituals",
+      "Be consistent with them"
+    ],
+    "tips_hi": [
+      "उन्हें सरल और टिकाऊ बनाएं",
+      "कनेक्शन-निर्माण अनुष्ठान शामिल करें",
+      "उनके साथ सुसंगत रहें"
+    ],
+    "questions_en": [
+      "What daily ritual keeps us connected?",
+      "What weekly date should we have?",
+      "What monthly check-in should we do?",
+      "What annual tradition should we create?",
+      "What morning/evening ritual would help us?",
+      "What ritual celebrates our love?"
+    ],
+    "questions_hi": [
+      "कौन सा दैनिक अनुष्ठान हमें जुड़ा रखता है?",
+      "हमें कौन सी साप्ताहिक तारीख रखनी चाहिए?",
+      "हमें कौन सा मासिक चेक-इन करना चाहिए?",
+      "हमें कौन सी वार्षिक परंपरा बनानी चाहिए?",
+      "कौन सा सुबह/शाम का अनुष्ठान हमारी मदद करेगा?",
+      "कौन सा अनुष्ठान हमारे प्यार का जश्न मनाता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "What Makes Us Unique",
+    "title_hi": "क्या हमें अद्वितीय बनाता है",
+    "description_en": "Celebrate what makes your relationship special and different",
+    "description_hi": "मनाएं कि क्या आपके रिश्ते को विशेष और अलग बनाता है",
+    "difficulty": "medium",
+    "estimated_time_minutes": 20,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "List what makes your relationship unique",
+      "Share inside jokes or traditions",
+      "Discuss your special dynamic",
+      "Celebrate your quirks together",
+      "Express pride in your relationship"
+    ],
+    "instructions_hi": [
+      "सूची बनाएं कि क्या आपके रिश्ते को अद्वितीय बनाता है",
+      "अंदरूनी चुटकुले या परंपराएं साझा करें",
+      "अपनी विशेष गतिशीलता पर चर्चा करें",
+      "एक साथ अपनी विचित्रताओं का जश्न मनाएं",
+      "अपने रिश्ते में गर्व व्यक्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Embrace your uniqueness",
+      "Don't compare to others",
+      "Celebrate your special bond"
+    ],
+    "tips_hi": [
+      "अपनी विशिष्टता को गले लगाओ",
+      "दूसरों से तुलना न करें",
+      "अपने विशेष बंधन का जश्न मनाएं"
+    ],
+    "questions_en": [
+      "What's our special inside joke?",
+      "What quirk do we share?",
+      "What makes our love story unique?",
+      "What do we do that other couples don't?",
+      "What nickname or phrase is just ours?",
+      "What makes us 'us'?"
+    ],
+    "questions_hi": [
+      "हमारा विशेष अंदरूनी चुटकुला क्या है?",
+      "हम कौन सी विचित्रता साझा करते हैं?",
+      "हमारी प्रेम कहानी को अद्वितीय क्या बनाता है?",
+      "हम क्या करते हैं जो अन्य जोड़े नहीं करते?",
+      "कौन सा उपनाम या वाक्यांश सिर्फ हमारा है?",
+      "क्या हमें 'हम' बनाता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Intimacy Conversation",
+    "title_hi": "अंतरंगता बातचीत",
+    "description_en": "Discuss physical and emotional intimacy needs openly",
+    "description_hi": "शारीरिक और भावनात्मक अंतरंगता की जरूरतों पर खुलकर चर्चा करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Create a comfortable, private setting",
+      "Discuss both physical and emotional intimacy",
+      "Share needs and desires openly",
+      "Talk about what makes you feel connected",
+      "Discuss boundaries and comfort levels"
+    ],
+    "instructions_hi": [
+      "एक आरामदायक, निजी सेटिंग बनाएं",
+      "शारीरिक और भावनात्मक दोनों अंतरंगता पर चर्चा करें",
+      "जरूरतों और इच्छाओं को खुलकर साझा करें",
+      "बात करें कि क्या आपको जुड़ा हुआ महसूस कराता है",
+      "सीमाओं और आराम के स्तर पर चर्चा करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be vulnerable and honest",
+      "Listen without judgment",
+      "Prioritize emotional safety"
+    ],
+    "tips_hi": [
+      "कमजोर और ईमानदार रहें",
+      "बिना निर्णय के सुनें",
+      "भावनात्मक सुरक्षा को प्राथमिकता दें"
+    ],
+    "questions_en": [
+      "What makes you feel most loved physically?",
+      "What creates emotional intimacy for you?",
+      "What can I do to make you feel desired?",
+      "What affection do you crave?",
+      "How can we deepen our connection?",
+      "What makes you feel safe to be vulnerable?"
+    ],
+    "questions_hi": [
+      "शारीरिक रूप से क्या आपको सबसे अधिक प्यार महसूस कराता है?",
+      "आपके लिए भावनात्मक अंतरंगता क्या बनाती है?",
+      "मैं आपको वांछित महसूस कराने के लिए क्या कर सकता हूं?",
+      "आप किस स्नेह की लालसा करते हैं?",
+      "हम अपने संबंध को कैसे गहरा कर सकते हैं?",
+      "क्या आपको कमजोर होने के लिए सुरक्षित महसूस कराता है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Family Background Exploration",
+    "title_hi": "पारिवारिक पृष्ठभूमि अन्वेषण",
+    "description_en": "Share and understand each other's family dynamics and upbringing",
+    "description_hi": "एक-दूसरे की पारिवारिक गतिशीलता और पालन-पोषण को साझा करें और समझें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Share about your family structure",
+      "Discuss family dynamics growing up",
+      "Talk about influential family members",
+      "Share family patterns you've noticed",
+      "Discuss what you want to keep or change"
+    ],
+    "instructions_hi": [
+      "अपनी पारिवारिक संरचना के बारे में साझा करें",
+      "बड़े होने के दौरान पारिवारिक गतिशीलता पर चर्चा करें",
+      "प्रभावशाली पारिवारिक सदस्यों के बारे में बात करें",
+      "आपने जो पारिवारिक पैटर्न देखे हैं उन्हें साझा करें",
+      "चर्चा करें कि आप क्या रखना या बदलना चाहते हैं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be compassionate and understanding",
+      "Recognize how upbringing shapes you",
+      "Support healing from past hurts"
+    ],
+    "tips_hi": [
+      "दयालु और समझदार रहें",
+      "पहचानें कि पालन-पोषण आपको कैसे आकार देता है",
+      "पिछली चोटों से उपचार का समर्थन करें"
+    ],
+    "questions_en": [
+      "What was your family like growing up?",
+      "What family values were important?",
+      "Who influenced you most in your family?",
+      "What family patterns do you see in yourself?",
+      "What do you want differently for us?",
+      "How can I support you regarding family?"
+    ],
+    "questions_hi": [
+      "बड़े होने के दौरान आपका परिवार कैसा था?",
+      "कौन से पारिवारिक मूल्य महत्वपूर्ण थे?",
+      "आपके परिवार में किसने आपको सबसे अधिक प्रभावित किया?",
+      "आप खुद में कौन से पारिवारिक पैटर्न देखते हैं?",
+      "आप हमारे लिए क्या अलग चाहते हैं?",
+      "परिवार के संबंध में मैं आपका समर्थन कैसे कर सकता हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Fears and Worries Sharing",
+    "title_hi": "भय और चिंताएं साझाकरण",
+    "description_en": "Open up about deeper fears and worries in a safe space",
+    "description_hi": "एक सुरक्षित स्थान में गहरे भय और चिंताओं के बारे में खुलें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Create a judgment-free environment",
+      "Share 3-5 current fears or worries",
+      "Include relationship and personal fears",
+      "Listen with empathy and support",
+      "Offer reassurance and comfort"
+    ],
+    "instructions_hi": [
+      "एक निर्णय-मुक्त वातावरण बनाएं",
+      "3-5 वर्तमान भय या चिंताएं साझा करें",
+      "संबंध और व्यक्तिगत भय शामिल करें",
+      "सहानुभूति और समर्थन के साथ सुनें",
+      "आश्वासन और आराम प्रदान करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Validate their fears",
+      "Don't minimize their worries",
+      "Provide emotional safety"
+    ],
+    "tips_hi": [
+      "उनके भय को मान्य करें",
+      "उनकी चिंताओं को कम न करें",
+      "भावनात्मक सुरक्षा प्रदान करें"
+    ],
+    "questions_en": [
+      "What fear keeps you awake at night?",
+      "What about our future worries you?",
+      "What relationship fear do you have?",
+      "What personal insecurity affects you?",
+      "How can I help ease your worries?",
+      "What reassurance do you need from me?"
+    ],
+    "questions_hi": [
+      "कौन सा डर आपको रात में जगाए रखता है?",
+      "हमारे भविष्य के बारे में क्या आपको चिंतित करता है?",
+      "आपको कौन सा संबंध भय है?",
+      "कौन सी व्यक्तिगत असुरक्षा आपको प्रभावित करती है?",
+      "मैं आपकी चिंताओं को कम करने में कैसे मदद कर सकता हूं?",
+      "आपको मुझसे क्या आश्वासन चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Expectations vs Reality",
+    "title_hi": "अपेक्षाएं बनाम वास्तविकता",
+    "description_en": "Discuss expectations you had and how reality compares",
+    "description_hi": "चर्चा करें कि आपकी क्या अपेक्षाएं थीं और वास्तविकता कैसे तुलना करती है",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Share expectations you had early on",
+      "Discuss how reality has differed",
+      "Talk about pleasant surprises",
+      "Address unmet expectations",
+      "Adjust expectations together"
+    ],
+    "instructions_hi": [
+      "शुरुआत में आपकी अपेक्षाएं साझा करें",
+      "चर्चा करें कि वास्तविकता कैसे भिन्न रही है",
+      "सुखद आश्चर्य के बारे में बात करें",
+      "अधूरी अपेक्षाओं को संबोधित करें",
+      "एक साथ अपेक्षाएं समायोजित करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be honest but tactful",
+      "Focus on growth, not blame",
+      "Celebrate what exceeded expectations"
+    ],
+    "tips_hi": [
+      "ईमानदार लेकिन कुशल रहें",
+      "दोष पर नहीं, विकास पर ध्यान दें",
+      "जो अपेक्षाओं से अधिक था उसका जश्न मनाएं"
+    ],
+    "questions_en": [
+      "What expectation was exceeded?",
+      "What surprised you about me?",
+      "What expectation was unmet?",
+      "What did you expect that changed?",
+      "What reality is better than expected?",
+      "What expectation should we adjust?"
+    ],
+    "questions_hi": [
+      "कौन सी अपेक्षा पार हो गई?",
+      "मेरे बारे में क्या आपको आश्चर्यचकित किया?",
+      "कौन सी अपेक्षा अधूरी रही?",
+      "आपने क्या उम्मीद की थी जो बदल गई?",
+      "कौन सी वास्तविकता अपेक्षा से बेहतर है?",
+      "हमें कौन सी अपेक्षा समायोजित करनी चाहिए?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Individual Dreams Support",
+    "title_hi": "व्यक्तिगत सपने समर्थन",
+    "description_en": "Discuss personal dreams and how to support each other's individual goals",
+    "description_hi": "व्यक्तिगत सपनों पर चर्चा करें और एक-दूसरे के व्यक्तिगत लक्ष्यों का समर्थन कैसे करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Share 3 personal dreams or goals",
+      "Explain why each is important",
+      "Discuss potential challenges",
+      "Ask for specific support needed",
+      "Commit to supporting each other"
+    ],
+    "instructions_hi": [
+      "3 व्यक्तिगत सपने या लक्ष्य साझा करें",
+      "समझाएं कि प्रत्येक क्यों महत्वपूर्ण है",
+      "संभावित चुनौतियों पर चर्चा करें",
+      "आवश्यक विशिष्ट समर्थन के लिए पूछें",
+      "एक-दूसरे का समर्थन करने के लिए प्रतिबद्ध हों"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Encourage individual growth",
+      "Balance personal and couple goals",
+      "Be each other's biggest cheerleader"
+    ],
+    "tips_hi": [
+      "व्यक्तिगत विकास को प्रोत्साहित करें",
+      "व्यक्तिगत और जोड़े लक्ष्यों को संतुलित करें",
+      "एक-दूसरे के सबसे बड़े चीयरलीडर बनें"
+    ],
+    "questions_en": [
+      "What personal goal matters most to you?",
+      "What dream have you not shared yet?",
+      "What do you need from me to achieve it?",
+      "How can I make space for your growth?",
+      "What sacrifice might be needed?",
+      "How do we balance 'us' and 'me' time?"
+    ],
+    "questions_hi": [
+      "आपके लिए कौन सा व्यक्तिगत लक्ष्य सबसे अधिक मायने रखता है?",
+      "कौन सा सपना आपने अभी तक साझा नहीं किया है?",
+      "इसे हासिल करने के लिए आपको मुझसे क्या चाहिए?",
+      "मैं आपके विकास के लिए स्थान कैसे बना सकता हूं?",
+      "किस बलिदान की आवश्यकता हो सकती है?",
+      "हम 'हम' और 'मैं' समय को कैसे संतुलित करें?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Jealousy and Insecurity Talk",
+    "title_hi": "ईर्ष्या और असुरक्षा बात",
+    "description_en": "Address jealousy and insecurities in a healthy, open way",
+    "description_hi": "ईर्ष्या और असुरक्षा को स्वस्थ, खुले तरीके से संबोधित करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Create a safe, non-judgmental space",
+      "Share any jealousies or insecurities",
+      "Discuss root causes",
+      "Offer reassurance",
+      "Set boundaries that build trust"
+    ],
+    "instructions_hi": [
+      "एक सुरक्षित, गैर-निर्णयात्मक स्थान बनाएं",
+      "कोई भी ईर्ष्या या असुरक्षा साझा करें",
+      "मूल कारणों पर चर्चा करें",
+      "आश्वासन दें",
+      "सीमाएं निर्धारित करें जो विश्वास बनाती हैं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Don't dismiss their feelings",
+      "Take responsibility where needed",
+      "Build trust through actions"
+    ],
+    "tips_hi": [
+      "उनकी भावनाओं को खारिज न करें",
+      "जहां आवश्यक हो जिम्मेदारी लें",
+      "कार्यों के माध्यम से विश्वास बनाएं"
+    ],
+    "questions_en": [
+      "What triggers jealousy in you?",
+      "What insecurity surfaces in our relationship?",
+      "What can I do to make you feel secure?",
+      "What boundaries would help?",
+      "What past experience affects this?",
+      "How can we build more trust?"
+    ],
+    "questions_hi": [
+      "आपमें ईर्ष्या को क्या ट्रिगर करता है?",
+      "हमारे रिश्ते में कौन सी असुरक्षा उभरती है?",
+      "मैं आपको सुरक्षित महसूस कराने के लिए क्या कर सकता हूं?",
+      "कौन सी सीमाएं मदद करेंगी?",
+      "कौन सा पिछला अनुभव इसे प्रभावित करता है?",
+      "हम अधिक विश्वास कैसे बना सकते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Life Priorities Discussion",
+    "title_hi": "जीवन प्राथमिकता चर्चा",
+    "description_en": "Rank and discuss your top life priorities and ensure alignment",
+    "description_hi": "अपनी शीर्ष जीवन प्राथमिकताओं को रैंक करें और चर्चा करें और संरेखण सुनिश्चित करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "List your top 10 life priorities",
+      "Rank them in order",
+      "Share why each matters",
+      "Compare your lists",
+      "Discuss any misalignments"
+    ],
+    "instructions_hi": [
+      "अपनी शीर्ष 10 जीवन प्राथमिकताओं की सूची बनाएं",
+      "उन्हें क्रम में रैंक करें",
+      "साझा करें कि प्रत्येक क्यों मायने रखता है",
+      "अपनी सूचियों की तुलना करें",
+      "किसी भी गलत संरेखण पर चर्चा करें"
+    ],
+    "materials_needed_en": [
+      "Paper and pen"
+    ],
+    "materials_needed_hi": [
+      "कागज और कलम"
+    ],
+    "tips_en": [
+      "Be honest about your priorities",
+      "Understand different priorities",
+      "Find ways to honor both"
+    ],
+    "tips_hi": [
+      "अपनी प्राथमिकताओं के बारे में ईमानदार रहें",
+      "विभिन्न प्राथमिकताओं को समझें",
+      "दोनों का सम्मान करने के तरीके खोजें"
+    ],
+    "questions_en": [
+      "What matters most in your life right now?",
+      "Where does our relationship rank?",
+      "Where does career rank?",
+      "How important is family?",
+      "What about personal growth?",
+      "Where do we align and differ?",
+      "How do we balance competing priorities?"
+    ],
+    "questions_hi": [
+      "अभी आपके जीवन में सबसे अधिक क्या मायने रखता है?",
+      "हमारा रिश्ता कहां रैंक करता है?",
+      "करियर कहां रैंक करता है?",
+      "परिवार कितना महत्वपूर्ण है?",
+      "व्यक्तिगत विकास के बारे में क्या?",
+      "हम कहां संरेखित हैं और कहां भिन्न हैं?",
+      "हम प्रतिस्पर्धी प्राथमिकताओं को कैसे संतुलित करें?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Personal Boundaries Setting",
+    "title_hi": "व्यक्तिगत सीमाएं निर्धारण",
+    "description_en": "Discuss and establish healthy personal boundaries",
+    "description_hi": "स्वस्थ व्यक्तिगत सीमाओं पर चर्चा करें और स्थापित करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Discuss what boundaries mean to you",
+      "Share important personal boundaries",
+      "Explain why each boundary matters",
+      "Listen without defensiveness",
+      "Commit to respecting boundaries"
+    ],
+    "instructions_hi": [
+      "चर्चा करें कि सीमाएं आपके लिए क्या मायने रखती हैं",
+      "महत्वपूर्ण व्यक्तिगत सीमाएं साझा करें",
+      "समझाएं कि प्रत्येक सीमा क्यों मायने रखती है",
+      "रक्षात्मकता के बिना सुनें",
+      "सीमाओं का सम्मान करने के लिए प्रतिबद्ध हों"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Boundaries are healthy",
+      "Respect differences",
+      "Communicate clearly"
+    ],
+    "tips_hi": [
+      "सीमाएं स्वस्थ हैं",
+      "मतभेदों का सम्मान करें",
+      "स्पष्ट रूप से संवाद करें"
+    ],
+    "questions_en": [
+      "What boundary is important to you?",
+      "What space do you need for yourself?",
+      "What topics are sensitive for you?",
+      "What time alone do you need?",
+      "What family boundaries matter?",
+      "What social boundaries should we have?",
+      "How do I know when I've crossed a boundary?"
+    ],
+    "questions_hi": [
+      "आपके लिए कौन सी सीमा महत्वपूर्ण है?",
+      "आपको अपने लिए किस स्थान की आवश्यकता है?",
+      "कौन से विषय आपके लिए संवेदनशील हैं?",
+      "आपको कितना अकेला समय चाहिए?",
+      "कौन सी पारिवारिक सीमाएं मायने रखती हैं?",
+      "हमें कौन सी सामाजिक सीमाएं रखनी चाहिए?",
+      "मुझे कैसे पता चलेगा कि मैंने एक सीमा पार कर ली है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Gratitude and Growth Reflection",
+    "title_hi": "आभार और विकास चिंतन",
+    "description_en": "Reflect deeply on gratitude for each other and relationship growth",
+    "description_hi": "एक-दूसरे के लिए आभार और संबंध विकास पर गहराई से विचार करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 25,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Share 10 things you're grateful for",
+      "Include qualities, actions, and moments",
+      "Discuss how you've both grown",
+      "Acknowledge challenges overcome",
+      "Express appreciation for the journey"
+    ],
+    "instructions_hi": [
+      "10 चीजें साझा करें जिनके लिए आप आभारी हैं",
+      "गुण, कार्य और क्षण शामिल करें",
+      "चर्चा करें कि आप दोनों कैसे बढ़े हैं",
+      "पार की गई चुनौतियों को स्वीकार करें",
+      "यात्रा के लिए प्रशंसा व्यक्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be specific and detailed",
+      "Express genuine emotion",
+      "Celebrate your journey"
+    ],
+    "tips_hi": [
+      "विशिष्ट और विस्तृत रहें",
+      "वास्तविक भावना व्यक्त करें",
+      "अपनी यात्रा का जश्न मनाएं"
+    ],
+    "questions_en": [
+      "What quality of yours am I most grateful for?",
+      "What moment changed everything?",
+      "How have you helped me grow?",
+      "What challenge made us stronger?",
+      "What do I never want to take for granted?",
+      "What am I most proud of in us?"
+    ],
+    "questions_hi": [
+      "आपके किस गुण के लिए मैं सबसे अधिक आभारी हूं?",
+      "किस पल ने सब कुछ बदल दिया?",
+      "आपने मुझे बढ़ने में कैसे मदद की?",
+      "किस चुनौती ने हमें मजबूत बनाया?",
+      "मैं क्या कभी हल्के में नहीं लेना चाहता?",
+      "हममें मुझे सबसे अधिक गर्व किस बात पर है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Difficult Conversation Practice",
+    "title_hi": "कठिन बातचीत अभ्यास",
+    "description_en": "Practice having difficult conversations in a constructive way",
+    "description_hi": "रचनात्मक तरीके से कठिन बातचीत करने का अभ्यास करें",
+    "difficulty": "medium",
+    "estimated_time_minutes": 30,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 15,
+    "coins_reward": 15,
+    "is_premium": false,
+    "instructions_en": [
+      "Choose a sensitive topic to discuss",
+      "Use 'I feel' statements",
+      "Listen actively without interrupting",
+      "Avoid blame and criticism",
+      "Focus on solutions together",
+      "End with appreciation"
+    ],
+    "instructions_hi": [
+      "चर्चा करने के लिए एक संवेदनशील विषय चुनें",
+      "'मुझे लगता है' कथनों का उपयोग करें",
+      "बिना रोके सक्रिय रूप से सुनें",
+      "दोष और आलोचना से बचें",
+      "एक साथ समाधान पर ध्यान दें",
+      "प्रशंसा के साथ समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Stay calm and respectful",
+      "Take breaks if needed",
+      "Remember you're on the same team"
+    ],
+    "tips_hi": [
+      "शांत और सम्मानजनक रहें",
+      "यदि आवश्यक हो तो ब्रेक लें",
+      "याद रखें कि आप एक ही टीम में हैं"
+    ],
+    "questions_en": [
+      "I feel ___ when ___ because ___",
+      "What I need from you is ___",
+      "Can we find a solution together?",
+      "What compromise can we make?",
+      "How can we prevent this in future?",
+      "What did we learn from this conversation?"
+    ],
+    "questions_hi": [
+      "मुझे ___ महसूस होता है जब ___ क्योंकि ___",
+      "मुझे आपसे ___ चाहिए",
+      "क्या हम एक साथ समाधान खोज सकते हैं?",
+      "हम क्या समझौता कर सकते हैं?",
+      "हम भविष्य में इसे कैसे रोक सकते हैं?",
+      "हमने इस बातचीत से क्या सीखा?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Life Story Timeline",
+    "title_hi": "जीवन कहानी समयरेखा",
+    "description_en": "Create and share your life timeline with major events and turning points",
+    "description_hi": "प्रमुख घटनाओं और मोड़ के साथ अपनी जीवन समयरेखा बनाएं और साझा करें",
+    "difficulty": "deep",
+    "estimated_time_minutes": 40,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 20,
+    "coins_reward": 20,
+    "is_premium": false,
+    "instructions_en": [
+      "Draw a timeline of your life",
+      "Mark 10-15 significant events",
+      "Include highs, lows, and turning points",
+      "Share the story behind each event",
+      "Discuss how events shaped you",
+      "Ask questions to understand deeper"
+    ],
+    "instructions_hi": [
+      "अपने जीवन की एक समयरेखा बनाएं",
+      "10-15 महत्वपूर्ण घटनाओं को चिह्नित करें",
+      "उच्च, निम्न और मोड़ शामिल करें",
+      "प्रत्येक घटना के पीछे की कहानी साझा करें",
+      "चर्चा करें कि घटनाओं ने आपको कैसे आकार दिया",
+      "गहराई से समझने के लिए प्रश्न पूछें"
+    ],
+    "materials_needed_en": [
+      "Paper and pen"
+    ],
+    "materials_needed_hi": [
+      "कागज और कलम"
+    ],
+    "tips_en": [
+      "Be vulnerable and open",
+      "Share both joys and struggles",
+      "Connect events to who you are now"
+    ],
+    "tips_hi": [
+      "कमजोर और खुले रहें",
+      "खुशी और संघर्ष दोनों साझा करें",
+      "घटनाओं को अब आप कौन हैं से जोड़ें"
+    ],
+    "questions_en": [
+      "What event changed your life direction?",
+      "What loss shaped you?",
+      "What achievement defines you?",
+      "What person influenced your path?",
+      "What failure taught you most?",
+      "What moment brought you joy?"
+    ],
+    "questions_hi": [
+      "किस घटना ने आपके जीवन की दिशा बदल दी?",
+      "किस नुकसान ने आपको आकार दिया?",
+      "कौन सी उपलब्धि आपको परिभाषित करती है?",
+      "किस व्यक्ति ने आपके रास्ते को प्रभावित किया?",
+      "किस विफलता ने आपको सबसे अधिक सिखाया?",
+      "किस पल ने आपको खुशी दी?"
+    ]
+  }
+]

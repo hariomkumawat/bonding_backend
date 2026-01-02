@@ -1,0 +1,834 @@
+[
+   {
+    "category": "Communication",
+    "title_en": "This or That",
+    "title_hi": "यह या वह",
+    "description_en": "Choose between two options and explain your choice",
+    "description_hi": "दो विकल्पों में से चुनें और अपनी पसंद समझाएं",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Take turns presenting choices",
+      "Each person picks and explains why",
+      "Discuss your different perspectives",
+      "Complete 15 rounds"
+    ],
+    "instructions_hi": [
+      "बारी-बारी से विकल्प प्रस्तुत करें",
+      "प्रत्येक व्यक्ति चुनता है और बताता है क्यों",
+      "अपने विभिन्न दृष्टिकोणों पर चर्चा करें",
+      "15 राउंड पूरे करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Explain your reasoning",
+      "Respect different choices",
+      "Learn about each other's values"
+    ],
+    "tips_hi": [
+      "अपना तर्क समझाएं",
+      "विभिन्न विकल्पों का सम्मान करें",
+      "एक-दूसरे के मूल्यों के बारे में जानें"
+    ],
+    "questions_en": [
+      "Talk or listen?",
+      "Plan or spontaneous?",
+      "Indoors or outdoors?",
+      "Group or alone time?",
+      "Lead or follow?",
+      "Organized or flexible?",
+      "Practical or creative?",
+      "Routine or variety?",
+      "Compete or collaborate?",
+      "Think or feel?",
+      "Bigpicture or details?",
+      "Tradition or innovation?",
+      "Comfort or adventure?",
+      "Quality or quantity?",
+      "Process or results?"
+    ],
+    "questions_hi": [
+      "बात करना या सुनना?",
+      "योजना या सहज?",
+      "घर के अंदर या बाहर?",
+      "समूह या अकेला समय?",
+      "नेतृत्व या अनुसरण?",
+      "संगठित या लचीला?",
+      "व्यावहारिक या रचनात्मक?",
+      "दिनचर्या या विविधता?",
+      "प्रतिस्पर्धा या सहयोग?",
+      "सोचना या महसूस करना?",
+      "बड़ी तस्वीर या विवरण?",
+      "परंपरा या नवाचार?",
+      "आराम या रोमांच?",
+      "गुणवत्ता या मात्रा?",
+      "प्रक्रिया या परिणाम?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Memory Lane",
+    "title_hi": "स्मृति लेन",
+    "description_en": "Share favorite memories from your relationship",
+    "description_hi": "अपने रिश्ते से पसंदीदा यादें साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "evening",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Each share 3 favorite memories together",
+      "Describe why that memory is special",
+      "Add details - sights, sounds, feelings",
+      "Listen and add your perspective",
+      "Relive the moment together"
+    ],
+    "instructions_hi": [
+      "प्रत्येक 3 पसंदीदा यादें साझा करें",
+      "बताएं कि वह स्मृति विशेष क्यों है",
+      "विवरण जोड़ें - दृश्य, ध्वनियाँ, भावनाएँ",
+      "सुनें और अपना दृष्टिकोण जोड़ें",
+      "एक साथ पल को फिर से जिएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be specific about the memory",
+      "Share how it made you feel",
+      "Celebrate your journey together"
+    ],
+    "tips_hi": [
+      "स्मृति के बारे में विशिष्ट रहें",
+      "साझा करें कि इसने आपको कैसा महसूस कराया",
+      "एक साथ अपनी यात्रा का जश्न मनाएं"
+    ],
+    "questions_en": [
+      "What's your favorite memory from our first year?",
+      "What moment made you fall deeper in love?",
+      "What's a funny memory that still makes you laugh?"
+    ],
+    "questions_hi": [
+      "हमारे पहले साल की आपकी पसंदीदा याद क्या है?",
+      "किस पल ने आपको और प्यार में गिरा दिया?",
+      "कौन सी मजेदार याद अभी भी आपको हंसाती है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Finish My Sentence",
+    "title_hi": "मेरा वाक्य पूरा करो",
+    "description_en": "Complete each other's sentences and see how well you know each other",
+    "description_hi": "एक-दूसरे के वाक्य पूरे करें और देखें कि आप एक-दूसरे को कितना जानते हैं",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "One person starts a sentence",
+      "Stop mid-sentence",
+      "Partner completes it",
+      "Check if the completion matches what you meant",
+      "Take turns for 10 sentences each"
+    ],
+    "instructions_hi": [
+      "एक व्यक्ति एक वाक्य शुरू करता है",
+      "बीच वाक्य में रुकें",
+      "साथी इसे पूरा करता है",
+      "जांचें कि क्या पूर्णता आपके अर्थ से मेल खाती है",
+      "प्रत्येक 10 वाक्यों के लिए बारी-बारी से"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Use sentences about yourself",
+      "Be playful with completions",
+      "Laugh at mismatches"
+    ],
+    "tips_hi": [
+      "अपने बारे में वाक्य का उपयोग करें",
+      "पूर्णता के साथ चंचल रहें",
+      "बेमेल पर हंसें"
+    ],
+    "questions_en": [
+      "My favorite thing about us is",
+      "I feel most loved when you",
+      "One thing I want us to do together is",
+      "My happiest moment with you was",
+      "When I'm with you I feel"
+    ],
+    "questions_hi": [
+      "हमारे बारे में मेरी पसंदीदा बात है",
+      "मैं सबसे अधिक प्यार महसूस करता हूं जब आप",
+      "एक चीज जो मैं हमें एक साथ करना चाहता हूं वह है",
+      "आपके साथ मेरा सबसे खुशी का पल था",
+      "जब मैं आपके साथ हूं तो मुझे लगता है"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "One Word Story",
+    "title_hi": "एक शब्द की कहानी",
+    "description_en": "Create a story together, one word at a time",
+    "description_hi": "एक साथ एक कहानी बनाएं, एक बार में एक शब्द",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Decide on a story theme (romance, adventure, comedy)",
+      "Take turns saying one word",
+      "Build the story together",
+      "Try to make it coherent and fun",
+      "Continue for 3-5 minutes",
+      "Read the complete story at the end"
+    ],
+    "instructions_hi": [
+      "एक कहानी विषय पर निर्णय लें (रोमांस, रोमांच, कॉमेडी)",
+      "बारी-बारी से एक शब्द बोलें",
+      "एक साथ कहानी बनाएं",
+      "इसे सुसंगत और मजेदार बनाने का प्रयास करें",
+      "3-5 मिनट तक जारी रखें",
+      "अंत में पूरी कहानी पढ़ें"
+    ],
+    "materials_needed_en": ["Paper and pen (optional)"],
+    "materials_needed_hi": ["कागज और कलम (वैकल्पिक)"],
+    "tips_en": [
+      "Be creative and spontaneous",
+      "Don't overthink your word",
+      "Embrace the chaos and laugh"
+    ],
+    "tips_hi": [
+      "रचनात्मक और सहज रहें",
+      "अपने शब्द पर अधिक न सोचें",
+      "अराजकता को गले लगाओ और हंसो"
+    ],
+    "questions_en": [
+      "What genre should our story be?",
+      "Should we include ourselves as characters?",
+      "What's the funniest line we created?"
+    ],
+    "questions_hi": [
+      "हमारी कहानी की शैली क्या होनी चाहिए?",
+      "क्या हमें खुद को पात्रों के रूप में शामिल करना चाहिए?",
+      "हमने सबसे मज़ेदार लाइन क्या बनाई?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Appreciation Round",
+    "title_hi": "प्रशंसा दौर",
+    "description_en": "Take turns appreciating specific things about each other",
+    "description_hi": "एक-दूसरे के बारे में विशिष्ट चीजों की सराहना करने के लिए बारी-बारी से लें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "anytime",
+    "mode": "together",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Sit facing each other",
+      "Take turns saying 'I appreciate when you",
+      "Be specific about actions or qualities",
+      "Complete 5 rounds each",
+      "Maintain eye contact",
+      "End with a thank you"
+    ],
+    "instructions_hi": [
+      "एक-दूसरे के सामने बैठें",
+      "बारी-बारी से कहें 'मैं सराहना करता हूं जब आप",
+      "कार्यों या गुणों के बारे में विशिष्ट रहें",
+      "प्रत्येक 5 राउंड पूरे करें",
+      "आंखों का संपर्क बनाए रखें",
+      "धन्यवाद के साथ समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Mention recent actions",
+      "Include daily gestures",
+      "Be genuine and heartfelt"
+    ],
+    "tips_hi": [
+      "हाल की कार्रवाइयों का उल्लेख करें",
+      "दैनिक इशारों को शामिल करें",
+      "सच्चे और दिल से रहें"
+    ],
+    "questions_en": [
+      "I appreciate when you listen to me without judging",
+      "I appreciate when you support my dreams",
+      "I appreciate when you make me laugh",
+      "I appreciate when you show affection",
+      "I appreciate when you remember little details"
+    ],
+    "questions_hi": [
+      "मैं सराहना करता हूं जब आप मुझे बिना किसी निर्णय के सुनते हैं",
+      "मैं सराहना करता हूं जब आप मेरे सपनों का समर्थन करते हैं",
+      "मैं सराहना करता हूं जब आप मुझे हंसाते हैं",
+      "मैं सराहना करता हूं जब आप स्नेह दिखाते हैं",
+      "मैं सराहना करता हूं जब आप छोटे विवरण याद रखते हैं"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Highs and Lows",
+    "title_hi": "उच्च और निम्न",
+    "description_en": "Share the best and most challenging parts of your week",
+    "description_hi": "अपने सप्ताह के सर्वश्रेष्ठ और सबसे चुनौतीपूर्ण भागों को साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Share your high - best moment of the week",
+      "Share your low - most challenging moment",
+      "Discuss how you handled both",
+      "Offer support and celebrate together",
+      "Take turns sharing"
+    ],
+    "instructions_hi": [
+      "अपना उच्च साझा करें - सप्ताह का सर्वश्रेष्ठ क्षण",
+      "अपना निम्न साझा करें - सबसे चुनौतीपूर्ण क्षण",
+      "चर्चा करें कि आपने दोनों को कैसे संभाला",
+      "समर्थन प्रदान करें और एक साथ जश्न मनाएं",
+      "बारी-बारी से साझा करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be vulnerable about your lows",
+      "Celebrate the highs enthusiastically",
+      "Provide emotional support"
+    ],
+    "tips_hi": [
+      "अपने निम्न के बारे में कमजोर रहें",
+      "उत्साहपूर्वक उच्च का जश्न मनाएं",
+      "भावनात्मक समर्थन प्रदान करें"
+    ],
+    "questions_en": [
+      "What was the highlight of your week?",
+      "What challenged you most this week?",
+      "How can I support you better?"
+    ],
+    "questions_hi": [
+      "आपके सप्ताह की मुख्य बात क्या थी?",
+      "इस सप्ताह आपको सबसे अधिक क्या चुनौती दी?",
+      "मैं आपको बेहतर कैसे समर्थन दे सकता हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Never Have I Ever",
+    "title_hi": "मैंने कभी नहीं किया",
+    "description_en": "Share experiences you've had or haven't had",
+    "description_hi": "अनुभव साझा करें जो आपके पास हैं या नहीं हैं",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Take turns saying 'Never have I ever",
+      "If partner has done it, they share the story",
+      "Keep statements appropriate and fun",
+      "Learn new things about each other",
+      "Complete 15 statements"
+    ],
+    "instructions_hi": [
+      "बारी-बारी से कहें 'मैंने कभी नहीं किया",
+      "यदि साथी ने किया है, तो वे कहानी साझा करते हैं",
+      "कथनों को उपयुक्त और मजेदार रखें",
+      "एक-दूसरे के बारे में नई चीजें सीखें",
+      "15 कथन पूरे करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Keep it light-hearted",
+      "Share interesting stories",
+      "Discover new experiences together"
+    ],
+    "tips_hi": [
+      "इसे हल्का-फुल्का रखें",
+      "दिलचस्प कहानियां साझा करें",
+      "एक साथ नए अनुभव खोजें"
+    ],
+    "questions_en": [
+      "Never have I ever traveled outside the country",
+      "Never have I ever tried a extreme sport",
+      "Never have I ever stayed up all night talking",
+      "Never have I ever cooked a complete meal from scratch",
+      "Never have I ever sung karaoke",
+      "Never have I ever been on a road trip",
+      "Never have I ever written a poem",
+      "Never have I ever learned a musical instrument",
+      "Never have I ever gone camping",
+      "Never have I ever danced in the rain"
+    ],
+    "questions_hi": [
+      "मैंने कभी देश के बाहर यात्रा नहीं की",
+      "मैंने कभी कोई चरम खेल नहीं आजमाया",
+      "मैंने कभी रात भर बात करते हुए नहीं रुका",
+      "मैंने कभी शुरू से एक पूरा भोजन नहीं पकाया",
+      "मैंने कभी कराओके नहीं गाया",
+      "मैंने कभी रोड ट्रिप पर नहीं गया",
+      "मैंने कभी कविता नहीं लिखी",
+      "मैंने कभी कोई संगीत वाद्ययंत्र नहीं सीखा",
+      "मैं कभी कैंपिंग पर नहीं गया",
+      "मैंने कभी बारिश में नृत्य नहीं किया"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "What Makes You Happy",
+    "title_hi": "क्या आपको खुश करता है",
+    "description_en": "Share things that bring joy to your life",
+    "description_hi": "उन चीजों को साझा करें जो आपके जीवन में खुशी लाती हैं",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "List 10 things that make you happy",
+      "Explain why each brings you joy",
+      "Note common happiness sources",
+      "Discuss how to bring more joy",
+      "Take turns sharing"
+    ],
+    "instructions_hi": [
+      "10 चीजों की सूची बनाएं जो आपको खुश करती हैं",
+      "बताएं कि प्रत्येक आपको खुशी क्यों देता है",
+      "सामान्य खुशी स्रोतों पर ध्यान दें",
+      "चर्चा करें कि और खुशी कैसे लाएं",
+      "बारी-बारी से साझा करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Include both big and small things",
+      "Be specific about why it matters",
+      "Look for shared sources of joy"
+    ],
+    "tips_hi": [
+      "बड़ी और छोटी दोनों चीजें शामिल करें",
+      "विशिष्ट रहें कि यह क्यों मायने रखता है",
+      "खुशी के साझा स्रोतों की तलाश करें"
+    ],
+    "questions_en": [
+      "What simple pleasure makes your day better?",
+      "What activity brings you pure joy?",
+      "When do you feel most content?",
+      "What makes you smile automatically?",
+      "What memory always cheers you up?"
+    ],
+    "questions_hi": [
+      "कौन सा साधारण आनंद आपके दिन को बेहतर बनाता है?",
+      "कौन सी गतिविधि आपको शुद्ध खुशी देती है?",
+      "आप सबसे अधिक संतुष्ट कब महसूस करते हैं?",
+      "क्या आपको स्वचालित रूप से मुस्कुराता है?",
+      "कौन सी याद हमेशा आपको खुश करती है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Question Jar",
+    "title_hi": "प्रश्न जार",
+    "description_en": "Answer random getting-to-know-you questions",
+    "description_hi": "यादृच्छिक आप-को-जानने के प्रश्नों के उत्तर दें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 15,
+    "best_time": "anytime",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Take turns picking questions",
+      "Answer honestly and thoughtfully",
+      "Ask follow-up questions",
+      "Complete 10 questions",
+      "Enjoy learning about each other"
+    ],
+    "instructions_hi": [
+      "बारी-बारी से प्रश्न चुनें",
+      "ईमानदारी और विचारपूर्वक उत्तर दें",
+      "अनुवर्ती प्रश्न पूछें",
+      "10 प्रश्न पूरे करें",
+      "एक-दूसरे के बारे में सीखने का आनंद लें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be open and honest",
+      "Share stories with your answers",
+      "Show genuine curiosity"
+    ],
+    "tips_hi": [
+      "खुले और ईमानदार रहें",
+      "अपने उत्तरों के साथ कहानियां साझा करें",
+      "वास्तविक जिज्ञासा दिखाएं"
+    ],
+    "questions_en": [
+      "What's your idea of a perfect day?",
+      "If you could have dinner with anyone, who?",
+      "What's something you want to learn?",
+      "What are you most proud of?",
+      "What's your biggest dream?",
+      "What's your favorite way to relax?",
+      "What makes you feel energized?",
+      "What's something that always makes you laugh?",
+      "What's your hidden talent?",
+      "What's the best advice you've received?"
+    ],
+    "questions_hi": [
+      "एक आदर्श दिन का आपका विचार क्या है?",
+      "यदि आप किसी के साथ रात का खाना खा सकते हैं, तो कौन?",
+      "कुछ ऐसा क्या है जो आप सीखना चाहते हैं?",
+      "आपको किस बात पर सबसे अधिक गर्व है?",
+      "आपका सबसे बड़ा सपना क्या है?",
+      "आराम करने का आपका पसंदीदा तरीका क्या है?",
+      "क्या आपको ऊर्जावान महसूस कराता है?",
+      "कुछ ऐसा क्या है जो हमेशा आपको हंसाता है?",
+      "आपकी छिपी हुई प्रतिभा क्या है?",
+      "आपको मिली सबसे अच्छी सलाह क्या है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Childhood Stories",
+    "title_hi": "बचपन की कहानियां",
+    "description_en": "Share memories and stories from your childhood",
+    "description_hi": "अपने बचपन की यादें और कहानियां साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 20,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person shares 3 childhood memories",
+      "Include funny, touching, or significant moments",
+      "Add details about people, places, emotions",
+      "Listen actively and ask questions",
+      "Share photos if available"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति 3 बचपन की यादें साझा करता है",
+      "मज़ेदार, छूने वाले, या महत्वपूर्ण क्षणों को शामिल करें",
+      "लोगों, स्थानों, भावनाओं के बारे में विवरण जोड़ें",
+      "सक्रिय रूप से सुनें और प्रश्न पूछें",
+      "यदि उपलब्ध हो तो फ़ोटो साझा करें"
+    ],
+    "materials_needed_en": ["Old photos (optional)"],
+    "materials_needed_hi": ["पुरानी तस्वीरें (वैकल्पिक)"],
+    "tips_en": [
+      "Share what shaped who you are today",
+      "Include family traditions",
+      "Talk about favorite childhood activities"
+    ],
+    "tips_hi": [
+      "साझा करें कि क्या आज आप कौन हैं",
+      "पारिवारिक परंपराओं को शामिल करें",
+      "पसंदीदा बचपन की गतिविधियों के बारे में बात करें"
+    ],
+    "questions_en": [
+      "What's your favorite childhood memory?",
+      "What was your biggest childhood fear?",
+      "What games did you love to play?",
+      "Who was your childhood best friend?",
+      "What's a tradition from your childhood?"
+    ],
+    "questions_hi": [
+      "आपकी पसंदीदा बचपन की याद क्या है?",
+      "आपका सबसे बड़ा बचपन का डर क्या था?",
+      "आप कौन से खेल खेलना पसंद करते थे?",
+      "आपका बचपन का सबसे अच्छा दोस्त कौन था?",
+      "आपके बचपन से एक परंपरा क्या है?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Daily Check-In",
+    "title_hi": "दैनिक चेक-इन",
+    "description_en": "A quick daily conversation to stay connected",
+    "description_hi": "जुड़े रहने के लिए एक त्वरित दैनिक बातचीत",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Set aside 10 minutes daily",
+      "Answer the check-in questions",
+      "Listen without distractions",
+      "Offer support where needed",
+      "Make it a daily ritual"
+    ],
+    "instructions_hi": [
+      "रोजाना 10 मिनट अलग रखें",
+      "चेक-इन प्रश्नों के उत्तर दें",
+      "बिना किसी विकर्षण के सुनें",
+      "जहां आवश्यक हो वहां समर्थन प्रदान करें",
+      "इसे दैनिक अनुष्ठान बनाएं"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Be consistent with timing",
+      "Put phones away",
+      "Be present and engaged"
+    ],
+    "tips_hi": [
+      "समय के साथ सुसंगत रहें",
+      "फोन दूर रखें",
+      "उपस्थित और लगे रहें"
+    ],
+    "questions_en": [
+      "How are you feeling today?",
+      "What's on your mind?",
+      "What do you need from me today?",
+      "What was your win today?",
+      "How can I support you tomorrow?"
+    ],
+    "questions_hi": [
+      "आज आप कैसा महसूस कर रहे हैं?",
+      "आपके दिमाग में क्या है?",
+      "आज आपको मुझसे क्या चाहिए?",
+      "आज आपकी जीत क्या थी?",
+      "मैं कल आपका समर्थन कैसे कर सकता हूं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "What I Learned Today",
+    "title_hi": "आज मैंने क्या सीखा",
+    "description_en": "Share something new you learned or discovered today",
+    "description_hi": "आज आपने जो कुछ नया सीखा या खोजा, उसे साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person shares something they learned today",
+      "It can be about work, life, or relationships",
+      "Explain why it was interesting",
+      "Discuss how you might apply it",
+      "Encourage continuous learning together"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति कुछ साझा करता है जो उन्होंने आज सीखा",
+      "यह काम, जीवन, या रिश्तों के बारे में हो सकता है",
+      "समझाएं कि यह दिलचस्प क्यों था",
+      "चर्चा करें कि आप इसे कैसे लागू कर सकते हैं",
+      "एक साथ निरंतर सीखने को प्रोत्साहित करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Share both big and small learnings",
+      "Be curious about their discovery",
+      "Celebrate growth together"
+    ],
+    "tips_hi": [
+      "बड़ी और छोटी दोनों सीखों को साझा करें",
+      "उनकी खोज के बारे में जिज्ञासु रहें",
+      "एक साथ विकास का जश्न मनाएं"
+    ],
+    "questions_en": [
+      "What new fact did you discover?",
+      "What skill did you improve today?",
+      "What insight did you gain?",
+      "What mistake taught you something?",
+      "What did you learn about yourself?"
+    ],
+    "questions_hi": [
+      "आपने कौन सा नया तथ्य खोजा?",
+      "आज आपने कौन सा कौशल सुधारा?",
+      "आपको क्या अंतर्दृष्टि मिली?",
+      "किस गलती ने आपको कुछ सिखाया?",
+      "आपने अपने बारे में क्या सीखा?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Best Part of My Day",
+    "title_hi": "मेरे दिन का सबसे अच्छा हिस्सा",
+    "description_en": "Share the highlight or favorite moment of your day",
+    "description_hi": "अपने दिन के मुख्य आकर्षण या पसंदीदा पल को साझा करें",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person shares their best moment",
+      "Describe it in detail",
+      "Explain why it stood out",
+      "Celebrate each other's joys",
+      "End on a positive note"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति अपना सर्वश्रेष्ठ क्षण साझा करता है",
+      "इसे विस्तार से वर्णन करें",
+      "समझाएं कि यह क्यों खड़ा था",
+      "एक-दूसरे की खुशियों का जश्न मनाएं",
+      "सकारात्मक नोट पर समाप्त करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Focus on the positive",
+      "Even small moments count",
+      "Show genuine happiness for them"
+    ],
+    "tips_hi": [
+      "सकारात्मक पर ध्यान दें",
+      "छोटे पल भी मायने रखते हैं",
+      "उनके लिए वास्तविक खुशी दिखाएं"
+    ],
+    "questions_en": [
+      "What made you smile today?",
+      "What's one thing you're proud of from today?",
+      "What moment do you want to remember?"
+    ],
+    "questions_hi": [
+      "आज आपको किस बात ने मुस्कुराया?",
+      "आज से एक चीज जिस पर आपको गर्व है?",
+      "कौन सा पल आप याद रखना चाहते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Random Acts of Kindness",
+    "title_hi": "दयालुता के यादृच्छिक कार्य",
+    "description_en": "Share kind gestures you witnessed or did today",
+    "description_hi": "दयालुता के कार्य साझा करें जो आपने देखे या आज किए",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Share acts of kindness you experienced",
+      "Include kindness given or received",
+      "Discuss how it made you feel",
+      "Plan kind gestures for tomorrow",
+      "Inspire each other to spread kindness"
+    ],
+    "instructions_hi": [
+      "दयालुता के कार्य साझा करें जो आपने अनुभव किए",
+      "दी गई या प्राप्त दयालुता शामिल करें",
+      "चर्चा करें कि इसने आपको कैसा महसूस कराया",
+      "कल के लिए दयालु इशारों की योजना बनाएं",
+      "दयालुता फैलाने के लिए एक-दूसरे को प्रेरित करें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Notice small acts of kindness",
+      "Include gestures from strangers",
+      "Celebrate compassion"
+    ],
+    "tips_hi": [
+      "दयालुता के छोटे कार्यों पर ध्यान दें",
+      "अजनबियों के इशारों को शामिल करें",
+      "करुणा का जश्न मनाएं"
+    ],
+    "questions_en": [
+      "What kind thing did someone do today?",
+      "How did you help someone today?",
+      "What kindness touched your heart?",
+      "What can we do to be kinder tomorrow?"
+    ],
+    "questions_hi": [
+      "आज किसी ने कौन सा दयालु काम किया?",
+      "आज आपने किसी की कैसे मदद की?",
+      "किस दयालुता ने आपके दिल को छुआ?",
+      "हम कल और दयालु होने के लिए क्या कर सकते हैं?"
+    ]
+  },
+  {
+    "category": "Communication",
+    "title_en": "Word of the Day",
+    "title_hi": "दिन का शब्द",
+    "description_en": "Pick one word to describe your day and explain why",
+    "description_hi": "अपने दिन का वर्णन करने के लिए एक शब्द चुनें और बताएं क्यों",
+    "difficulty": "easy",
+    "estimated_time_minutes": 10,
+    "best_time": "evening",
+    "mode": "both",
+    "points_reward": 10,
+    "coins_reward": 10,
+    "is_premium": false,
+    "instructions_en": [
+      "Each person picks one word for their day",
+      "Explain why that word fits",
+      "Share specific examples",
+      "Discuss the emotions behind it",
+      "Listen empathetically"
+    ],
+    "instructions_hi": [
+      "प्रत्येक व्यक्ति अपने दिन के लिए एक शब्द चुनता है",
+      "समझाएं कि वह शब्द क्यों फिट बैठता है",
+      "विशिष्ट उदाहरण साझा करें",
+      "इसके पीछे की भावनाओं पर चर्चा करें",
+      "सहानुभूतिपूर्वक सुनें"
+    ],
+    "materials_needed_en": [],
+    "materials_needed_hi": [],
+    "tips_en": [
+      "Choose an emotion or feeling word",
+      "Be honest about your state",
+      "Support each other's feelings"
+    ],
+    "tips_hi": [
+      "एक भावना या अनुभव शब्द चुनें",
+      "अपनी स्थिति के बारे में ईमानदार रहें",
+      "एक-दूसरे की भावनाओं का समर्थन करें"
+    ],
+    "questions_en": [
+      "What one word describes your day?",
+      "Why did you choose that word?",
+      "What made today feel that way?",
+      "What word do you want tomorrow to be?"
+    ],
+    "questions_hi": [
+      "कौन सा एक शब्द आपके दिन का वर्णन करता है?",
+      "आपने वह शब्द क्यों चुना?",
+      "आज को उस तरह से महसूस करने के लिए क्या बनाया?",
+      "आप कल कौन सा शब्द चाहते हैं?"
+    ]
+  }
+]
